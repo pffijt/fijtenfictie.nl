@@ -5,8 +5,25 @@
   font-display: swap;
 }
 
+html {
+  --background-color: #FFFDF0;
+  --menu-background-color: #CF0000;
+  --menu-font-color: white;
+  --font-color: black;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --background-color: #1E1D14;
+    --menu-background-color: #CF0000;
+    --menu-font-color: white;
+    --font-color: white;
+  }
+}
+
 body {
-  background-color: #FFFDF0;
+  background-color: var(--background-color);
   /* color: #222;
   font-family: sans-serif;
   line-height: 1.5;
@@ -44,7 +61,7 @@ nav {
   position: fixed;
   bottom: 0;
   right: 0;
-  background-color: #CF0000;
+  background-color: var(--menu-background-color);
   opacity: 0.95;
 }
 
@@ -53,7 +70,7 @@ nav {
 }
 
 nav > ul > li > a {
-  color: white;
+  color: var(--menu-font-color);
   text-decoration: none;
   font-family: 'sailors-condensed-regular', sans-serif;
 }
@@ -78,7 +95,7 @@ nav > ul > li > a {
 }
 
 .header-hr {
-  border: 2px solid black;
+  border: 2px solid var(--font-color);
   margin-top: 0.25rem;
   opacity: 1;
 }
@@ -93,7 +110,7 @@ nav > ul > li > a {
 }
 
 .article-header > a {
-  color: black;
+  color: var(--font-color);
   text-decoration: none;
 }
 
