@@ -1,0 +1,11 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'nl-nl'
+defaultContentLanguage = "nl"
+defaultContentLang = "nl"
+title = 'Fijt & Fictie'
+theme = "fijtTheme"
+
+[params]
+    logoLocation = '/fijt_fictie.svg'
+    logoAlternative = 'Fijt & Fictie'
+    headline = 'Het Nieuw Rotterdamsch Cabaret'

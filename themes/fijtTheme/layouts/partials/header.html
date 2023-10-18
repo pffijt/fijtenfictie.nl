@@ -1,0 +1,30 @@
+{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ $dateHuman := .Date | time.Format "Monday 2 January 2006" }}
+<div class="container">
+    <div class="row text-start">
+        <div class="col header-clock">
+            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col">
+            <h1>
+                <a href="{{ .Site.BaseURL }}">
+                    <picture>
+                        <source srcset="/fijt_fictie.webp">
+                        <source srcset="{{ $.Site.Params.logoLocation }}">
+                        <img class="header-logo" src="{{ $.Site.Params.logoLocation }}" alt="{{ $.Site.Params.logoAlternative }}" role="img">
+                    </picture>
+                </a>
+            </h1>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <h2>
+            {{ $.Site.Params.headline }}
+        </h2>
+        <hr class="header-hr"/>
+    </div>
+</div>

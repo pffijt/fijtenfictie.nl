@@ -1,0 +1,106 @@
+
+@font-face {
+  font-family: 'sailors-condensed-regular';
+  src: url('/sailors_condensed.ttf');
+  font-display: swap;
+}
+
+body {
+  background-color: #FFFDF0;
+  /* color: #222;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 1rem;
+  max-width: 768px; */
+}
+
+header {
+  /* border-bottom: 1px solid #222;
+  margin-bottom: 1rem; */
+}
+
+footer {
+  /* border-top: 1px solid #222;
+  margin-top: 1rem; */
+}
+
+h2 {
+  font-family: 'sailors-condensed-regular', sans-serif;
+  font-size: 1.125em;
+}
+
+a {
+  /* color: #00e;
+  text-decoration: none; */
+}
+
+p {
+  font-family: 'Libre Bodoni', serif; 
+  font-size: 15px;
+}
+
+nav {
+  z-index: 99999;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #CF0000;
+  opacity: 0.95;
+}
+
+.menu-content {
+  display: none;
+}
+
+nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+  font-family: 'sailors-condensed-regular', sans-serif;
+}
+
+.active {
+
+}
+
+/* Header styles */
+
+.header-clock {
+  font-family: 'Libre Bodoni', serif;
+  font-size: 0.875em;
+  margin: 1rem 0.5rem;
+  font-weight: bold;
+}
+
+.header-logo {
+  width: 100%;
+  max-width: 516px;
+  height: auto;
+}
+
+.header-hr {
+  border: 2px solid black;
+  margin-top: 0.25rem;
+  opacity: 1;
+}
+
+/* Home styles */
+
+.article-header {
+  font-family: 'Libre Bodoni', serif;
+  font-weight: bold;
+  font-size: 2.1875em;
+  text-align: left;
+}
+
+.article-header > a {
+  color: black;
+  text-decoration: none;
+}
+
+.article-image {
+  width: 100%;
+  max-width: 516px;
+  height: auto;
+  margin: 0.75rem 0;
+}
+
