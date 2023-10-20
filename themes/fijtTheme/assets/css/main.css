@@ -10,6 +10,7 @@ html {
   --menu-background-color: #CF0000;
   --menu-font-color: white;
   --font-color: black;
+  overflow: auto;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +25,7 @@ html {
 body {
   background-color: var(--background-color);
   color: var(--font-color);
+  overflow: auto;
 }
 
 header {
