@@ -12,9 +12,8 @@
             <h1>
                 <a href="{{ .Site.BaseURL }}">
                     <picture>
-                        <source srcset="{{ .Site.BaseURL }}/fijt_fictie_light.webp" media="(prefers-color-scheme: light)">
                         <source srcset="{{ .Site.BaseURL }}/fijt_fictie_dark.webp" media="(prefers-color-scheme: dark)">
-                        <img class="header-logo" src="{{ $.Site.Params.logoLocation }}" alt="{{ $.Site.Params.logoAlternative }}" role="img">
+                        <img class="header-logo" src="{{ .Site.BaseURL }}/fijt_fictie_light.webp" alt="{{ $.Site.Params.logoAlternative }}" role="img">
                     </picture>
                 </a>
             </h1>

@@ -10,7 +10,6 @@ html {
   --menu-background-color: #CF0000;
   --menu-font-color: white;
   --font-color: black;
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,11 +23,7 @@ html {
 
 body {
   background-color: var(--background-color);
-  /* color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px; */
+  color: var(--font-color);
 }
 
 header {
@@ -59,24 +54,30 @@ p {
 nav {
   z-index: 99999;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 5px;
+  right: 5px;
   background-color: var(--menu-background-color);
   opacity: 0.95;
+  padding: 8px;
+  border-radius: 15px;
 }
+
+/* Menu styles */
 
 .menu-content {
-  display: none;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: height 1s, opacity 1s ease-in-out;
 }
 
-nav > ul > li > a {
+.menu-button {
+  text-align: right;
   color: var(--menu-font-color);
   text-decoration: none;
   font-family: 'sailors-condensed-regular', sans-serif;
-}
-
-.active {
-
+  font-size: 1.75em;
 }
 
 /* Header styles */
@@ -112,6 +113,11 @@ nav > ul > li > a {
 .article-header > a {
   color: var(--font-color);
   text-decoration: none;
+}
+
+.article-link {
+  color: var(--menu-background-color);
+  font-family: 'Libre Bodoni', serif;
 }
 
 .article-image {

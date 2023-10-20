@@ -4,6 +4,9 @@
     <div class="container">
       <h2 class="article-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
       {{ .Summary }}
+      {{ if .Truncated }}
+        <a class="article-link" href="{{ .RelPermalink }}">Lees verder</a>
+      {{ end }}
       <hr />
     </div>
   {{ end }}

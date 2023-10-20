@@ -11,15 +11,18 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-  <nav>
-    <div class="menu-content">
-      <ul>
+  <nav class="text-right">
+    <div id="menu-content" class="menu-content">
         {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-      </ul>
     </div>
-    <a href="javascript:void(0);" onclick="openMenu()">
-      menu
-    </a>
+    <div class="row">
+      
+    </div>
+    <div class="row">
+      <a class="menu-button" href="javascript:void(0);" onclick="openMenu()">
+        menu
+      </a>
+    </div>
   </nav>
 {{- end }}
 
@@ -32,19 +35,20 @@ Renders a menu for the given menu ID.
     {{- else if $page.HasMenuCurrent .Menu .}}
       {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
     {{- end }}
-    <li>
+    <div class="row">
       <a
+        class="menu-button"
         {{- range $k, $v := $attrs }}
           {{- with $v }}
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
           {{- end }}
         {{- end -}}
       >{{ or (T .Identifier) .Name | safeHTML }}</a>
-      {{- with .Children }}
+      <!-- {{- with .Children }}
         <ul>
           {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
         </ul>
-      {{- end }}
-    </li>
+      {{- end }} -->
+      </div>
   {{- end }}
 {{- end }}
