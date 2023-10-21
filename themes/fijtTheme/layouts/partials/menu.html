@@ -15,12 +15,12 @@ Renders a menu for the given menu ID.
     <div id="menu-content" class="menu-content">
         {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </div>
-    <div class="row">
+    <div href="javascript:void(0);" onclick="openMenu()">
+      <div class="row">
       
-    </div>
-    <div class="row">
-      <div href="javascript:void(0);" onclick="openMenu()">
-        <a class="menu-button">
+      </div>
+      <div class="row">
+        <a class="menu-link">
           menu
         </a>
       </div>
@@ -39,7 +39,7 @@ Renders a menu for the given menu ID.
     {{- end }}
     <div class="row">
       <a
-        class="menu-button"
+        class="menu-link"
         {{- range $k, $v := $attrs }}
           {{- with $v }}
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}

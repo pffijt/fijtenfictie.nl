@@ -61,7 +61,7 @@ p {
 nav {
   z-index: 99999;
   position: fixed;
-  top: 90.5%;
+  bottom: 0.1vh;
   right: 5px;
   background-color: var(--menu-background-color);
   opacity: 0.95;
@@ -71,20 +71,26 @@ nav {
 
 /* Menu styles */
 
+.menu-button {
+  cursor: pointer;
+}
+
 .menu-content {
   height: 0;
   width: 0;
   visibility: hidden;
   opacity: 0;
-  transition: height 1s, opacity 1s ease-in-out;
+  transition: height 0.5s, opacity 0.5s ease-in-out;
 }
 
-.menu-button {
+.menu-link {
   text-align: right;
   color: var(--menu-font-color);
   text-decoration: none;
   font-family: 'sailors-condensed-regular', sans-serif;
   font-size: 1.75em;
+  cursor: pointer;
+  user-select: none;
 }
 
 /* Header styles */
