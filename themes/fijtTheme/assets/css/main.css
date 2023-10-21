@@ -28,6 +28,11 @@ body {
   overflow: auto;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 header {
   /* border-bottom: 1px solid #222;
   margin-bottom: 1rem; */
@@ -56,7 +61,7 @@ p {
 nav {
   z-index: 99999;
   position: fixed;
-  bottom: 5px;
+  top: 90.5%;
   right: 5px;
   background-color: var(--menu-background-color);
   opacity: 0.95;
