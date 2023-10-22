@@ -4,6 +4,7 @@ defaultContentLanguage = "nl"
 defaultContentLang = "nl"
 title = 'Fijt & Fictie'
 theme = "fijtTheme"
+enableRobotsTXT = true
 
 [params]
     logoLocation = '/fijt_fictie.svg'
