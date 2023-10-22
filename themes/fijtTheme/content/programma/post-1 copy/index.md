@@ -7,7 +7,7 @@ draft = false
 tags = ['red','green','blue']
 +++
 
-{{<image-styled src="velvetkraaijkamp.png" alt="Velvet & Kraaijkamp" class="article-image">}}
+{{<image-styled src="velvetkraaijkamp.png" title="Velvet & Kraaijkamp" alt="Potretfoto van Velvet & Kraaijkamp" class="article-image">}}
 
 Dit najaar klimmen verscheidene aanstormende artiesten weer op het podium bij Fijt & Fictie om het publiek te vermaken met vertelkunst, muziek en humor. Lotte Velvet en Maria Kraaijkamp zullen hun kunsten tonen op onze planken. Maak het mee en haal snel uw kaarten!
 <!--more-->
