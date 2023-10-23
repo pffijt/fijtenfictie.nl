@@ -63,6 +63,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
+          name: website
           path: ./public
 
   # Deployment job
@@ -85,6 +86,10 @@ jobs:
     needs: build
     steps:
       - uses: actions/checkout@v2
+      - name: Download website content
+        uses: actions/download-artifact@v3
+        with:
+          name: website
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
             repoToken: '${{ secrets.GITHUB_TOKEN }}'
