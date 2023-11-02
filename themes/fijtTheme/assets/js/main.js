@@ -1,6 +1,6 @@
 function openMenu() {
     const menuContentElement = document.getElementById('menu-content');
-    if (menuContentElement.style.visibility === 'hidden') {
+    if (!menuContentElement.style.visibility || menuContentElement.style.visibility === 'hidden') {
         menuContentElement.style.visibility = 'visible';
         menuContentElement.style.opacity = 1;
         menuContentElement.style.height = 'auto';

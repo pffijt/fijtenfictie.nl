@@ -33,6 +33,16 @@ img {
   height: auto;
 }
 
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 header {
   /* border-bottom: 1px solid #222;
   margin-bottom: 1rem; */
@@ -61,8 +71,8 @@ p {
 nav {
   z-index: 99999;
   position: fixed;
-  bottom: 0.1vh;
-  right: 5px;
+  bottom: 2vh;
+  right: 2vw;
   background-color: var(--menu-background-color);
   opacity: 0.95;
   padding: 8px;
