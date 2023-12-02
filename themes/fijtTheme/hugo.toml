@@ -2,20 +2,35 @@ baseURL = 'http://localhost:1313/'
 languageCode = 'nl-nl'
 title = 'My New Hugo Site'
 
+[menus]
 [[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
+  name = 'Home'
+  pageRef = '/'
+  weight = 10
+  [[menus.main.params]]
+    class = 'menu-link'
 
 [[menus.main]]
-name = 'Programma'
-pageRef = '/programma'
-weight = 20
+  name = 'Programma'
+  pageRef = '/programma'
+  weight = 20
+  [[menus.main.params]]
+    class = 'menu-link'
 
 [[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
+  name = 'Tags'
+  pageRef = '/tags'
+  weight = 30
+  [[menus.main.params]]
+    class = 'menu-link'
+
+[[menus.main]]
+  name = 'Tickets'
+  url = 'https://fijtenfictie.stager.co/web/tickets'
+  weight = 40
+  [[menus.main.params]]
+    class = 'menu-link'
+    target = "_blank"
 
 [module]
   [module.hugoVersion]
