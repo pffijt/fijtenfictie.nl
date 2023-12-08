@@ -1,0 +1,21 @@
+{{ define "main" }}
+    {{ range .Pages.ByDate }}
+        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+        {{ $dateHuman := .Date | time.Format "Mon 2 Jan" }}
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-6">
+                    <time class="article-header" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+                </div>
+                <div class="col-sm-7 col-9">
+                    <h2 class="article-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+                    <p class="article-paragraph">{{ .Description }}</p>
+                </div>
+                <div class="col-1">
+                    <a class="article-link" href="{{ .Params.Ticketurl }}">Kaarten</a>
+                </div>
+                <hr />
+            </div>
+        </div>
+    {{ end }}
+{{ end }}
