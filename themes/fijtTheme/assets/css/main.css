@@ -13,6 +13,16 @@ html {
   overflow: auto;
 }
 
+::-moz-selection {
+  color: var(--background-color);
+  background: var(--font-color);
+}
+
+::selection {
+  color: var(--background-color);
+  background: var(--font-color);
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     --background-color: #1E1D14;
@@ -65,7 +75,6 @@ a {
 
 p {
   font-family: 'Libre Bodoni', serif; 
-  font-size: 15px;
 }
 
 nav {
@@ -112,9 +121,21 @@ nav {
   font-weight: bold;
 }
 
+@media (min-width: 768px) {
+  .header-clock {
+    position: relative;
+    bottom: -1rem;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 0.875em;
+    height: 8px;
+    margin: 0;
+    font-weight: bold;
+  }
+}
+
 .header-logo {
   width: 100%;
-  max-width: 516px;
+  max-width: 400px;
   height: auto;
 }
 
@@ -131,7 +152,30 @@ nav {
   font-weight: bold;
   font-size: 2.1875em;
   text-align: left;
+  line-height: 1.15;
 }
+
+.second-article-header {
+  font-size: 1.6em;
+}
+
+.third-article-header {
+  font-size: 1.3em;
+}
+
+.article-paragraph {
+  font-size: 1.2em;
+  line-height: 1.15;
+}
+
+.second-article-paragraph {
+  font-size: 1em;
+}
+
+.third-article-paragraph {
+  font-size: 1em;
+}
+
 
 .article-header > a {
   color: var(--font-color);
@@ -141,6 +185,8 @@ nav {
 .article-link {
   color: var(--menu-background-color);
   font-family: 'Libre Bodoni', serif;
+  font-style: italic;
+  /* text-decoration: none; */
 }
 
 .article-image {
@@ -150,3 +196,51 @@ nav {
   margin: 0.75rem 0;
 }
 
+.secondary-col {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+
+@media (min-width: 768px) {
+  .secondary-col {
+    height: initial;
+    width: initial;
+    visibility: visible;
+  }
+}
+
+.tertiary-col {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+/* footer */
+.icon {
+  margin-right: 8px;
+}
+
+/* single article */
+.single-article {
+  /* padding: 0; */
+  max-width: 768px;
+  /* max-width: 45%; */
+}
+
+.single-article-header {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .single-article {
+    font-size: 1.3em;
+    line-height: 1.25;
+  }
+}
+
+/* author */
+.author-text {
+  font-family: 'Libre Bodoni', serif; 
+  font-size: 0.8em;
+}

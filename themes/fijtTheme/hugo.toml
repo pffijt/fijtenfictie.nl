@@ -11,8 +11,8 @@ title = 'My New Hugo Site'
     class = 'menu-link'
 
 [[menus.main]]
-  name = 'Programma'
-  pageRef = '/programma'
+  name = 'Agenda'
+  pageRef = '/agenda'
   weight = 20
   [[menus.main.params]]
     class = 'menu-link'
