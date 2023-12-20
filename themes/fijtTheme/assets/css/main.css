@@ -169,8 +169,7 @@ nav {
 }
 
 .article-paragraph {
-  font-size: 1.2em;
-  line-height: 1.15;
+  font-size: 1em;
 }
 
 .second-article-paragraph {
@@ -201,17 +200,18 @@ nav {
   margin: 0.75rem 0;
 }
 
-.third-column {
-  height: 0;
-  width: 0;
-  visibility: hidden;
+.third-col-content {
+  display: none;
 }
 
 @media (min-width: 1200px) {
-  .third-column {
-    height: initial;
-    width: initial;
-    visibility: visible;
+  .third-col-content {
+    display: initial;
+  }
+
+  .article-paragraph {
+    font-size: 1.2em;
+    line-height: 1.15;
   }
 }
 

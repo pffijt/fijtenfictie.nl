@@ -1,0 +1,7 @@
+<div class="row text-center">
+    <div class="col">
+        {{ $image := ((((.Page.Resources.GetMatch (.Get "src")).Fit "750x350" ) | images.Filter (images.Colorize 52 6 100)).Process "webp q85") }}
+        <img src='{{ $image.RelPermalink }}' width="750" height="350" alt='{{ .Get "alt" }}' class='{{ .Get "class" | default "" }}' />
+    </div>
+</div>
+  
