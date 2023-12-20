@@ -8,7 +8,7 @@ tags = ['red','green','blue']
 imgsrc = "velvetkraaijkamp.png"
 imgalt = "article-image"
 imgclass = "article-image"
-authors = ['Pim Fijt', 'Wolf']
+author = 'Pim Fijt'
 +++
 
 Dit najaar klimmen verscheidene aanstormende artiesten weer op het podium bij Fijt & Fictie om het publiek te vermaken met vertelkunst, muziek en humor. Lotte Velvet en Maria Kraaijkamp zullen hun kunsten tonen op onze planken. Maak het mee en haal snel uw kaarten!
