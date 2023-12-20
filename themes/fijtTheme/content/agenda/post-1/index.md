@@ -6,10 +6,12 @@ ticketURL = 'https://fijtenfictie.stager.co/web/tickets'
 description = 'Fijt & Fictie nodigt u van harte uit om aan te sluiten bij de laatste Ambras van 2023.'
 date = 2023-03-15T12:00:00-07:00
 draft = false
+imgsrc = "photo.jpg"
+imgalt = "article-image"
+imgclass = "article-image"
 tags = ['red','green','blue']
 +++
 
-{{<image-styled src="photo.jpg" title="Velvet & Kraaijkamp" alt="Potretfoto van Velvet & Kraaijkamp" class="article-image">}}
 
 Fijt & Fictie nodigt u van harte uit om aan te sluiten bij de laatste Ambras van 2023. U zult worden ontvangen door uw gastheer Evan Tekin, die op twintig december een studentikoos doch illuster gezelschap bij elkaar zamelt om, met een gezonde dosis filosofie in het achterhoofd, de waanzin van de dag te duiden. Anders moet u het immers van Arjen Lubach horen, en dat is nog minder fraai.
 <!--more-->

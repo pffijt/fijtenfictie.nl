@@ -147,6 +147,11 @@ nav {
 
 /* Home styles */
 
+.most-popular {
+  font-family: 'sailors-condensed-regular', sans-serif;
+  font-size: 1em;
+}
+
 .article-header {
   font-family: 'Libre Bodoni', serif;
   font-weight: bold;
@@ -196,25 +201,18 @@ nav {
   margin: 0.75rem 0;
 }
 
-.secondary-col {
+.third-column {
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-
-@media (min-width: 768px) {
-  .secondary-col {
+@media (min-width: 1200px) {
+  .third-column {
     height: initial;
     width: initial;
     visibility: visible;
   }
-}
-
-.tertiary-col {
-  height: 0;
-  width: 0;
-  visibility: hidden;
 }
 
 /* footer */

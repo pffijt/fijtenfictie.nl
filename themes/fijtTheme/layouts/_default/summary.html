@@ -1,0 +1,11 @@
+<article class="post">
+    {{ .Render "image-styled"}}
+    
+    {{ .Summary }}
+    <footer>
+        {{ if .Truncated }}
+            <a class="article-link" href="{{ .RelPermalink }}">Lees verder...</a>
+        {{ end }}
+        <hr />
+    </footer>
+</article>

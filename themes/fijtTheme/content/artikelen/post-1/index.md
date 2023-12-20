@@ -5,11 +5,11 @@ description = 'Dit najaar klimmen verscheidene aanstormende artiesten weer op he
 date = 2023-03-15T11:00:00-07:00
 draft = false
 tags = ['red','green','blue']
+imgsrc = "velvetkraaijkamp.png"
+imgalt = "article-image"
+imgclass = "article-image"
+authors = ['Pim Fijt', 'Wolf']
 +++
-
-{{<image-styled src="velvetkraaijkamp.png" title="Velvet & Kraaijkamp" alt="Potretfoto van Velvet & Kraaijkamp" class="article-image">}}
-
-{{<author name="Pim Fijt">}}
 
 Dit najaar klimmen verscheidene aanstormende artiesten weer op het podium bij Fijt & Fictie om het publiek te vermaken met vertelkunst, muziek en humor. Lotte Velvet en Maria Kraaijkamp zullen hun kunsten tonen op onze planken. Maak het mee en haal snel uw kaarten!
 <!--more-->

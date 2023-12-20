@@ -1,46 +1,37 @@
 {{ define "main" }}
+  {{ $pages := site.RegularPages.ByDate }}
   <!-- {{ .Content }} -->
   <div class="container">
     <div class="row">
       
       <div class="col-md-3">
-        {{ range site.RegularPages }}
+        {{ range first 3 (after 1 $pages) }}
           <h2 class="article-header second-article-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
           <div class="article-paragraph second-article-paragraph">
-            {{ .Summary }}
+            {{ .Render "summary"}}
           </div>
-          {{ if .Truncated }}
-            <a class="article-link" href="{{ .RelPermalink }}">Lees verder...</a>
-          {{ end }}
-          <hr />
         {{ end }}
       </div>
 
       <div class="col">
-        {{ range site.RegularPages }}
+        {{ range first 1 $pages }}
           <h2 class="article-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
           <div class="article-paragraph">
-            {{ .Summary }}
+            {{ .Render "summary"}}
           </div>
-          {{ if .Truncated }}
-            <a class="article-link" href="{{ .RelPermalink }}">Lees verder...</a>
-          {{ end }}
-          <hr />
         {{ end }}
       </div>
 
       <div class="col-12 col-xl-2">
-        Meest Populair
-        {{ range site.RegularPages }}
-          <h2 class="article-header third-article-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-          <div class="article-paragraph third-article-paragraph">
-            {{ .Summary }}
-          </div>
-          {{ if .Truncated }}
-            <a class="article-link" href="{{ .RelPermalink }}">Lees verder...</a>
+        <div class="third-column">
+          <h4 class="most-popular">Meest Populair</h4>
+          {{ range $pages }}
+            <h2 class="article-header third-article-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+            <div class="article-paragraph third-article-paragraph">
+              {{ .Render "summary"}}
+            </div>
           {{ end }}
-          <hr />
-        {{ end }}
+        </div>
       </div>
     </div>
   </div>
