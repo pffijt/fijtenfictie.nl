@@ -18,13 +18,6 @@ title = 'My New Hugo Site'
     class = 'menu-link'
 
 [[menus.main]]
-  name = 'Tags'
-  pageRef = '/tags'
-  weight = 30
-  [[menus.main.params]]
-    class = 'menu-link'
-
-[[menus.main]]
   name = 'Tickets'
   url = 'https://fijtenfictie.stager.co/web/tickets'
   weight = 40

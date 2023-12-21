@@ -6,6 +6,9 @@ title = 'Fijt & Fictie'
 theme = "fijtTheme"
 enableRobotsTXT = true
 
+[taxonomies]
+    auteur = "auteurs"
+
 [params]
     logoLocation = '/fijt_fictie.svg'
     logoAlternative = 'Fijt & Fictie'
