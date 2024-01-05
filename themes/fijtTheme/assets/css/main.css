@@ -80,7 +80,7 @@ a {
 }
 
 p {
-  font-family: 'Libre Bodoni', serif; 
+  font-family: 'Libre Bodoni', Helvetica, sans-serif; 
 }
 
 nav {
@@ -121,7 +121,7 @@ nav {
 /* Header styles */
 
 .header-clock {
-  font-family: 'Libre Bodoni', serif;
+  font-family: 'Libre Bodoni', Helvetica, sans-serif;
   font-size: 0.875em;
   margin: 1rem 0.5rem;
   font-weight: bold;
@@ -131,7 +131,7 @@ nav {
   .header-clock {
     position: relative;
     bottom: -1rem;
-    font-family: 'Libre Bodoni', serif;
+    font-family: 'Libre Bodoni', Helvetica, sans-serif;
     font-size: 0.875em;
     height: 8px;
     margin: 0;
@@ -154,7 +154,7 @@ nav {
 /* Home styles */
 
 .most-popular {
-  font-family: 'Libre Bodoni', serif;
+  font-family: 'Libre Bodoni', Helvetica, sans-serif;
   font-size: 1em;
 }
 
@@ -203,13 +203,13 @@ nav {
 
 .article-link {
   color: var(--menu-background-color);
-  font-family: 'Libre Bodoni', serif;
+  font-family: 'Libre Bodoni', Helvetica, sans-serif;
   font-style: italic;
   /* text-decoration: none; */
 }
 
 .calendar-header {
-  font-family: 'Libre Bodoni', serif;
+  font-family: 'Libre Bodoni', Helvetica, sans-serif;
   font-size: 2em;
   color: var(--font-color);
   text-decoration: none;
@@ -338,7 +338,7 @@ nav {
 
 /* author */
 .author-text {
-  font-family: 'Libre Bodoni', serif; 
+  font-family: 'Libre Bodoni', Helvetica, sans-serif; 
   font-size: 0.8em;
 }
 
