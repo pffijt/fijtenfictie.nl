@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       
-      <div class="col-md-3">
+      <div class="col-md-3 article-card second-article-card">
         {{ range first 3 (after 1 $pages) }}
           <h2 class="article-header second-article-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
           <div class="article-paragraph second-article-paragraph">
@@ -17,6 +17,15 @@
         {{ range first 1 $pages }}
           <h2 class="article-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
           <div class="article-paragraph">
+            {{ .Render "summary"}}
+          </div>
+        {{ end }}
+      </div>
+
+      <div class="col-md-3 article-card second-phone-article-card">
+        {{ range first 3 (after 1 $pages) }}
+          <h2 class="article-header second-article-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+          <div class="article-paragraph second-article-paragraph">
             {{ .Render "summary"}}
           </div>
         {{ end }}

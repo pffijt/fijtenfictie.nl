@@ -156,10 +156,6 @@ nav {
   font-size: 1em;
 }
 
-.article-card {
-  container-name: sidebar;
-}
-
 .article-header {
   font-family: 'sailors-condensed-regular', sans-serif;
   font-weight: bold;
@@ -168,12 +164,6 @@ nav {
   line-height: 1.15;
   color: var(--font-color);
   text-decoration: none;
-}
-
-@container sidebar (min-width: 471px) {
-  .article-card {
-    background-color: red;
-  }
 }
 
 .left-align {
@@ -248,7 +238,23 @@ nav {
   display: none;
 }
 
+.second-article-card {
+  display: none;
+}
+
+.second-phone-article-card {
+  display: initial;
+}
+
 @media (min-width: 1200px) {
+  .second-article-card {
+    display: initial;
+  }
+
+  .second-phone-article-card {
+    display: none;
+  }
+
   .third-col-content {
     display: initial;
   }
