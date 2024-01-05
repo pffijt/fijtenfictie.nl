@@ -16,6 +16,7 @@ html {
   --menu-background-color: #CF0000;
   --menu-font-color: white;
   --font-color: black;
+  --paragraph-font-color: #262626;
   --reverse-font-color: #fcf9f7;
   overflow: auto;
 }
@@ -36,6 +37,7 @@ html {
     --menu-background-color: #CF0000;
     --menu-font-color: white;
     --font-color: white;
+    --paragraph-font-color: white;
     --reverse-font-color: #1E1D14;
   }
 }
@@ -87,7 +89,7 @@ a {
 
 p {
   font-family: 'Playfair', serif;
-  color: #262626; 
+  color: var(--paragraph-font-color); 
 }
 
 nav {
