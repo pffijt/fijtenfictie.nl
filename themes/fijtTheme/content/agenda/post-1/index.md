@@ -10,6 +10,7 @@ imgsrc = "photo.jpg"
 imgalt = "article-image"
 imgclass = "article-image"
 tags = ['red','green','blue']
+auteurs = ['Pim Fijt']
 +++
 
 

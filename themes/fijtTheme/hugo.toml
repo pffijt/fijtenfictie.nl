@@ -25,6 +25,14 @@ title = 'My New Hugo Site'
     class = 'menu-link'
     target = "_blank"
 
+[[menus.main]]
+  name = 'Over'
+  pageRef = '/over'
+  weight = 50
+  [[menus.main.params]]
+    class = 'menu-link'
+
+
 [module]
   [module.hugoVersion]
     extended = false

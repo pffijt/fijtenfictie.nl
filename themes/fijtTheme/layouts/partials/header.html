@@ -2,8 +2,7 @@
 {{ $dateHuman := .Date | time.Format "Monday 2 January 2006" }}
 <div class="container">
     <div class="row text-start">
-        <div class="col header-clock">
-            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        <div class="col header-clock" id="header-clock">
         </div>
     </div>
 
@@ -12,9 +11,9 @@
             <h1>
                 <a href="{{ .Site.BaseURL }}">
                     <picture>
-                        <source srcset="{{ .Site.BaseURL }}/fijt_fictie_dark.webp" media="(prefers-color-scheme: dark)">
+                        <source srcset="{{ .Site.BaseURL }}/logo3.png" media="(prefers-color-scheme: dark)">
                         <!-- <img class="header-logo" width="810" height="237" src="{{ .Site.BaseURL }}/fijt_fictie_light.webp" title="{{ $.Site.Params.logoAlternative }}" alt="Logo van {{ $.Site.Params.logoAlternative }}" role="img"> -->
-                        <img class="header-logo" width="810" height="237" src="{{ .Site.BaseURL }}/fijt_fictie_light.webp" title="{{ $.Site.Params.logoAlternative }}" alt="Logo van {{ $.Site.Params.logoAlternative }}" role="img">
+                        <img class="header-logo" width="810" height="237" src="{{ .Site.BaseURL }}/logo3.png" title="{{ $.Site.Params.logoAlternative }}" alt="Logo van {{ $.Site.Params.logoAlternative }}" role="img">
                     </picture>
                 </a>
             </h1>
@@ -22,9 +21,9 @@
     </div>
 
     <div class="text-center">
-        <h2>
+        <!-- <h2>
             {{ $.Site.Params.headline }}
-        </h2>
+        </h2> -->
         <hr class="header-hr"/>
     </div>
 </div>

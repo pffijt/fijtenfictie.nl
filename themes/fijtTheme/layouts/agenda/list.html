@@ -1,20 +1,27 @@
 {{ define "main" }}
     {{ range .Pages.ByDate }}
         {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-        {{ $dateHuman := .Date | time.Format "Mon 2 Jan" }}
+        {{ $dateHuman := .Date | time.Format "Mon 2 Jan 15:04" }}
         <div class="container">
             <div class="row">
-                <div class="col-sm-3 col-6">
-                    <time class="article-header" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+                <a class="col-sm-9 col" href="{{ .RelPermalink }}" style="text-decoration: none;">
+                    <div class="row">
+                        <div class="col-sm-5 col-11 align-self-center">
+                            <time class="calendar-header" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+                        </div>
+                        <div class="col">
+                            <h2 class="article-header left-align">{{ .LinkTitle }}</h2>
+                            <p class="article-paragraph">{{ .Description }}</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="col-sm-1 col-11 align-self-center">
+                    <a class="article-link call-to-action-link" href="{{ .Params.Ticketurl }}">Kaarten&nbsp;<i class="fa-solid fa-2xs fa-arrow-up-right-from-square"></i>
+                    </a>
                 </div>
-                <div class="col-sm-7 col-9">
-                    <h2 class="article-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-                    <p class="article-paragraph">{{ .Description }}</p>
-                </div>
-                <div class="col-1">
-                    <a class="article-link" href="{{ .Params.Ticketurl }}">Kaarten</a>
-                </div>
-                <hr />
+            </div>
+            <div class="container">
+                <hr/>
             </div>
         </div>
     {{ end }}

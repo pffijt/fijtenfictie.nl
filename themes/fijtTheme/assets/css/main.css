@@ -36,6 +36,9 @@ body {
   background-color: var(--background-color);
   color: var(--font-color);
   overflow: auto;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
 }
 
 img {
@@ -148,28 +151,47 @@ nav {
 /* Home styles */
 
 .most-popular {
-  font-family: 'sailors-condensed-regular', sans-serif;
+  font-family: 'Libre Bodoni', serif;
   font-size: 1em;
 }
 
+.article-card {
+  container-name: sidebar;
+}
+
 .article-header {
-  font-family: 'Libre Bodoni', serif;
+  font-family: 'sailors-condensed-regular', sans-serif;
   font-weight: bold;
-  font-size: 2.1875em;
-  text-align: left;
+  font-size: 2em;
+  text-align: center;
   line-height: 1.15;
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+@container sidebar (min-width: 471px) {
+  .article-card {
+    background-color: red;
+  }
+}
+
+.left-align {
+  text-align: left;
 }
 
 .second-article-header {
+  text-align: left;
   font-size: 1.6em;
 }
 
 .third-article-header {
+  text-align: left;
   font-size: 1.3em;
 }
 
 .article-paragraph {
   font-size: 1em;
+  color: var(--font-color);
 }
 
 .second-article-paragraph {
@@ -179,7 +201,6 @@ nav {
 .third-article-paragraph {
   font-size: 1em;
 }
-
 
 .article-header > a {
   color: var(--font-color);
@@ -193,9 +214,26 @@ nav {
   /* text-decoration: none; */
 }
 
+.calendar-header {
+  font-family: 'Libre Bodoni', serif;
+  font-size: 2em;
+  color: var(--font-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.calendar-header > a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.call-to-action-link {
+  font-size: 1.2em;
+}
+
 .article-image {
   width: 100%;
-  max-width: 516px;
+  max-width: 1000px;
   height: auto;
   margin: 0.75rem 0;
 }
@@ -247,4 +285,11 @@ nav {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+/* footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
 }
