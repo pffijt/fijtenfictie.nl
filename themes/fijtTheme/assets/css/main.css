@@ -39,6 +39,7 @@ body {
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
+  padding-bottom: 50px;
 }
 
 img {
@@ -240,10 +241,19 @@ nav {
 
 .third-col-content {
   display: none;
+  width: 0px;
+}
+
+.third-col {
+  display: none;
 }
 
 @media (min-width: 1200px) {
   .third-col-content {
+    display: initial;
+  }
+
+  .third-col {
     display: initial;
   }
 
@@ -291,5 +301,6 @@ nav {
 .footer {
   position: absolute;
   bottom: 0;
+  margin-bottom: 0px;
   width: 100vw;
 }
