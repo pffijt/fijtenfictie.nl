@@ -6,12 +6,12 @@
                 {{ .Content }}
             </div>
         </div>
-        <h2 class="single-article">Gerelateerde content</h2>
+        <!-- <h2 class="single-article">Gerelateerde content</h2>
         <hr/>
-        <div>
+        <div class="">
             {{ range .Pages }}
                     <h3 class="article-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
-                    <div class="article-paragraph second-article-paragraph">
+                    <div class="article-paragraph single-article">
                         {{ .Summary }}
                     </div>
                     {{ if .Truncated }}
@@ -20,6 +20,6 @@
                     <hr />
                 </div>
             {{ end }}
-        </div>
+        </div> -->
     </div>
 {{ end }}

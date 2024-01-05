@@ -5,12 +5,18 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Playfair';
+  src: url('../playfair.ttf');
+  font-display: swap;
+}
+
 html {
-  --background-color: #FFFDF0;
+  --background-color: #fcf9f7;
   --menu-background-color: #CF0000;
   --menu-font-color: white;
   --font-color: black;
-  --reverse-font-color: #FFFDF0;
+  --reverse-font-color: #fcf9f7;
   overflow: auto;
 }
 
@@ -70,7 +76,7 @@ footer {
 }
 
 h2 {
-  font-family: 'sailors-condensed-regular', sans-serif;
+  font-family: 'Playfair', serif;
   font-size: 1.125em;
 }
 
@@ -80,7 +86,8 @@ a {
 }
 
 p {
-  font-family: 'Libre Bodoni', Helvetica, sans-serif; 
+  font-family: 'Playfair', serif;
+  color: #262626; 
 }
 
 nav {
@@ -121,7 +128,7 @@ nav {
 /* Header styles */
 
 .header-clock {
-  font-family: 'Libre Bodoni', Helvetica, sans-serif;
+font-family: 'Playfair', serif;
   font-size: 0.875em;
   margin: 1rem 0.5rem;
   font-weight: bold;
@@ -131,7 +138,7 @@ nav {
   .header-clock {
     position: relative;
     bottom: -1rem;
-    font-family: 'Libre Bodoni', Helvetica, sans-serif;
+  font-family: 'Playfair', serif;
     font-size: 0.875em;
     height: 8px;
     margin: 0;
@@ -146,7 +153,7 @@ nav {
 }
 
 .header-hr {
-  border: 2px solid var(--font-color);
+  border: 1.8px solid #262626;
   margin-top: 0.25rem;
   opacity: 1;
 }
@@ -154,16 +161,16 @@ nav {
 /* Home styles */
 
 .most-popular {
-  font-family: 'Libre Bodoni', Helvetica, sans-serif;
+font-family: 'Playfair', serif;
   font-size: 1em;
 }
 
 .article-header {
-  font-family: 'sailors-condensed-regular', sans-serif;
-  font-weight: bold;
-  font-size: 2em;
+  font-family: 'Playfair', serif;
+  font-weight: 900;
+  font-size: 2.2em;
   text-align: center;
-  line-height: 1.15;
+  line-height: 1.2;
   color: var(--font-color);
   text-decoration: none;
 }
@@ -175,17 +182,18 @@ nav {
 
 .second-article-header {
   text-align: left;
-  font-size: 1.6em;
+  font-size: 1.8em;
 }
 
 .third-article-header {
   text-align: left;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .article-paragraph {
   font-size: 1em;
   color: var(--font-color);
+  line-height: 1.2;
 }
 
 .second-article-paragraph {
@@ -203,13 +211,13 @@ nav {
 
 .article-link {
   color: var(--menu-background-color);
-  font-family: 'Libre Bodoni', Helvetica, sans-serif;
+font-family: 'Playfair', serif;
   font-style: italic;
   /* text-decoration: none; */
 }
 
 .calendar-header {
-  font-family: 'Libre Bodoni', Helvetica, sans-serif;
+font-family: 'Playfair', serif;
   font-size: 2em;
   color: var(--font-color);
   text-decoration: none;
@@ -241,7 +249,6 @@ nav {
 }
 
 @media (prefers-color-scheme: dark) {
-  .agenda-row {
     h2 {
       --h: 1.2em;
   
@@ -256,7 +263,6 @@ nav {
     overflow: hidden;
     transition: 0.3s;
     }
-}
 }
 
 .agenda-row:hover {
@@ -310,7 +316,7 @@ nav {
 
   .article-paragraph {
     font-size: 1.2em;
-    line-height: 1.15;
+    line-height: 1.2;
   }
 }
 
@@ -338,7 +344,7 @@ nav {
 
 /* author */
 .author-text {
-  font-family: 'Libre Bodoni', Helvetica, sans-serif; 
+font-family: 'Playfair', serif; 
   font-size: 0.8em;
 }
 
