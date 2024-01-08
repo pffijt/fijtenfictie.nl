@@ -1,0 +1,31 @@
+.header-clock {
+    font-family: 'Playfair', serif;
+      font-size: 0.875em;
+      margin: 1rem 0.5rem;
+      font-weight: bold;
+}
+    
+@media (min-width: 768px) {
+    .header-clock {
+    position: relative;
+    bottom: -1rem;
+    font-family: 'Playfair', serif;
+    font-size: 0.875em;
+    height: 8px;
+    margin: 0;
+    font-weight: bold;
+    }
+}
+
+.header-logo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.header-hr {
+    border: 1.8px solid #262626;
+    margin-top: 0.25rem;
+    opacity: 1;
+}
+    

@@ -1,9 +1,18 @@
-{{- with resources.Get "css/main.css" }}
-  {{- if eq hugo.Environment "development" }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-  {{- else }}
-    {{- with . | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-    {{- end }}
+<!-- core -->
+{{- $core := (resources.Get "css/core/core.css") }}
+{{- $header := (resources.Get "css/core/header.css") }}
+{{- $footer := (resources.Get "css/core/footer.css") }}
+
+<!-- layouts -->
+{{- $layouts := (resources.Match "css/layouts/*.css") | resources.Concat "assets/css/layouts.css" }}
+
+{{- $stylesheet := (slice $core $header $footer $layouts) | resources.Concat "assets/css/stylesheet.css" }}
+
+
+{{- if eq hugo.Environment "development" }}
+  <link rel="stylesheet" href="{{ $stylesheet.RelPermalink }}">
+{{- else }}
+  {{- with . | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" crossorigin="anonymous">
   {{- end }}
 {{- end }}

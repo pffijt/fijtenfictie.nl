@@ -1,0 +1,97 @@
+/* Home styles */
+
+.most-popular {
+    font-family: 'Playfair', serif;
+    font-size: 1em;
+}
+    
+.article-header {
+    font-family: 'Playfair', serif;
+    font-weight: 900;
+    font-size: 2.2em;
+    text-align: center;
+    line-height: 1.2;
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.left-align {
+    text-align: left;
+    width: fit-content;
+}
+
+.second-article-header {
+    text-align: left;
+    font-size: 1.8em;
+}
+
+.third-article-header {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.article-paragraph {
+    font-size: 1em;
+    color: var(--font-color);
+    line-height: 1.2;
+}
+
+.second-article-paragraph {
+    font-size: 1em;
+}
+
+.third-article-paragraph {
+    font-size: 1em;
+}
+
+.article-header > a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.article-link {
+    color: var(--menu-background-color);
+font-family: 'Playfair', serif;
+    font-style: italic;
+    /* text-decoration: none; */
+}
+
+.third-col-content {
+    display: none;
+    width: 0px;
+  }
+  
+  .third-col {
+    display: none;
+  }
+  
+  .second-article-card {
+    display: none;
+  }
+  
+  .second-phone-article-card {
+    display: initial;
+  }
+  
+  @media (min-width: 1200px) {
+    .second-article-card {
+      display: initial;
+    }
+  
+    .second-phone-article-card {
+      display: none;
+    }
+  
+    .third-col-content {
+      display: initial;
+    }
+  
+    .third-col {
+      display: initial;
+    }
+  
+    .article-paragraph {
+      font-size: 1.2em;
+      line-height: 1.2;
+    }
+  }
