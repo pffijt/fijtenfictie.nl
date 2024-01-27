@@ -12,7 +12,6 @@
 {{- if eq hugo.Environment "development" }}
   <link rel="stylesheet" href="{{ $stylesheet.RelPermalink }}">
 {{- else }}
-  {{- with . | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" crossorigin="anonymous">
-  {{- end }}
+  {{- $prodstylesheet := $stylesheet | minify | fingerprint}}
+  <link rel="stylesheet" href="{{ $prodstylesheet.RelPermalink }}" integrity="{{ $prodstylesheet.Data.Integrity }}" crossorigin="anonymous">
 {{- end }}
