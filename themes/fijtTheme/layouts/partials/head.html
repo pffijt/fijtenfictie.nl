@@ -17,19 +17,22 @@
 <script src="https://kit.fontawesome.com/0dad904ca9.js" async crossorigin="anonymous"></script>
 
 {{ $pageTitle := site.Title }}
+{{ $metadataImage :=  print .Site.BaseURL "/logo_social.jpg" }}
 
 {{ if not .IsHome  }}
     {{ $pageTitle = print .Title " | " site.Title }}
+    {{ $src := (.Param "imgsrc")}}
+    {{ if $src }}
+        {{ $image := ((((.Resources.GetMatch (.Param "imgsrc" )).Fit "800x373" ) | images.Filter (images.Colorize 24 2 99)).Process "jpg q85") }}
+        {{ $metadataImage =  print .Site.BaseURL $image.RelPermalink }}
+    {{ end }}
 {{ end }}
 
 <title itemprop="name">{{ $pageTitle }}</title>
 
 <meta property="og:title" content="{{ $pageTitle }}" />
 <meta property="og:site_name" content="{{ site.Title }}" />
-<meta property="og:image" content="{{ .Site.BaseURL }}/logo_social.jpg" />
-<meta property="og:image:type" content="image/jpeg" />
-<meta property="og:image:width" content="810" />
-<meta property="og:image:height" content="237" />
+<meta property="og:image" content="{{ $metadataImage }}" />
 <meta property="og:image:alt" content="{{ site.Title }}" />
 <meta property="og:description" content="{{ .Description }}" />
 <meta property="og:locale" content="{{ replace .Site.Language.LanguageCode "-" "_" }}" />
