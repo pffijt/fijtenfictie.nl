@@ -1,3 +1,4 @@
 [submodule "fijtTheme"]
 	path = themes/fijtTheme
 	url = git@github.com:pffijt/fijtTheme.git
+	branch = master
