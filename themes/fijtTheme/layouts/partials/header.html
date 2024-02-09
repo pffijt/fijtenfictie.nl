@@ -1,0 +1,28 @@
+{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ $dateHuman := .Date | time.Format "Monday 2 January 2006" }}
+<div class="container">
+    <div class="row text-start">
+        <div class="col header-clock" id="header-clock">
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col">
+            <h1>
+                <a href="{{ .Site.BaseURL }}">
+                    <picture>
+                        <source srcset="{{ .Site.BaseURL }}/logo4_dark.png" media="(prefers-color-scheme: dark)">
+                        <img class="header-logo" width="810" height="237" src="{{ .Site.BaseURL }}/logo4_light.png" title="{{ $.Site.Params.logoAlternative }}" alt="Logo van {{ $.Site.Params.logoAlternative }}" role="img">
+                    </picture>
+                </a>
+            </h1>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <!-- <h2>
+            {{ $.Site.Params.headline }}
+        </h2> -->
+        <hr class="header-hr"/>
+    </div>
+</div>
