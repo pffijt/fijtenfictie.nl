@@ -10,6 +10,9 @@ enableRobotsTXT = true
     auteur = "auteurs"
 
 [params]
+    instagramUrl = 'https://www.instagram.com/fijtenfictie/'
+    facebookUrl = 'https://www.facebook.com/fijtenfictie'
+    twitterUrl = 'https://twitter.com/fijtenfictie'
     logoLocation = '/fijt_fictie.svg'
     logoAlternative = 'Fijt & Fictie'
     headline = 'Het Nieuw Rotterdamsch Cabaret'
