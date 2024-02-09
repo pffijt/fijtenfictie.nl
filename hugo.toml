@@ -13,3 +13,33 @@ enableRobotsTXT = true
     logoLocation = '/fijt_fictie.svg'
     logoAlternative = 'Fijt & Fictie'
     headline = 'Het Nieuw Rotterdamsch Cabaret'
+
+[menus]
+[[menus.main]]
+  name = 'Home'
+  pageRef = '/'
+  weight = 10
+  [[menus.main.params]]
+    class = 'menu-link'
+
+[[menus.main]]
+  name = 'Agenda'
+  pageRef = '/agenda'
+  weight = 20
+  [[menus.main.params]]
+    class = 'menu-link'
+
+[[menus.main]]
+  name = 'Tickets'
+  url = 'https://fijtenfictie.stager.co/web/tickets'
+  weight = 40
+  [[menus.main.params]]
+    class = 'menu-link'
+    target = "_blank"
+
+[[menus.main]]
+  name = 'Over'
+  pageRef = '/over'
+  weight = 50
+  [[menus.main.params]]
+    class = 'menu-link'
