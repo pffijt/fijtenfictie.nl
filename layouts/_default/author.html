@@ -6,9 +6,9 @@
             {{ $dateHuman := .Page.Date | time.Format "Monday 2 January 2006" }}
             <div class="row">
                 <div class="col" style="max-width: 65px;">
-                    {{- with resources.Get "img/default_avatar.png"}}
+                    {{- with resources.Get "img/default_avatar.webp"}}
                         {{ $image := (.Fit "50x50") | images.Filter (images.Colorize 52 6 100) }}
-                        <img src="{{$image.RelPermalink}}" class="author-image" alt="Portretfoto">
+                        <img src="{{ $image.RelPermalink }}" class="author-image" alt="Portretfoto">
                     {{- end}}
                 </div>
                 <div class="col-9">
