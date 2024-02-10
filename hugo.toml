@@ -13,7 +13,8 @@ enableRobotsTXT = true
     instagramUrl = 'https://www.instagram.com/fijtenfictie/'
     facebookUrl = 'https://www.facebook.com/fijtenfictie'
     twitterUrl = 'https://twitter.com/fijtenfictie'
-    logoLocation = '/fijt_fictie.svg'
+    logoLight = '/logo4_light.webp'
+    logoDark = '/logo4_dark.webp'
     logoAlternative = 'Fijt & Fictie'
     headline = 'Het Nieuw Rotterdamsch Cabaret'
 
