@@ -5,6 +5,19 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+    "headers": [ {
+      "source": "**/*.@(ttf|webp|css|js|jpg|png)",
+      "headers": [ {
+        "key": "Cache-Control",
+        "value": "public, max-age=31536000"
+      } ]
+    }, {
+      "source": "**/*.@(html)",
+      "headers": [ {
+        "key": "Cache-Control",
+        "value": "public, max-age=0, must-revalidate"
+      } ]
+    } ]
   }
 }
