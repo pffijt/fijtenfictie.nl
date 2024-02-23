@@ -3,7 +3,7 @@
 <h4 class="author-text">
     <div class="container">
         {{ if .Param "auteurs" }}
-            {{ $dateHuman := .Page.Date | time.Format "Monday 2 January 2006" }}
+            {{ $dateHuman := .Page.Date | time.Format "Monday 2 January 2006 15:04" }}
             <div class="row">
                 <div class="col" style="max-width: 65px;">
                     {{- with resources.Get "img/default_avatar.webp"}}
@@ -12,11 +12,19 @@
                     {{- end}}
                 </div>
                 <div class="col-9">
-                    {{ range .Param "auteurs" }}
-                        <a class="article-link" href="{{ "/auteurs/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a>
+                    {{ if not (eq (.Param "layout") "agenda")}}
+                        {{ range .Param "auteurs" }}
+                            <a class="article-link" href="{{ "/auteurs/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a>
+                        {{ end }}
+                        <br/>
+                        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+                    {{ else }}
+                        {{ range .Param "auteurs" }}
+                            <div style="display: flex; align-items: center; justify-content: flex-start; height: 100%;">
+                                <a class="article-link article-link-big" href="{{ "/auteurs/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a>
+                            </div>
+                        {{ end }}
                     {{ end }}
-                    <br/>
-                    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
                 </div>
             </div>
         {{ else }}
