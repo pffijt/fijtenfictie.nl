@@ -5,7 +5,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches:
-      - develop
+      - gh-pages
       - main
 
   # Allows you to run this workflow manually from the Actions tab
@@ -77,7 +77,7 @@ jobs:
 
   # Deployment job
   deploy-github:
-    if: github.ref == 'refs/heads/develop'
+    if: github.ref == 'refs/heads/gh-pages'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
