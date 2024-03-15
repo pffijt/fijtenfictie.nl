@@ -5,6 +5,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches:
+      - develop
       - main
 
   # Allows you to run this workflow manually from the Actions tab
@@ -57,14 +58,17 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "https://fijtenfictie.nl"          
-      # - name: Upload pages artifact
-      #   uses: actions/upload-pages-artifact@v1
-      #   with:
-      #     path: ./public
+          if [[ $GITHUB_REF == 'refs/heads/main' ]]; then
+              hugo \
+                --gc \
+                --minify \
+                --baseURL "https://fijtenfictie.nl" 
+          else
+              hugo \
+                --gc \
+                --minify \
+                --baseURL "https://pffijt.github.io/fijtenfictie.nl" 
+          fi         
       - name: Upload firebase artifact
         uses: actions/upload-artifact@v2
         with:
@@ -72,18 +76,8 @@ jobs:
           path: public    
 
   # Deployment job
-  # deploy-github:
-  #   environment:
-  #     name: github-pages
-  #     url: ${{ steps.deployment.outputs.page_url }}
-  #   runs-on: ubuntu-latest
-  #   needs: build
-  #   steps:
-  #     - name: Deploy to GitHub Pages
-  #       id: deployment
-  #       uses: actions/deploy-pages@v2
-  
-  deploy-firebase:
+  deploy-github:
+    if: github.ref == 'refs/heads/develop'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -91,7 +85,25 @@ jobs:
     needs: build
     steps:
       - uses: actions/checkout@v2
-      - name: Download firebase artifact
+      - name: Download website artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: public
+          path: public
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+  
+  deploy-firebase:
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download website artifact
         uses: actions/download-artifact@v2
         with:
           name: public
