@@ -4,10 +4,11 @@ slug = 'irisensophie'
 layout = 'agenda'
 ticketURL = 'https://fijtenfictie.stager.co/web/tickets'
 description = '"Ik zeg altijd maar zo" is een moderne revue van Iris Wiegers, vol humor en muzikale hoogtepunten, die de absurditeiten van hedendaagse verwachtingen belicht. Daarnaast verkent Sophie Willemijntje als autist op een intergalactische reis de zoektocht naar liefde en intimiteit.'
-date = 2024-04-20T20:30:00+02:00
+date = 2024-02-23T20:30:00+02:00
+expiryDate = 2024-04-20T20:30:00+02:00
 draft = false
 imgsrc = "photo.png"
-imgalt = "article-image"
+imgalt = "Iris Wiegers & Sophie Willemijntje"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
@@ -23,7 +24,7 @@ Een muzikale, intergalactische reis van een autist op zoek naar liefde en intimi
 De deuren gaan open om 20:00 uur, de voorstelling begint om 20:30 uur.
 
 
-__Location__
+__Locatie__
 
 Het Klooster Oude Noorden  
 Ruivenstraat 81  

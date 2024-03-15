@@ -4,10 +4,11 @@ slug = 'jannesentomesh'
 layout = 'agenda'
 ticketURL = 'https://fijtenfictie.stager.co/web/tickets'
 description = '"Tussenin" is een voorstelling over Jannes Laven, een echte man, die met humor, poëzie en muziek zijn mannelijkheid in vraag stelt. Tomesh Beumken daagt het publiek uit om op een vernieuwende manier naar het alledaagse te kijken, met belofte van zowel ontroering als provocatie voor liefhebbers van kleinkunst.'
-date = 2024-05-25T20:30:00+02:00
+date = 2024-02-23T20:30:00+02:00
+expiryDate = 2024-05-25T20:30:00+02:00
 draft = false
 imgsrc = "photo.png"
-imgalt = "article-image"
+imgalt = "Jannes Laven & Tomesh Beumken"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
@@ -23,7 +24,7 @@ Tomesh Beumken onderscheidt zich door zijn unieke vermenging van humor, poëzie,
 De deuren gaan open om 20:00 uur, de voorstelling begint om 20:30 uur.
 
 
-__Location__
+__Locatie__
 
 Het Klooster Oude Noorden  
 Ruivenstraat 81  

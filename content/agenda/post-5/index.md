@@ -4,10 +4,11 @@ slug = 'ruthenmarlies'
 layout = 'agenda'
 ticketURL = 'https://fijtenfictie.stager.co/web/tickets'
 description = '"Volg mij" is Ruth Elings` voorstelling over verandering, waar ze, net als velen, mee worstelt. In "Goed genoeg" onderzoekt Marlies Bloemen wat er gebeurt als je niet in de gebruikelijke hokjes past, op zoek naar eerlijkheid en authenticiteit in weerwil van maatschappelijke verwachtingen.'
-date = 2024-06-29T20:30:00+02:00
+date = 2024-02-23T20:30:00+02:00
+expiryDate = 2024-06-29T20:30:00+02:00
 draft = false
 imgsrc = "photo.png"
-imgalt = "article-image"
+imgalt = "Ruth Elings & Marlies Bloemen"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
@@ -22,7 +23,7 @@ Wat als je niet weet in welk hokje je past? Als je niet doet wat iedereen doet e
 
 De deuren gaan open om 20:00 uur, de voorstelling begint om 20:30 uur.
 
-__Location__
+__Locatie__
 
 Het Klooster Oude Noorden  
 Ruivenstraat 81  

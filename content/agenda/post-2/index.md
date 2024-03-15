@@ -4,10 +4,11 @@ slug = 'maaikeendirk'
 layout = 'agenda'
 ticketURL = 'https://fijtenfictie.stager.co/web/tickets'
 description = 'Maaike Dirkje Hop omarmt onhandigheid in een tijd waar dit gewaardeerd wordt. Ben Kütterer verruilt geneeskunde voor theater en verrast het publiek met scherpzinnige observaties en humor. Beiden laten zien dat authenticiteit en creativiteit leiden tot succes.'
-date = 2024-03-30T20:30:00+02:00
+date = 2024-02-23T20:30:00+02:00
+expiryDate = 2024-03-30T20:30:00+02:00
 draft = false
 imgsrc = "photo.png"
-imgalt = "article-image"
+imgalt = "Maaike Dirkje & Ben Kütterer"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
@@ -21,7 +22,7 @@ Ben Kütterer besluit een studie geneeskunde de snijzalen in te ruilen voor de t
 
 De deuren gaan open om 20:00 uur, de voorstelling begint om 20:30 uur.
 
-__Location__
+__Locatie__
 
 Het Klooster Oude Noorden  
 Ruivenstraat 81  

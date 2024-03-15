@@ -58,10 +58,9 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo \
-            -F \
             --gc \
             --minify \
-            --baseURL "https://fijtenfictie-1df35.web.app"          
+            --baseURL "https://fijtenfictie.nl/"          
       # - name: Upload pages artifact
       #   uses: actions/upload-pages-artifact@v1
       #   with:
