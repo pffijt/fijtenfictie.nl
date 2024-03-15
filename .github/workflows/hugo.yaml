@@ -60,7 +60,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "https://fijtenfictie.nl/"          
+            --baseURL "https://fijtenfictie.nl"          
       # - name: Upload pages artifact
       #   uses: actions/upload-pages-artifact@v1
       #   with:
