@@ -68,19 +68,7 @@ jobs:
                   --gc \
                   --minify \
                   --baseURL "https://pffijt.github.io/fijtenfictie.nl" 
-            fi         
-          run: |
-            if [[ $GITHUB_REF == 'refs/heads/production' ]]; then
-                hugo \
-                  --gc \
-                  --minify \
-                  --baseURL "https://fijtenfictie.nl" 
-            else
-                hugo \
-                  --gc \
-                  --minify \
-                  --baseURL "https://pffijt.github.io/fijtenfictie.nl" 
-            fi         
+            fi      
       - name: Upload firebase artifact
         uses: actions/upload-artifact@v2
         with:
