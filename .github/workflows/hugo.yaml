@@ -58,17 +58,17 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          if [[ $GITHUB_REF == 'refs/heads/production' ]]; then
-              hugo \
-                --gc \
-                --minify \
-                --baseURL "https://fijtenfictie.nl" 
-          else
-              hugo \
-                --gc \
-                --minify \
-                --baseURL "https://pffijt.github.io/fijtenfictie.nl" 
-          fi         
+            if [[ $GITHUB_REF == 'refs/heads/production' ]]; then
+                hugo \
+                  --gc \
+                  --minify \
+                  --baseURL "https://fijtenfictie.nl" 
+            else
+                hugo \
+                  --gc \
+                  --minify \
+                  --baseURL "https://pffijt.github.io/fijtenfictie.nl" 
+            fi      
       - name: Upload firebase artifact
         uses: actions/upload-artifact@v2
         with:
@@ -90,6 +90,10 @@ jobs:
         with:
           name: public
           path: public
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: "./public"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
