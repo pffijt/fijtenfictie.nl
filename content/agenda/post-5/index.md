@@ -22,6 +22,8 @@ Wat als je niet weet in welk hokje je past? Als je niet doet wat iedereen doet e
 
 De deuren gaan open om 20:00 uur, de voorstelling begint om 20:30 uur.
 
+## [Bekijk hier je kaarten](https://fijtenfictie.stager.co/web/tickets/111388386?utm_campaign=Ruth+Elings+%26+Marlies+Bloemen&utm_source=fijtenfictie.nl)
+
 __Locatie__
 
 Het Klooster Oude Noorden  
