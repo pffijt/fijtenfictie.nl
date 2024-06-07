@@ -14,6 +14,7 @@ enableRobotsTXT = true
     facebookUrl = 'https://www.facebook.com/fijtenfictie'
     twitterUrl = 'https://twitter.com/fijtenfictie'
     threadsUrl = 'https://www.threads.net/@fijtenfictie'
+    linkedinUrl = 'https://www.linkedin.com/company/fijtenfictie'
     logoLight = '/logo4_light.webp'
     logoDark = '/logo4_dark.webp'
     logoAlternative = 'Fijt & Fictie'
