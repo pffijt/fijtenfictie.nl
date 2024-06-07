@@ -67,3 +67,5 @@ node_modules/
 
 # ignore public folder
 public/
+
+.idea

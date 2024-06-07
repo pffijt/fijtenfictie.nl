@@ -14,7 +14,6 @@ tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
 +++
 
-
 Met gepaste trots presenteert Fijt & Fictie wederom twee kleinkunstenaars in het Klooster Oude Noorden. We stellen u even kort voor.
 
 In _Volg mij_ neemt kleinkunstenaar Ruth Elings je aan de hand als je verandering een beetje spannend vindt. Dat vindt ze zelf namelijk ook. Ruth is in een klein christelijk dorp opgegroeid met het idee dat verandering vooral vermeden moet worden. Inmiddels is ze erachter gekomen dat de wereld misschien toch nog niet helemaal af is, en hoewel niet iedereen is opgegroeid in de kerk, zijn er veel mensen die verandering toch eng vinden. De gewoontedieren worden meegesleurd, en Ruth gaat voorop.
