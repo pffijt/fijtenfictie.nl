@@ -24,6 +24,6 @@ De zaal is open vanaf 20:00 uur, het programma gaat van start om 20:30 uur.
 
 __Locatie__
 
-Het Klooster Oude Noorden
-Ruivenstraat 81
+Het Klooster Oude Noorden</br>
+Ruivenstraat 81</br>
 3036DD Rotterdam
