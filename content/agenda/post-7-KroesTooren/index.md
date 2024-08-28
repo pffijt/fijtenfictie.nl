@@ -18,7 +18,7 @@ auteurs = ['Pim Fijt']
 
 **Britt van Tooren** vraagt: waarom heb ik niet mee mogen denken over mijn eigen bestaan? Ik had het fijn gevonden als er was gevraagd: zou je willen leven? Heb je daar eigenlijk wel trek in? En daarna zelf had mogen kiezen: Wil ik geboren worden of niet? Over op je bek gaan en nog even blijven liggen. Over je afvragen of de mail met de bijsluiter van het leven in je spamfolder is beland. Over verlangen een kiezelsteen te zijn. Een rollercoaster performance vol catchy proza, vunzige beats, monogame pinguïns en (een soort van) God.
 
-De zaal is open vanaf 20:00 uur, het programma gaat van start om 20:30 uur.
+**De zaal is open vanaf 20:00 uur, het programma gaat van start om 20:30 uur.**
 
 ## [Bekijk hier de kaarten](https://fijtenfictie.stager.co/web/tickets/111445089?utm_campaign=KroesTooren&utm_source=websiteAgenda)
 

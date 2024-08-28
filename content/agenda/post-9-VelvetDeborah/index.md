@@ -18,7 +18,7 @@ auteurs = ['Pim Fijt']
 
 Cabaretier **Deborah** giet haar gedachtenspel in een muzikaal eigentijds jasje. Met haar scherpe blik neemt ze je mee in haar geestige observaties. Aanschouw de havermelkelite in actie in een voorstelling waar humor en moraliteit elkaar om de oren slaan. Deborah omarmt de huidige tijdgeest met een knipoog en onthult tegelijkertijd precies de zere plek. De voorstelling ‘Systeem Overload’ is een verrassende mix van standup, kleinkunst, cabaret en elektronische beats.
 
-De zaal is open vanaf 20:00 uur, het programma gaat van start om 20:30 uur.
+**De zaal is open vanaf 20:00 uur, het programma gaat van start om 20:30 uur.**
 
 ## [Bekijk hier de kaarten](https://fijtenfictie.stager.co/web/tickets/111445611?utm_campaign=VelvetDeborah&utm_source=websiteAgenda)
 

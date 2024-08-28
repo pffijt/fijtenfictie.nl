@@ -18,7 +18,7 @@ Na een turbulente tijd pakt iedereen de draad weer op. Zo ook **Luuk Weggemans**
 
 We zijn allemaal bekend met het vertellen van verhalen. Verhalen van vroeger, verhalen van nu, verzonnen verhalen. Iedereen heeft een verhaal. Iedereen IS een verhaal. Maar ooit zal dat verhaal eindigen. In ‘En toen kwam er een olifant met een lange snuit’ vraagt **Julia Straten** zich af wanneer haar verhaal eindigt. Wanneer de olifant de boel komt verstoren en haar verhaaltje uitblaast. En vooral of ze dan blij is met hoe ze geleefd heeft. Klinkt ongezellig. Is het niet.
 
-De zaal is open vanaf 20:00 uur, het programma gaat van start om 20:30 uur.
+**De zaal is open vanaf 20:00 uur, het programma gaat van start om 20:30 uur.**
 
 ## [Bekijk hier de kaarten](https://fijtenfictie.stager.co/web/tickets/111445610?utm_campaign=WeggemansStraten&utm_source=websiteAgenda)
 
