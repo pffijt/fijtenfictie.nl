@@ -24,6 +24,6 @@ Cabaretier **Deborah** giet haar gedachtenspel in een muzikaal eigentijds jasje.
 
 __Locatie__
 
-Het Klooster Oude Noorden</br>
-Ruivenstraat 81</br>
+Het Klooster Oude Noorden  
+Ruivenstraat 81  
 3036DD Rotterdam

@@ -3,7 +3,7 @@ title = 'Thom Gerrits & Ramon Chatrer'
 slug = 'gerrits-chatrer'
 layout = 'agenda'
 ticketURL = 'https://fijtenfictie.stager.co/web/tickets/111447279?utm_campaign=GerritsChatrer&utm_source=websiteAgenda'
-description = "Ontdek de veelzijdigheid van Thom Gerrits en Ramon Chatrer: Thom mixt humor, muziek, en persoonlijke verhalen in zijn cabaretvoorstellingen, terwijl Ramon met zijn liedjesprogramma 'VOLK' een kleurrijke blik werpt op de mensen om ons heen en zichzelf."
+description = "Ontdek de veelzijdigheid van Thom Gerrits en Ramon Chatrer: Thom mixt humor, muziek, en persoonlijke verhalen in zijn voorstellingen, terwijl Ramon een kleurrijke blik werpt op zichzelf en de mensen om ons heen."
 date = 2024-02-23T20:30:00+02:00
 expiryDate = 2024-11-30T20:30:00+02:00
 draft = false
