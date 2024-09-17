@@ -70,7 +70,7 @@ jobs:
                   --baseURL "https://pffijt.github.io/fijtenfictie.nl" 
             fi      
       - name: Upload firebase artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: public
           path: public    
@@ -86,7 +86,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Download website artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: public
           path: public
@@ -105,7 +105,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Download website artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: public
           path: public
