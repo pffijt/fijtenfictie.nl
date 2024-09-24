@@ -29,4 +29,4 @@ Voor de rest werkt de stichting met vrijwilligers en met zzp'ers op projectbasis
 
 
 __Hoofdlijnen beleidsplan 2024:__  
-De opstart van alle noodzakelijke grondvoorwaarden voor het goed functioneren van de stichting. We willen bestendigen wat hebben en de tijd goed gebruiken om een ambitieus, coherent en haalbaar plan te formuleren voor de komende paar jaar. Lees het volledige plan [hier](https://fijtenfictie.nl/organisatie/beleidsplan2024.pdf). Test
+De opstart van alle noodzakelijke grondvoorwaarden voor het goed functioneren van de stichting. We willen bestendigen wat hebben en de tijd goed gebruiken om een ambitieus, coherent en haalbaar plan te formuleren voor de komende paar jaar. Lees het volledige plan [hier](https://fijtenfictie.nl/organisatie/beleidsplan2024.pdf).
