@@ -23,3 +23,8 @@ In het verleden en de nabije toekomst maken we ook Ambras: de enige avond waar h
 ---
 
 In overeenstemming met geldende wettelijke vereisten en statutaire bepalingen, vindt u [hier](/organisatie) enkele formele gegevens met betrekking tot de stichting.
+
+
+
+
+
