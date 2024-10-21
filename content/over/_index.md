@@ -16,5 +16,6 @@ Om daad bij die woorden te voegen programmeren wij momenteel het jongste volbloe
 **Ambras**  
 In het verleden en de nabije toekomst maken we ook Ambras: de enige avond waar het beste wel onder in de kruik zit. In een bedrijvig café verzamelen wij illustere sprekers uit de stad die we stevig aan de tand voelen over hun werk. Maar onze opzet is pas geslaagd als ook het publiek, in een roes van nijver of alcohol, de sprekers bekokstooft met vragen die ze nergens anders krijgen. Ter Leering ende Vermaeck, dus. 
 
+---
 
 In overeenstemming met geldende wettelijke vereisten en statutaire bepalingen, vindt u [hier](/organisatie) enkele formele gegevens met betrekking tot de stichting.
