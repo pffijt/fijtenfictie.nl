@@ -4,6 +4,8 @@ title = 'Over'
 
 Wie haalt het in zijn botte hoofd om anno thans in Rotterdam, *where culture goes to die*, een nieuw podium te beginnen? Dat klopt: Fijt & Fictie.
 
+---
+
 **Missie**  
 Fijt & Fictie wil een bonte verzameling toeschouwers vermaken, verbazen, en zo nu en dan inspireren. We sleuren gangmakers en publiek aan hun haren bij elkaar en hopen vurig dat er iets vernieuwends ontstaat. In Rotterdam zal niemand ontkomen aan ons streven om de boel eens flink op te schudden. *Es gibt auf dieser Welt auch noch anständige Leute.*
 
