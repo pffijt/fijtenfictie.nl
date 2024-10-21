@@ -10,11 +10,13 @@ Fijt & Fictie wil een bonte verzameling toeschouwers vermaken, verbazen, en zo n
 **Visie**  
 We bereiken dit ambitieuze doel door onszelf staande te houden als een baken van cultuur en podiumkunsten in een stad die zichzelf net serieus genoeg neemt om werelds te zijn. Met ons eclectische programma bieden we eigenzinnige, kleinschalige en soms verfrissende culturele evenementen. Door te spelen met verwachtingen, combineren we dingen die eigenlijk niet samen horen, in de hoop dat het iets oplevert dat we later ‘tegendraads’ kunnen noemen. Fijt & Fictie gelooft in de kracht van cultuur als spiegel van de samenleving en als podium voor perspectieven die misschien niet nieuw zijn, maar wel goed verpakt.
 
+---
+
 **Fijt & Fictie in het Klooster**  
 Om daad bij die woorden te voegen programmeren wij momenteel het jongste volbloed cabaretpodium van Rotterdam. Om de week kunt u bij *Fijt & Fictie in het Klooster* genieten van het beste dat Nederland te bieden heeft aan kleinkunst. Van fijnbesnaard tot knettergek, de onvervalste Nederlandse levenskunst vindt je hier. Twee artiesten spelen in het charmante Klooster elk 45 minuten van hun show, waarbij je kunt rekenen op meeslepende liedjes, rake grappen en bovenal een goed verhaal.
 
 **Ambras**  
-In het verleden en de nabije toekomst maken we ook Ambras: de enige avond waar het beste wel onder in de kruik zit. In een bedrijvig café verzamelen wij illustere sprekers uit de stad die we stevig aan de tand voelen over hun werk. Maar onze opzet is pas geslaagd als ook het publiek, in een roes van nijver of alcohol, de sprekers bekokstooft met vragen die ze nergens anders krijgen. Ter Leering ende Vermaeck, dus. 
+In het verleden en de nabije toekomst maken we ook Ambras: de enige avond waar het beste wel onder in de kruik zit. In een bedrijvig café verzamelen wij illustere sprekers uit de stad die we stevig aan de tand voelen over hun werk. Maar onze opzet is pas geslaagd als ook het publiek, in een roes van nijver of alcohol, de sprekers bekokstooft met vragen die ze nergens anders krijgen. 
 
 ---
 
