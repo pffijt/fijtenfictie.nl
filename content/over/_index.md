@@ -22,6 +22,8 @@ In het verleden en de nabije toekomst maken we ook Ambras: de enige avond waar h
 
 ---
 
+Heb je vragen, ideeën, klachten of complimenten? Stuur een e-mail naar *info@fijtenfictie.nl* of bel naar +31 6 47 28 14 44 (op normale tijden, op normale dagen).
+
 In overeenstemming met geldende wettelijke vereisten en statutaire bepalingen, vindt u [hier](/organisatie) enkele formele gegevens met betrekking tot de stichting.
 
 
