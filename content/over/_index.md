@@ -2,7 +2,7 @@
 title = 'Over'
 +++
 
-Wie haalt het in zijn botte hoofd om anno thans in Rotterdam, *where culture goes to die*, een nieuw podium te beginnen? Dat klopt: Fijt & Fictie.
+**Wie haalt het in zijn botte hoofd om anno thans in Rotterdam, *where culture goes to die*, een nieuw podium te beginnen? Dat klopt: Fijt & Fictie.**
 
 ---
 
@@ -10,7 +10,7 @@ Wie haalt het in zijn botte hoofd om anno thans in Rotterdam, *where culture goe
 Fijt & Fictie wil een bonte verzameling toeschouwers vermaken, verbazen, en zo nu en dan inspireren. We sleuren gangmakers en publiek aan hun haren bij elkaar en hopen vurig dat er iets vernieuwends ontstaat. In Rotterdam zal niemand ontkomen aan ons streven om de boel eens flink op te schudden. *Es gibt auf dieser Welt auch noch anständige Leute.*
 
 **Visie**  
-We bereiken dit ambitieuze doel door onszelf staande te houden als een baken van cultuur en podiumkunsten in een stad die zichzelf net serieus genoeg neemt om werelds te zijn. Met ons eclectische programma bieden we eigenzinnige, kleinschalige en soms verfrissende culturele evenementen. Door te spelen met verwachtingen, combineren we dingen die eigenlijk niet samen horen, in de hoop dat het iets oplevert dat we later ‘tegendraads’ kunnen noemen. Fijt & Fictie gelooft in de kracht van cultuur als spiegel van de samenleving en als podium voor perspectieven die misschien niet nieuw zijn, maar wel goed verpakt.
+We bereiken dit ambitieuze doel door onszelf staande te houden als een baken van cultuur en podiumkunsten in een stad die zichzelf net serieus genoeg neemt om werelds te zijn. Met ons eclectische programma bieden we eigenzinnige, kleinschalige en soms verfrissende culturele evenementen. Door te spelen met verwachtingen, combineren we dingen die eigenlijk niet samen horen, in de hoop dat het iets oplevert dat we later ‘tegendraads’ kunnen noemen. Fijt & Fictie gelooft in de kracht van cultuur als spiegel van de samenleving en als podium voor verrassende perspectieven.
 
 ---
 
