@@ -1,5 +1,6 @@
 +++
 title = 'Over'
+description = 'Cultuur en podiumkunst in Rotterdam'
 +++
 
 **Wie haalt het in zijn botte hoofd om anno nu in Rotterdam, *where culture goes to die*, een nieuw podium te beginnen? Dat klopt: Fijt & Fictie.**
