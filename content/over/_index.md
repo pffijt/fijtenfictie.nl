@@ -2,7 +2,7 @@
 title = 'Over'
 +++
 
-**Wie haalt het in zijn botte hoofd om anno thans in Rotterdam, *where culture goes to die*, een nieuw podium te beginnen? Dat klopt: Fijt & Fictie.**
+**Wie haalt het in zijn botte hoofd om anno nu in Rotterdam, *where culture goes to die*, een nieuw podium te beginnen? Dat klopt: Fijt & Fictie.**
 
 ---
 
@@ -18,7 +18,7 @@ We bereiken dit ambitieuze doel door onszelf staande te houden als een baken van
 Om daad bij die woorden te voegen programmeren wij momenteel het jongste volbloed cabaretpodium van Rotterdam. Om de week kunt u bij *Fijt & Fictie in het Klooster* genieten van het beste dat Nederland te bieden heeft aan kleinkunst. Van fijnbesnaard tot knettergek, de onvervalste Nederlandse levenskunst vindt je hier. Twee artiesten spelen in het charmante Klooster elk 45 minuten van hun show, waarbij je kunt rekenen op meeslepende liedjes, rake grappen en bovenal een goed verhaal.
 
 **Ambras**  
-In het verleden en de nabije toekomst maken we ook Ambras: de enige avond waar het beste wel onder in de kruik zit. In een bedrijvig café verzamelen wij illustere sprekers uit de stad die we stevig aan de tand voelen over hun werk. Maar onze opzet is pas geslaagd als ook het publiek, in een roes van nijver of alcohol, de sprekers bekokstooft met vragen die ze nergens anders krijgen. 
+In het verleden en de nabije toekomst maken we ook Ambras: de enige avond waar het beste wel onderin de kruik zit. In een bedrijvig café verzamelen wij illustere sprekers uit de stad die we stevig aan de tand voelen over hun werk. Maar onze opzet is pas geslaagd als ook het publiek, in een roes van nijver of alcohol, de sprekers bekokstooft met vragen die ze nergens anders krijgen. 
 
 ---
 
