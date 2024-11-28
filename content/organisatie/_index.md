@@ -20,7 +20,7 @@ Het leveren van een culturele en maatschappelijke meerwaarde. Deze meerwaarde ka
 
 __Bestuur van Stichting Fijt & Fictie:__  
 L.E. Mooren - Voorzitter  
-S. Borgman - Secretaris    
+M.Th. Geertsma - Secretaris    
 R. van Zeeventer - Penningmeester
 
 __Beloningsbeleid:__  
