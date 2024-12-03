@@ -2,6 +2,7 @@
 title = 'Grote vraag naar kleine podia'
 slug = 'grote-vraag-naar-kleine-podia'
 description = "Grote vraag naar kleine podia."
+layout = 'agenda'
 imgsrc = "image0.jpeg"
 imgalt = "Ruïne van de Grote Schouwburg, verwoest in 1940."
 imgclass = "article-image"
