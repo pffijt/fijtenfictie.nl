@@ -2,6 +2,9 @@
 title = 'Grote vraag naar kleine podia'
 slug = 'grote-vraag-naar-kleine-podia'
 description = "Grote vraag naar kleine podia."
+imgsrc = "image0.png"
+imgalt = "Ruïne van de Grote Schouwburg, verwoest in 1940."
+imgclass = "article-image"
 +++
 
 "Sommigen mensen worden geboren met een spraakgebrek of een hazenlip. Anderen hebben minder geluk. Zij worden geboren met de liefde voor Feyenoord."
