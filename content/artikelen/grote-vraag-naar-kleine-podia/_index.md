@@ -2,6 +2,7 @@
 title = 'Grote vraag naar kleine podia'
 slug = 'grote-vraag-naar-kleine-podia'
 description = "Grote vraag naar kleine podia."
+date = 2024-02-23T20:30:00+02:00
 layout = 'agenda'
 draft = false
 imgsrc = "image0.jpeg"
