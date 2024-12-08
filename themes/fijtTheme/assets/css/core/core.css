@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'sailors-condensed-regular';
+    src: url('../../sailors_condensed.woff2') format("woff2");
+    font-display: swap;
+}
+  
+@font-face {
+  font-family: 'Playfair';
+  src: url('../../playfair-webfont.woff2') format("woff2");
+  font-display: swap;
+}
+
+html {
+  --background-color: #fcf9f7;
+  --menu-background-color: #CF0000;
+  --menu-font-color: white;
+  --font-color: black;
+  --paragraph-font-color: #262626;
+  --reverse-font-color: #fcf9f7;
+  background-color: black;
+  height:100%;
+  width:100%;
+}
+
+
+::-moz-selection {
+  color: var(--background-color);
+  background: var(--font-color);
+}
+
+::selection {
+  color: var(--background-color);
+  background: var(--font-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --background-color: #1E1D14;
+    --menu-background-color: #CF0000;
+    --menu-font-color: white;
+    --font-color: white;
+    --paragraph-font-color: white;
+    --reverse-font-color: #1E1D14;
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  overflow: auto;
+  overflow-x: hidden;
+  position: relative;
+  height:100%;
+  width:100%;
+  table-layout:fixed;
+  display:table-row;
+}
+
+body::before, body::after {
+  content: '';
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 100px;
+  pointer-events: none;
+  z-index: 999;
+}
+
+body::before {
+  top: -100px;
+  background: var(--background-color); /* Top overscroll */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+h2 {
+  font-family: 'Playfair', serif;
+  font-size: 1.125em;
+}
+
+p {
+  font-family: 'Playfair', serif;
+  color: var(--paragraph-font-color); 
+  margin-bottom: 0.9rem;
+}
+
+strong {
+  font-family: 'Playfair', serif;
+  color: var(--paragraph-font-color);
+  margin-bottom: 0.9rem;
+}
+
+a {
+  color: var(--menu-background-color);
+  text-decoration: none;
+}
+
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  position: relative;
+  min-height: 100%;
+}
+
+.pathway {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}

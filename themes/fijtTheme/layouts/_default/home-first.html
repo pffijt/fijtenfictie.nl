@@ -1,0 +1,36 @@
+<article>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <a href="{{ .RelPermalink }}">
+                {{ .Render "image-styled"}}
+            </a>
+        </div>
+        <div class="col-12 col-md-6">
+            <h2 class="article-header home-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle | upper }}</a></h2>
+            <div class="article-paragraph">
+                {{ if .Param "auteurs" }}
+                    <div>
+                        <p>
+                            <i>door verslaggever {{index (.Param "auteurs") 0}}</i>
+                        </p>
+                    </div>
+                {{ end }}
+                <p>
+                    {{ .Summary | markdownify }}
+                </p>
+                {{ if .Truncated }}
+                <a class="article-link readmore" href="{{ .RelPermalink }}">{{ i18n "readmore" }}<span class="article-link-dots">...</span></a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    <footer>
+        {{ if .Next }}
+        <hr />
+        {{ else }}
+        <div style="height: 10vh;">
+
+        </div>
+        {{ end }}
+    </footer>
+</article>

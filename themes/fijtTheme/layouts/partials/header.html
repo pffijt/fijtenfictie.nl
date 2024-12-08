@@ -1,0 +1,32 @@
+{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ $dateHuman := .Date | time.Format "Monday 2 January 2006" }}
+<div class="container">
+
+    <div class="row text-center">
+        <div class="col-12 col-sm-12 col-md-5">
+            {{$pages := where .Site.RegularPages "Section" "header" }}
+            {{ range first 1 (after 0 $pages) }}
+             {{ .Render "header-ad" }}
+            {{end}}
+        </div>
+        <div class="col-12 col-sm-12 col-md-2 pt-2">
+            <a href="{{ .Site.BaseURL }}">
+                <picture>
+                    <source srcset="{{ .Site.BaseURL }}{{ $.Site.Params.logoDark }}" media="(prefers-color-scheme: dark)">
+                    <img class="header-logo" width="810" height="237" src="{{ .Site.BaseURL }}{{ $.Site.Params.logoLight }}" title="{{ $.Site.Params.logoAlternative }}" alt="{{ $.Site.Params.logoAlternative }}" role="img">
+                </picture>
+            </a>
+            <div id="header-clock" class="pathway"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-5">
+            {{$pages := where .Site.RegularPages "Section" "header" }}
+            {{ range first 1 (after 1 $pages) }}
+            {{ .Render "header-ad" }}
+            {{end}}
+        </div>
+    </div>
+
+    <div class="mt-3 mb-5">
+        {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    </div>
+</div>

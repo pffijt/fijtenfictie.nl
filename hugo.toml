@@ -36,6 +36,13 @@ enableRobotsTXT = true
     class = 'menu-link'
 
 [[menus.main]]
+    name = 'Artikelen'
+    pageRef = '/artikelen'
+    weight = 30
+    [[menus.main.params]]
+        class = 'menu-link'
+
+[[menus.main]]
   name = 'Tickets'
   url = 'https://fijtenfictie.stager.co/web/tickets?utm_campaign=TIcketshop&utm_source=fijtenfictie.nl'
   weight = 40
