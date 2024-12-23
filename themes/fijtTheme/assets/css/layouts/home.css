@@ -10,6 +10,15 @@
     width: fit-content;
 }
 
+.first-header {
+  background: var(--font-color);
+  padding: 5px;
+}
+
+.first-header > a {
+  color: var(--background-color);
+}
+
 .second-home-col-header {
     text-align: left;
     font-size: 1.8em;
@@ -68,6 +77,19 @@
   }
 }
 
-.home-second {
-  width: 85%;
+.readmore-home {
+  background-color: var(--menu-background-color);
+  height: 100%;
+  width: 100%;
+}
+
+.readmore-home-header {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-weight: 900;
+  font-size: 3.0em;
+  text-align: center;
+  line-height: 0.8;
+  color: var(--background-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
 }

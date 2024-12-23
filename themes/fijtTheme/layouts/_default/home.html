@@ -2,21 +2,38 @@
   {{ $pages := where site.RegularPages.ByExpiryDate "Section" "ne" "header" }}
   <div class="container">
     <div class="row">
-      <div class="col">
         {{ range first 1 $pages }}
-          <div class="col">
+          <div class="col-12">
             <div class="article-card">
               {{ .Render "home-first"}}
             </div>
           </div>
         {{ end }}
         {{ range first 1 (after 1 $pages) }}
-        <div class="col">
+        <div class="col-10">
           <div class="article-card">
             {{ .Render "home-second"}}
           </div>
         </div>
+        <div class="col-2">
+          <div class="readmore-home">
+            <div class="readmore-home-header">
+              {{ "Verder te lezen" | upper }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+        {{ range first 1 (after 1 $pages) }}
+        <div class="col-10">
+          <div class="article-card">
+            {{ .Render "home-second"}}
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="readmore-home">
+          </div>
+        </div>
+
         {{ end }}
     </div>
-  </div>
 {{ end }}
