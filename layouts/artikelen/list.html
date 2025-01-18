@@ -1,0 +1,21 @@
+{{ define "main" }}
+{{ range .Pages.ByExpiryDate }}
+{{ $ticketDateMachine := .ExpiryDate | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ $ticketDateHuman := .ExpiryDate | time.Format "Mon 2 Jan 15:04" }}
+<div class="container">
+    <div class="row agenda-row">
+        <a class="col-sm-12 col" href="{{ .RelPermalink }}" style="text-decoration: none;">
+            <div class="row">
+                <div class="col">
+                    <h2 class="article-header">{{ .LinkTitle }}</h2>
+                    <p class="article-paragraph">{{ .Summary | markdownify }}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="container">
+        <hr/>
+    </div>
+</div>
+{{ end }}
+{{ end }}
