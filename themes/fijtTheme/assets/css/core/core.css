@@ -125,6 +125,10 @@ main {
   min-height: 100%;
 }
 
+footer {
+  z-index: 9999;
+}
+
 .pathway {
     font-family: "Pathway Gothic One", sans-serif;
     font-weight: 400;
