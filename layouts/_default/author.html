@@ -5,13 +5,13 @@
     <div class="container">
         {{ if .Param "auteurs" }}
             <div class="row">
-                <div class="col" style="max-width: 65px;">
+                <div class="col p-0" style="max-width: 65px;">
                     {{- with resources.Get "img/default_avatar.webp"}}
                         {{ $image := (.Fit "50x50") | images.Filter (images.Colorize 52 6 100) }}
                         <img src="{{ $image.RelPermalink }}" class="author-image" alt="Portretfoto">
                     {{- end}}
                 </div>
-                <div class="col-9">
+                <div class="col-9 p-0">
                     {{ if not (eq (.Param "layout") "agenda")}}
                         {{ range .Param "auteurs" }}
                             <a class="article-link" href="{{ "/auteurs/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a>
@@ -28,9 +28,6 @@
                 </div>
             </div>
         {{ else }}
-            <div class="row">
-                <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-            </div>
         {{ end }}
     </div>
 </h4>

@@ -1,15 +1,9 @@
 <article class="home-second">
     <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-7">
             <h2 class="article-header home-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle | upper }}</a></h2>
             <div class="article-paragraph">
-                {{ if .Param "auteurs" }}
-                    <div>
-                        <p>
-                            <i>door verslaggever {{index (.Param "auteurs") 0}}</i>
-                        </p>
-                    </div>
-                {{ end }}
+                {{ .Render "author" }}
                 <p>
                     {{ .Summary | markdownify }}
                 </p>
@@ -18,7 +12,7 @@
                 {{ end }}
             </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-5">
             <a href="{{ .RelPermalink }}">
                 {{ .Render "image-styled"}}
             </a>

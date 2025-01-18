@@ -1,7 +1,5 @@
 +++
-title = 'Absint in Delfshaven'
+title = ''
 description = 'test'
+imgsrc = 'pschorr.png'
 +++
-
-Voor een prettig vertoeven in oud-Hollandsch café in historisch Delfshaven met een 19e-eeuwse drank en een benefietbokswedstrijd tussen twee speciale gasten!
-Bezoek **Café de Ooievaar** _gratis entrée_

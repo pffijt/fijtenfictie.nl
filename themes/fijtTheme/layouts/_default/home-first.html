@@ -8,13 +8,7 @@
         <div class="col-12 col-md-6">
             <h2 class="article-header first-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle | upper }}</a></h2>
             <div class="article-paragraph">
-                {{ if .Param "auteurs" }}
-                    <div>
-                        <p>
-                            <i>door verslaggever {{index (.Param "auteurs") 0}}</i>
-                        </p>
-                    </div>
-                {{ end }}
+                {{ .Render "author" }}
                 <p>
                     {{ .Summary | markdownify }}
                 </p>

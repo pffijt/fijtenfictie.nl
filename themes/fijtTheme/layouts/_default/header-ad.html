@@ -1,4 +1,10 @@
 <article class="header-ad-container">
   <h3 class="header-ad-title">{{.Title | upper }}</h3>
-  <div class="header-ad-paragraph">{{.Content}}</div>
+  <div class="header-ad-paragraph">
+    {{ if .Param "imgsrc" }}
+      <img class="ad-img" src='{{ (.Resources.GetMatch (.Param "imgsrc" )).RelPermalink }}'>
+    {{end}}
+
+    {{.Content}}
+  </div>
 </article>
