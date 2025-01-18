@@ -16,6 +16,10 @@
     padding-bottom: 100px;
     width: 100vw;
 
+    a {
+        color: var(--background-color);
+    }
+
     p {
         color: var(--background-color);
     }

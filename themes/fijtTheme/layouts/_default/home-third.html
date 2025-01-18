@@ -1,8 +1,8 @@
-<article class="home-second">
+<article class="home-third">
     <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-12">
             <h2 class="article-header home-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle | upper }}</a></h2>
-            <div class="article-paragraph">
+            <div class="article-paragraph third-home-paragraph">
                 {{ if .Param "auteurs" }}
                     <div>
                         <p>
@@ -17,11 +17,6 @@
                 <a class="article-link readmore" href="{{ .RelPermalink }}">{{ i18n "readmore" }}<span class="article-link-dots">...</span></a>
                 {{ end }}
             </div>
-        </div>
-        <div class="col-12 col-md-6">
-            <a href="{{ .RelPermalink }}">
-                {{ .Render "image-styled"}}
-            </a>
         </div>
     </div>
     <footer>
