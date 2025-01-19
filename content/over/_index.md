@@ -31,7 +31,7 @@ Wanneer de sterren er goed voor staan maken we ook Ambras: de enige avond waar h
 (2) Je bent géén goed mens, hebt géén hart voor cultuur, maar straalt dat wèl graag uit.  
 (3) Je bent altijd op zoek naar nieuwe manieren om geen belasting te betalen.  
 
-**Fijt & Fictie is een culturele ANBI (Algemeen Nut Beogende Instelling).** Dat houdt *gunstige belastingregels* in voor jou als weldoener. Giften aan Fijt & Fictie kunnen namelijk tot een fiscale aftrekpost leiden die groter is dan het geschonken bedrag. Wij zeggen: doen! Wil je doneren, of gewoon meer informatie hierover? Stuur ons een e-mail naar info@fijtenfictie.nl.
+**Fijt & Fictie is een culturele ANBI (Algemeen Nut Beogende Instelling).** Dat houdt *gunstige belastingregels* in voor jou als weldoener. Giften aan Fijt & Fictie kunnen namelijk tot een fiscale aftrekpost leiden die groter is dan het geschonken bedrag. Wij zeggen: doen! Wil je doneren, of gewoon meer informatie hierover? Stuur ons een e-mail naar info@fijtenfictie.nl of [doneer hier](https://fijtenfictie.stager.co/shop/doneren).  
 
 Heb je vragen, ideeën, klachten of complimenten? Stuur een e-mail naar info@fijtenfictie.nl of bel naar +31 6 47 28 14 44 (op normale tijden, op normale dagen).
 
