@@ -8,10 +8,10 @@ description = 'Cultuur en podiumkunst in Rotterdam'
 ---
 
 **Missie**  
-Fijt & Fictie wil een bonte verzameling toeschouwers vermaken, verbazen, en zo nu en dan inspireren. We sleuren gangmakers en publiek aan hun haren bij elkaar en hopen vurig dat er iets vernieuwends ontstaat. In Rotterdam zal niemand ontkomen aan ons streven om de boel eens flink op te schudden. 
+Fijt & Fictie koestert slechts een bescheiden droom: Rotterdam hé-le-maal veranderen. Nou goed, niet hé-le-maal, maar dan toch een beetje mooier maken. We willen het publiek vermaken, verbazen, en zo nu en dan inspireren. Hoewel onze stad bekend staat als onverbeterlijke betonnen bak, zien wij in de hoeken en kieren talloze kansen ontkiemen voor indrukwekkende kunsten, die lang niet altijd een plek krijgen in de zon. Ons streven is dit bruisende talent een podium te bieden, en zodoende de stad een plek te maken waar je, als je niet oppast, over de cultuurmakers struikelt. We sleuren gangmakers en publiek aan hun haren bij elkaar en hopen vurig dat er iets nieuws ontstaat.  
 
 **Visie**  
-We bereiken dit doel door onszelf staande te houden als een baken van cultuur en podiumkunsten in een stad die zichzelf net serieus genoeg neemt om werelds te zijn. Met ons programma bieden we eigenzinnige en kleinschalige culturele evenementen. Fijt & Fictie gelooft in de kracht van cultuur als spiegel van de samenleving en als podium voor verrassende perspectieven. *Es gibt auf dieser Welt auch noch anständige Leute.* 
+We bereiken dit doel door onszelf staande te houden als een baken van cultuur en podiumkunsten in een stad die zichzelf net serieus genoeg neemt om werelds te zijn. We programmeren eigenzinnige en kleinschalige avonden waar dat kan en ook waar dat níet kan, om het gevoel te doen ontstaan, dat je in Rotterdam nog wat kan ontdekken als je van de gebaande paden durft te wijken. Fijt & Fictie gelooft in de kracht van cultuur als spiegel van de samenleving, en als broedplek voor verrassende perspectieven, en hoopt met haar projecten zo bij te dragen aan een buitengewone stad.  
 
 ---
 
@@ -29,7 +29,7 @@ Wanneer de sterren er goed voor staan maken we ook Ambras: de enige avond waar h
 
 (1) Je bent een goed mens met een hart voor cultuur.  
 (2) Je bent géén goed mens, hebt géén hart voor cultuur, maar straalt dat wèl graag uit.  
-(3) Je bent altijd op zoek naar nieuwe manieren om geen belasting te betalen.  
+(3) Je bent altijd op zoek naar nieuwe manieren om minder belasting te betalen.  
 
 **Fijt & Fictie is een culturele ANBI (Algemeen Nut Beogende Instelling).** Dat houdt *gunstige belastingregels* in voor jou als weldoener. Giften aan Fijt & Fictie kunnen namelijk tot een fiscale aftrekpost leiden die groter is dan het geschonken bedrag. Wij zeggen: doen! Wil je doneren, of gewoon meer informatie hierover? Stuur ons een e-mail naar info@fijtenfictie.nl of [doneer hier](https://fijtenfictie.stager.co/shop/doneren).  
 
