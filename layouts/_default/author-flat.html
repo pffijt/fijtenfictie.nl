@@ -7,8 +7,7 @@
             <div class="row">
                 <div class="col-9 p-0">
                     {{ if not (eq (.Param "layout") "agenda")}}
-                        <p>
-                            door&nbsp;
+                        <p class="article-link-big" style="font-style: italic">
                             {{ range .Param "auteurs" }}
                             <a class="article-link" href="{{ "/auteurs/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a>
                             {{ end }}
@@ -16,7 +15,7 @@
                         <br/>
                         <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
                     {{ else }}
-                        <p style="display: flex; align-items: center; justify-content: flex-start; height: 100%;">
+                        <p class="article-link-big" style="display: flex; align-items: center; justify-content: flex-start; height: 100%; font-style: italic;">
                             door&nbsp;
                         {{ range .Param "auteurs" }}
                                 <a class="article-link" href="{{ "/auteurs/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a>

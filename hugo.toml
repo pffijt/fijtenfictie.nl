@@ -56,7 +56,6 @@ enableRobotsTXT = true
     weight = 50
     [[menus.main.params]]
         class = 'menu-link'
-        target = "_blank"
 
 [[menus.main]]
   name = 'Over'

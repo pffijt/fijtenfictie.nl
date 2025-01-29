@@ -3,6 +3,9 @@ title = 'Steun Ons'
 description = 'Cultuur en podiumkunst in Rotterdam'
 +++
 
+**Word Denkbeeldige Vriend van Fijt & Fictie!**  
+Kleine bedragen kunnen veel voor ons betekenen. Daarom kun je al Denkbeeldige Vriend worden voor slechts €35,- per jaar. Als Denkbeeldige Vriend krijg je toegang tot exclusieve evenementen en word je als eerste op de hoogte gehouden van het laatste Fijt & Fictie-nieuws, maar bovenal kun je met een gerust hart en een goed geweten naar bed - omdat je Rotterdam een dienst hebt geleverd. Goed! **[Doneer hier](https://fijtenfictie.stager.co/shop/doneren)**.
+
 **Drie goede redenen om Fijt & Fictie te steunen:**
 
 (1) Je bent een goed mens met een hart voor cultuur.  
