@@ -33,17 +33,17 @@ html {
   background: var(--font-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    --background-color: #1E1D14;
-    --menu-background-color: #CF0000;
-    --menu-font-color: white;
-    --font-color: white;
-    --paragraph-font-color: white;
-    --reverse-font-color: #1E1D14;
-  }
+/*@media (prefers-color-scheme: dark) {*/
+/*  html {*/
+/*    --background-color: #1E1D14;*/
+/*    --menu-background-color: #CF0000;*/
+/*    --menu-font-color: white;*/
+/*    --font-color: white;*/
+/*    --paragraph-font-color: white;*/
+/*    --reverse-font-color: #1E1D14;*/
+/*  }*/
 
-}
+/*}*/
 
 body {
   background-color: var(--background-color);

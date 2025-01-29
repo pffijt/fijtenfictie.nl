@@ -3,7 +3,7 @@
         <div class="col-12 col-md-12">
             <h2 class="article-header home-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle | upper }}</a></h2>
             <div class="article-paragraph third-home-paragraph">
-                {{ .Render "author" }}
+                {{ .Render "author-flat" }}
                 <p>
                     {{ .Summary | markdownify }}
                 </p>

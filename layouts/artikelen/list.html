@@ -3,11 +3,16 @@
 {{ $ticketDateMachine := .ExpiryDate | time.Format "2006-01-02T15:04:05-07:00" }}
 {{ $ticketDateHuman := .ExpiryDate | time.Format "Mon 2 Jan 15:04" }}
 <div class="container">
-    <div class="row agenda-row">
+    <div class="row">
         <a class="col-sm-12 col" href="{{ .RelPermalink }}" style="text-decoration: none;">
             <div class="row">
                 <div class="col">
-                    <h2 class="article-header">{{ .LinkTitle }}</h2>
+                    <div class="agenda-row" style="width: max-content; margin: auto">
+                        <h2 class="article-header">{{ .LinkTitle }}</h2>
+                    </div>
+                    <div class="row">
+                        {{ .Render "image-styled"}}
+                    </div>
                     <p class="article-paragraph">{{ .Summary | markdownify }}</p>
                 </div>
             </div>
