@@ -74,7 +74,7 @@ jobs:
         with:
           name: public
           path: public
-
+##
   # Deployment job
   deploy-github:
     if: github.ref == 'refs/heads/main'
@@ -84,19 +84,19 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Download website artifact
         uses: actions/download-artifact@v4
         with:
           name: public
           path: public
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: "./public"
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
 
   deploy-firebase:
     if: github.ref == 'refs/heads/production'
