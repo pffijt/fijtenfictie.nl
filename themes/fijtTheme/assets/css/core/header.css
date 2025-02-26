@@ -17,6 +17,24 @@
     }
 }
 
+.clock {
+    font-size: 1.25rem;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+    .clock {
+        font-size: 0.70rem;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .clock {
+        font-size: 1.1rem;
+    }
+}
+
 .header-logo {
     width: 100%;
     max-width: 200px;

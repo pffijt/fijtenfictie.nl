@@ -4,19 +4,26 @@
 {{ $ticketDateHuman := .ExpiryDate | time.Format "Mon 2 Jan 15:04" }}
 <div class="container">
     <div class="row">
-        <a class="col" href="{{ .RelPermalink }}" style="text-decoration: none;">
-            <div class="row">
-                <div class="col">
-                    <div class="agenda-row">
-                        <h2 class="article-header">{{ .LinkTitle }}</h2>
-                    </div>
-                    <div class="row">
-                        {{ .Render "image-styled"}}
-                    </div>
-                    <p class="article-paragraph">{{ .Summary | markdownify }}</p>
+        <div class="col">
+            <a href="{{ .RelPermalink }}" style="text-decoration: none;">
+                <div class="agenda-row">
+                    <h2 class="article-header">{{ .LinkTitle }}</h2>
                 </div>
+            </a>
+            <div class="row">
+                {{ .Render "image-styled" }}
+                <span class="article-paragraph">
+                    {{ .Render "author" }}
+                </span>
             </div>
-        </a>
+            <p class="article-paragraph article-link-big" style="align-items: center; height: 100%; font-style: italic;">
+                {{ .Summary | markdownify }}
+                <br/><br/>
+                {{ if .Truncated }}
+                <a class="article-link readmore" href="{{ .RelPermalink }}">{{ i18n "readmore" }}<span class="article-link-dots">...</span></a>
+                {{ end }}
+            </p>
+        </div>
     </div>
     <div class="container">
         <hr/>

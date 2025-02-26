@@ -1,6 +1,8 @@
 +++
 title = 'Steun Ons'
 description = 'Cultuur en podiumkunst in Rotterdam'
+imgsrc = "image0.jpeg"
+imgalt = "Ruïne van de Grote Schouwburg, verwoest in 1940."
 +++
 
 **Word Denkbeeldige Vriend van Fijt & Fictie!**  

@@ -1,9 +1,9 @@
-<article class="home-third">
-    <div class="row">
+<article class="home-third" >
+    <div class="row mb-3">
         <div class="col-12 col-md-12">
-            <h2 class="article-header home-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle | upper }}</a></h2>
+            <h2 class="article-header third-home-col-header home-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle | upper }}</a></h2>
             <div class="article-paragraph third-home-paragraph">
-                {{ .Render "author-flat" }}
+                {{ .Render "author-home" }}
                 <p>
                     {{ .Summary | markdownify }}
                 </p>
@@ -13,7 +13,4 @@
             </div>
         </div>
     </div>
-    <footer>
-        <hr />
-    </footer>
 </article>

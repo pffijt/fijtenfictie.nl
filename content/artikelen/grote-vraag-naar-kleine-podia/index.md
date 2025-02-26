@@ -5,9 +5,11 @@ description = "Grote vraag naar kleine podia."
 date = 2024-02-23T20:31:05+02:00
 layout = 'artikel'
 draft = false
+highlight = 10
 imgsrc = "image0.jpeg"
 imgalt = "Ruïne van de Grote Schouwburg, verwoest in 1940."
 imgclass = "article-image"
+auteurs = ['Pim Fijt']
 +++
 
 "Sommigen mensen worden geboren met een spraakgebrek of een hazenlip. Anderen hebben minder geluk. Zij worden geboren met de liefde voor Feyenoord."
