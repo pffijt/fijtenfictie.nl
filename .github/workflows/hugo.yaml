@@ -58,23 +58,23 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-            if [[ $GITHUB_REF == 'refs/heads/production' ]]; then
-                hugo \
-                  --gc \
-                  --minify \
-                  --baseURL "https://fijtenfictie.nl" 
-            else
-                hugo \
-                  --gc \
-                  --minify \
-                  --baseURL "https://pffijt.github.io/fijtenfictie.nl" 
-            fi      
+          if [[ $GITHUB_REF == 'refs/heads/production' ]]; then
+              hugo \
+                --gc \
+                --minify \
+                --baseURL "https://fijtenfictie.nl" 
+          else
+              hugo \
+                --gc \
+                --minify \
+                --baseURL "https://pffijt.github.io/fijtenfictie.nl" 
+          fi
       - name: Upload firebase artifact
         uses: actions/upload-artifact@v4
         with:
           name: public
-          path: public    
-
+          path: public
+##
   # Deployment job
   deploy-github:
     if: github.ref == 'refs/heads/main'
@@ -84,20 +84,20 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Download website artifact
         uses: actions/download-artifact@v4
         with:
           name: public
           path: public
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: "./public"
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
-  
+        uses: actions/deploy-pages@v4
+
   deploy-firebase:
     if: github.ref == 'refs/heads/production'
     runs-on: ubuntu-latest
@@ -111,7 +111,7 @@ jobs:
           path: public
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-            repoToken: '${{ secrets.GITHUB_TOKEN }}'
-            firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FIJTENFICTIE_1DF35 }}'
-            channelId: live
-            projectId: fijtenfictie-1df35
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FIJTENFICTIE_1DF35 }}'
+          channelId: live
+          projectId: fijtenfictie-1df35

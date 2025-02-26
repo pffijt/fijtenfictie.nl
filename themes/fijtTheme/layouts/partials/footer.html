@@ -1,0 +1,70 @@
+<div class="footer">
+    <div class="container">
+        <hr class="header-hr"/>
+        <div class="row">
+            <div class="col-12 col-sm">
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+                            <a style="font-size: 0.70rem;" href="{{ .Site.BaseURL }}/15november2024_AlgemeneVoorwaarden.pdf" target="_blank">
+                                Algemene voorwaarden
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <p>© {{ $.Site.Params.logoAlternative }} {{ now.Year }}.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8 col-sm">
+                        {{ if $.Site.Params.instagramUrl }}
+                        <a class="a-icon" href="{{ $.Site.Params.instagramUrl }}" target="_blank" rel="noopener">
+                            <i class="icon fa-brands fa-instagram fa-xl"></i>
+                        </a>
+                        {{ end }}
+                        {{ if $.Site.Params.facebookUrl }}
+                        <a class="a-icon" href="{{ $.Site.Params.facebookUrl }}" target="_blank" rel="noopener">
+                            <i class="icon fa-brands fa-facebook fa-xl"></i>
+                        </a>
+                        {{ end }}
+                        {{ if $.Site.Params.threadsUrl }}
+                        <a class="a-icon" href="{{ $.Site.Params.threadsUrl }}" target="_blank" rel="noopener">
+                            <i class="icon fa-brands fa-threads fa-xl"></i>
+                        </a>
+                        {{ end }}
+                        {{ if $.Site.Params.twitterUrl }}
+                        <a class="a-icon" href="{{ $.Site.Params.twitterUrl }}" target="_blank" rel="noopener">
+                            <i class="icon fa-brands fa-x-twitter fa-xl"></i>
+                        </a>
+                        {{ end }}
+                        {{ if $.Site.Params.linkedinUrl }}
+                        <a class="a-icon" href="{{ $.Site.Params.linkedinUrl }}" target="_blank" rel="noopener">
+                            <i class="icon fa-brands fa-linkedin fa-xl"></i>
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm">
+
+            </div>
+            <div class="col-12 col-sm footer-contact">
+                <div class="row">
+                    <div style="margin-bottom: 1em;">
+                        <span style="text-decoration: underline">CONTACT</span><br/>
+                        info@fijtenfictie.nl<br/>
+                        +31647281444
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <span style="text-decoration: underline">Voor de duif</span><br/>
+                        Posthoornstraat 11<br/>
+                        3011WD Rotterdam
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

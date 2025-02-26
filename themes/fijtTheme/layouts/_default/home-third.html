@@ -1,0 +1,16 @@
+<article class="home-third" >
+    <div class="row mb-3">
+        <div class="col-12 col-md-12">
+            <h2 class="article-header third-home-col-header home-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle | upper }}</a></h2>
+            <div class="article-paragraph third-home-paragraph">
+                {{ .Render "author-home" }}
+                <p>
+                    {{ .Summary | markdownify }}
+                </p>
+                {{ if .Truncated }}
+                <a class="article-link readmore" href="{{ .RelPermalink }}">{{ i18n "readmore" }}<span class="article-link-dots">...</span></a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</article>

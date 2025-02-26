@@ -1,0 +1,57 @@
+.calendar-header {
+    font-family: 'Playfair', serif;
+    font-size: 2em;
+    color: var(--font-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+    
+.calendar-header > a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+    
+.agenda-row {
+    h2 {
+    --h: 1.2em;
+    padding-right: 5px;
+
+    line-height: var(--h);
+    color: #0000;
+    text-shadow: 
+    0 var(--_i, var(--h)) var(--reverse-font-color),
+    0 0 rgb(0 0 0 / calc(var(--_i, 1) * 100%) );
+    background: 
+    linear-gradient(var(--menu-background-color) 0 0) 
+    bottom/100% calc(100% - var(--_i, 1) * 100%) no-repeat;
+    overflow: hidden;
+    transition: 0.3s;
+    }
+}
+    
+/*@media (prefers-color-scheme: dark) {
+    .agenda-row {
+        h2 {
+            --h: 1.2em;
+        
+        line-height: var(--h);
+        color: #FFFF;
+        text-shadow: 
+            0 var(--_i, var(--h)) var(--reverse-font-color),
+            0 0 rgb(0 0 0 / calc(var(--_i, 1) * 100%) );
+        background: 
+            linear-gradient(var(--menu-background-color) 0 0) 
+            bottom/100% calc(100% - var(--_i, 1) * 100%) no-repeat;
+        overflow: hidden;
+        transition: 0.3s;
+        }
+    }
+}*/
+    
+.agenda-row:hover {
+    --_i: 0;
+}
+
+.call-to-action-link {
+    font-size: 1.2em;
+}

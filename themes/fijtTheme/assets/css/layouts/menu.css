@@ -1,0 +1,87 @@
+/*nav {*/
+/*  z-index: 99999;*/
+/*  position: fixed;*/
+/*  right: 2.5vw;*/
+/*  width: 85px;*/
+/*  bottom: 5vh;*/
+/*  height: 60px;*/
+/*  background-color: var(--menu-background-color);*/
+/*  opacity: 0.95;*/
+/*  padding: 8px;*/
+/*  border-radius: 15px;*/
+/*  transition: height 0.5s, width 0.5s;*/
+/*  text-align: right;*/
+/*  float: right;*/
+/*  clear: right;*/
+/*  padding-right: 22px;*/
+/*}*/
+
+nav {
+  width: 100%;
+  background-color: var(--menu-background-color);
+}
+
+/*.menu-button {*/
+/*    cursor: pointer;*/
+/*}*/
+/*  */
+/*.menu-content {*/
+/*  height: 0;*/
+/*  width: 0;*/
+/*  visibility: hidden;*/
+/*  opacity: 0;*/
+/*  transition: opacity 0.2s;*/
+/*  transition-delay: 0.3s;*/
+/*  padding: 0px;*/
+/*}*/
+
+/*.menu-link:hover {*/
+/*  --dotSize: 0.05rem;*/
+/*  --bgSize: 0.30rem;*/
+/*  --bgPosition: calc(var(--bgSize) / 2);*/
+/*  isolation: isolate;*/
+/*  filter: contrast(50) invert(1);*/
+/*  mix-blend-mode: difference;*/
+/*}*/
+
+/*.menu-link::after {*/
+/*  !* Cover our element *!*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  inset: 0;*/
+
+/*  !* Dotted background *!*/
+/*  background-image: radial-gradient(*/
+/*      circle at center,*/
+/*      white var(--dotSize),*/
+/*      transparent 0*/
+/*  );*/
+/*  background-size: var(--bgSize) var(--bgSize);*/
+/*  background-position: 0 0, var(--bgPosition) var(--bgPosition);*/
+/*}*/
+
+.menu-link {
+  padding: 0px;
+  color: var(--background-color);
+  text-decoration: none;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-weight: 800;
+  font-size: 1.5em;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+}
+
+
+@media (min-width: 768px) {
+  .menu-link {
+    font-size: 2.255em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-link {
+    font-size: 2.5em;
+  }
+}

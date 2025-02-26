@@ -1,0 +1,59 @@
+{{- /*
+Renders a menu for the given menu ID.
+
+@context {page} page The current page.
+@context {string} menuID The menu ID.
+
+@example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+*/}}
+
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+
+{{- with index site.Menus $menuID }}
+  <nav>
+    <div class="row justify-content-center align-items-center text-center">
+      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+    </div>
+<!--    <ul>-->
+<!--      <li>-->
+<!--        <button type="button" role="button" id="menu-button" class="p-0 m-0" onclick="openMenu()" aria-label="Main website menu" aria-expanded="false" aria-controls="menu">-->
+<!--          <div class="row">-->
+<!--            <span class="menu-link">-->
+<!--              menu-->
+<!--            </span>-->
+<!--          </div> -->
+<!--        </button>-->
+<!--      </li>-->
+<!--      <ul id="menu" aria-hidden="true">-->
+<!--        <div id="menu-content" class="menu-content">-->
+<!--          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}-->
+<!--        </div>-->
+<!--      </ul>-->
+<!--    </ul>-->
+  </nav>
+{{- end }}
+
+{{- define "partials/inline/menu/walk.html" }}
+  {{- $page := .page }}
+  {{- range .menuEntries }}
+    {{- $attrs := dict "href" .URL }}
+    {{- if $page.IsMenuCurrent .Menu . }}
+      {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
+    {{- else if $page.HasMenuCurrent .Menu . }}
+      {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
+    {{- end }}
+        <div class="col">
+
+          <a
+              class="{{ .Params.class }}"
+              target="{{ .Params.target }}"
+              {{- range $k, $v := $attrs }}
+              {{- with $v }}
+              {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+          {{- end }}
+          {{- end -}}
+          >{{ or (T .Identifier) .Name | upper | safeHTML }}</a>
+        </div>
+  {{- end }}
+{{- end }}

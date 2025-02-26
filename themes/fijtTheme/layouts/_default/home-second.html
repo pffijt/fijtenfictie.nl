@@ -1,0 +1,24 @@
+<article class="home-second">
+    <div class="row">
+        <div class="col-12 col-md-7">
+            <h2 class="article-header home-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle | upper }}</a></h2>
+            <div class="article-paragraph">
+                {{ .Render "author-home" }}
+                <p>
+                    {{ .Summary | markdownify }}
+                </p>
+                {{ if .Truncated }}
+                <a class="article-link readmore" href="{{ .RelPermalink }}">{{ i18n "readmore" }}<span class="article-link-dots">...</span></a>
+                {{ end }}
+            </div>
+        </div>
+        <div class="col-12 col-md-5">
+            <a href="{{ .RelPermalink }}">
+                {{ .Render "image-styled"}}
+            </a>
+        </div>
+    </div>
+    <footer>
+        <hr />
+    </footer>
+</article>

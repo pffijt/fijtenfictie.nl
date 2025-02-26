@@ -22,7 +22,7 @@ enableRobotsTXT = true
 
 [menus]
 [[menus.main]]
-  name = 'Home'
+  name = 'Thuis'
   pageRef = '/'
   weight = 10
   [[menus.main.params]]
@@ -36,7 +36,14 @@ enableRobotsTXT = true
     class = 'menu-link'
 
 [[menus.main]]
-  name = 'Tickets'
+    name = 'Artikelen'
+    pageRef = '/artikelen'
+    weight = 30
+    [[menus.main.params]]
+        class = 'menu-link'
+
+[[menus.main]]
+  name = 'Kaarten'
   url = 'https://fijtenfictie.stager.co/web/tickets?utm_campaign=TIcketshop&utm_source=fijtenfictie.nl'
   weight = 40
   [[menus.main.params]]
@@ -44,9 +51,16 @@ enableRobotsTXT = true
     target = "_blank"
 
 [[menus.main]]
+    name = 'Steun ons'
+    pageRef = '/steun'
+    weight = 50
+    [[menus.main.params]]
+        class = 'menu-link'
+
+[[menus.main]]
   name = 'Over'
   pageRef = '/over'
-  weight = 50
+  weight = 60
   [[menus.main.params]]
     class = 'menu-link'
 

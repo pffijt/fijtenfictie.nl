@@ -1,0 +1,33 @@
+{{ define "main" }}
+  {{ $pages := where ((site.RegularPages.ByDate).ByParam "highlight") "Section" "ne" "header" }}
+  <div class="container">
+    <div class="row">
+        {{ range first 1 $pages }}
+          <div class="col-12">
+            <div class="article-card">
+              {{ .Render "home-first"}}
+            </div>
+          </div>
+        {{ end }}
+        {{ range first 1 (after 1 $pages) }}
+        <div class="col-12">
+          <div class="">
+            {{ .Render "home-second"}}
+          </div>
+        </div>
+        </div>
+        {{ end }}
+        <div class="col-12">
+          <div class="row">
+            {{ range first 3 (after 2 $pages) }}
+            <div class="col-12 col-md-4">
+              {{ .Render "home-third"}}
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        <footer>
+          <hr />
+        </footer>
+    </div>
+{{ end }}
