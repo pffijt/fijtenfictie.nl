@@ -1,7 +1,7 @@
 +++
 title = 'Leon Mooren'
 description = 'Leon Mooren'
-imgsrc = "image0.png"
+imgsrc = "image0.jpg"
 imgalt = "Leon Mooren"
 +++
 
