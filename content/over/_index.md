@@ -1,6 +1,8 @@
 +++
 title = 'Over'
 description = 'Cultuur en podiumkunst in Rotterdam'
+imgsrc = "image0.jpg"
+imgalt = "Hallo vriend."
 +++
 
 **Wie haalt het in zijn botte hoofd om anno nu in Rotterdam, *where culture goes to die*, een nieuw podium te beginnen? Dat klopt: Fijt & Fictie.**
