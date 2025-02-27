@@ -2,9 +2,9 @@
 title = 'Grote vraag naar kleine podia'
 slug = 'grote-vraag-naar-kleine-podia'
 description = "Grote vraag naar kleine podia."
-date = 2024-02-23T20:31:05+02:00
+date = 2025-02-27T20:30:05+02:00
 layout = 'artikel'
-draft = false
+draft = true
 highlight = 10
 imgsrc = "image0.jpeg"
 imgalt = "Ruïne van de Grote Schouwburg, verwoest in 1940."
