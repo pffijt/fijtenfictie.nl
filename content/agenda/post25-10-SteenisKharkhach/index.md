@@ -7,6 +7,7 @@ description = "Noortje van Steenis bezingt haar strijd met rolpatronen, Ayoub Kh
 date = 2024-02-23T20:30:00+02:00
 expiryDate = 2025-06-21T20:30:00+02:00
 draft = false
+highlight = 1
 imgsrc = "image0.png"
 imgalt = "Noortje van Steenis & Ayoub Kharkhach"
 imgclass = "article-image"

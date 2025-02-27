@@ -7,6 +7,7 @@ description = "Wij. Antoinette zingt en vertelt met humor, Devin Hillenius filee
 date = 2024-02-23T20:30:00+02:00
 expiryDate = 2025-05-03T20:30:00+02:00
 draft = false
+highlight = 1
 imgsrc = "image0.png"
 imgalt = "Wij. Antoinette & Devin Hillenius"
 imgclass = "article-image"
