@@ -1,7 +1,7 @@
 +++
 title = 'Steun Ons'
 description = 'Cultuur en podiumkunst in Rotterdam'
-imgsrc = "image0.jpeg"
+imgsrc = "image0.jpg"
 imgalt = "Steun ons!."
 +++
 
