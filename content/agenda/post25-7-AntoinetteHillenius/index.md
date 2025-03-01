@@ -13,6 +13,7 @@ imgalt = "Wij. Antoinette & Devin Hillenius"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hidden = false
 +++
 
 **Wij. Antoinette** is een enthousiaste, zingende verhalenverteller. Met een grapje lult en lacht ze alles aan elkaar. Ze is niet op haar mondje gevallen en heeft een hartje van goud. Ze schrijft liedjes over op je bek gaan, knappe vrouwen en het niet aankunnen van complimenten. 

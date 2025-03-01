@@ -6,8 +6,6 @@ title = 'Fijt & Fictie'
 theme = "fijtTheme"
 enableRobotsTXT = true
 
-[taxonomies]
-    auteur = "auteurs"
 
 [params]
     instagramUrl = 'https://www.instagram.com/fijtenfictie/'

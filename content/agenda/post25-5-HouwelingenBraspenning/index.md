@@ -13,6 +13,7 @@ imgalt = "Jan van Houwelingen & Boban Braspenning"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 **Jan van Houwelingen** (winnaar Albert Heijn Kleurwedstrijd 2003) bestijgt nu al een aantal jaar het podium met scherpe anekdotes, gênante woordgrappen en flauwe observaties. In zijn voorstelling _Op Sokken_ loopt Jan, anekdotisch en vol zelfspot, langs de sokkels van zijn idolen op zoek naar de held in zichzelf. Hij treedt op door heel het land, zolang de treinen rijden.

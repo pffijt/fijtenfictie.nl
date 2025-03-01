@@ -12,6 +12,7 @@ imgalt = "Thom Gerrits & Ramon Chatrer"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 Maak kennis met **Thom Gerrits**, een veelzijdige cabaretier en schrijver die de Nederlandse podia verovert met zijn unieke mix van humor, muziek en persoonlijke verhalen. Thom staat bekend om zijn scherpe observaties en geestige gedachtekronkels die hij in zijn shows verweeft met zelfgeschreven liedjes en rapteksten. In zijn voorstelling 'Dit zijn de Echte' neemt hij je mee op een reis vol energie, diepgang en onverwachte wendingen.

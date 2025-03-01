@@ -12,6 +12,7 @@ imgalt = "Maaike Dirkje & Ben Kütterer"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 Met gepaste trots presenteert Fijt & Fictie wederom twee kleinkunstenaars in het Klooster Oude Noorden. We stellen u even kort voor.

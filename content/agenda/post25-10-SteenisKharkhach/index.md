@@ -13,6 +13,7 @@ imgalt = "Noortje van Steenis & Ayoub Kharkhach"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 **Noortje van Steenis** is gaan samenwonen. Met een man-man. Ze gaat, zonder het zelf te willen, de strijd aan met verwachtingen en rolpatronen. Want ze wil niet zo’n vrouw-vrouw worden.  Dus ze controleert de bandenspanning, weigert de wasmachine aan te zetten en raakt op komische wijze in de knel. Dit alles in de vorm van mooie liedjes en grappige anekdotes, uit het leven gegrepen.

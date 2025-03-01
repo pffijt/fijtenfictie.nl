@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ $pages := where ((site.RegularPages.ByExpiryDate).ByParam "highlight") "Section" "ne" "header" }}
+  {{ $pages := where (where ((site.RegularPages.ByExpiryDate).ByParam "highlight") "Section" "ne" "header") "Params.hiddenPage" "ne" true }}
   <div class="container">
     <div class="row">
         {{ range first 1 $pages }}

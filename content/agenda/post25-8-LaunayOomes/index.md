@@ -13,6 +13,7 @@ imgalt = "Elvis de Launay & Fee Oomes"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 **Elvis de Launay** kan alles. En, in tegenstelling tot de meesten, op elk moment. In een theatrale, poëtische wervelwind neemt ze je mee door haar gedachtenwereld, en bezorgt jou, kijker, een ontregelende ervaring die je niet snel zal vergeten. Maak je borst maar nat, want dit is Elvis’ wereld. We’re all just living in it.

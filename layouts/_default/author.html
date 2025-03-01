@@ -6,10 +6,20 @@
         {{ if .Param "auteurs" }}
             <div class="row">
                 <div class="col p-0" style="max-width: 65px;">
-                    {{- with resources.Get "img/default_avatar.webp"}}
-                        {{ $image := (.Fit "50x50") | images.Filter (images.Colorize 52 6 100) }}
-                        <img src="{{ $image.RelPermalink }}" class="author-image" alt="Portretfoto">
-                    {{- end}}
+                    {{ range .Param "auteurs" }}
+                        {{$author := (. | urlize) }}
+                        {{ with $.Site.GetPage  "page" $author }}
+                            {{ with .Resources.GetMatch "*" }}
+                                {{ $width := print "" (div .Width 2) }}
+                                {{ $height := print "" (div .Height 1.75) }}
+                                {{ $dimension := print $width "x" $height " Center" }}
+                                {{ $image := ((.Crop $dimension).Fit "50x50") | images.Filter (images.Colorize 52 6 100) }}
+                                <a href="{{ "/auteurs/" | relLangURL }}{{ $author }}">
+                                    <img src="{{ $image.RelPermalink }}" class="author-image" alt="Portretfoto">
+                                </a>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
                 </div>
                 <div class="col-9 p-0">
                     {{ if not (eq (.Param "layout") "agenda")}}
