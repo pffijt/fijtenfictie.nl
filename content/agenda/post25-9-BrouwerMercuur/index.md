@@ -13,6 +13,7 @@ imgalt = "Jelle Brouwer & Tirza Mercuur"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 Na een studie Communicatiewetenschappen, gevolgd door een opleiding tot radio producer lag er voor **Jelle Brouwer** natuurlijk maar één carrièrepad te wachten: Keukenmonteur. En wat voor één! Dagelijks over de vloer kruipen bij de meest uiteenlopende huishoudens geeft hem meer inspiratie dan de Dalai Lama in een new-age winkel. Vandaar dat hij toch regelmatig een voorzichtige tred op het podium zet om zijn verhalen te vertellen. Jelle is comedian, presentator op evenementen, MC op foute feestjes maar bovenal, sfeermaker!

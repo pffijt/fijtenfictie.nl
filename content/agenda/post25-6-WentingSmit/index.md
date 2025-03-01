@@ -13,6 +13,7 @@ imgalt = "Tobias Wenting & Oscar Smit"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 **Tobias Wenting** speelt piano vanaf zijn zevende. Na zijn klassiek pianostudie, besloot hij zijn blikveld te verruimen door Compositie voor Film en Theater te studeren aan ArtEZ Arnhem. Op ArtEZ kwamen zijn liefde voor pianospelen, componeren, zingen en tekstschrijven samen binnen de Nederlandse kleinkunst. Tobias zijn theaterwerk omvat virtuoze muzikale en tekstuele verrassingen. Hij is voortdurend op zoek naar onconventionele manieren waarop muziek en tekst samen kunnen komen. Naast zijn werk als pianist en theatermaker is Tobias als arrangeur en componist betrokken bij verschillende theater- film- en gameprojecten in binnen en buitenland.

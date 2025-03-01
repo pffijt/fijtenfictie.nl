@@ -12,6 +12,7 @@ imgalt = "Albert Meijer & Hermes Ahmadi"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 **Albert Meijer** speelt 'Plakjes', zijn cabaretvoorstelling over omgaan met dood en verlies. Kun je nog grapjes maken over de absurde situaties waar je in terecht komt als je een uitvaart moet organiseren, als je een kist uitzoekt, of als je de as van een overleden vriend op moet halen? En hoe ziet queer rouw er eigenlijk uit?

@@ -12,6 +12,7 @@ imgalt = "Ambras, Er is leven in de brouwerij!"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 Het is weer tijd voor **Ambras**! Woensdag 3 juli barst het gesprek los in de Stadsbrouwerij de Pelgrim. Uw gastheer Wolf de Kreij verzamelt een illuster gezelschap denkers, doeners en jongeren om duiding te geven aan de waan van de dag. Ditmaal ter discussie: Schuld.

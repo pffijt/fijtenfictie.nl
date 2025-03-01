@@ -12,6 +12,7 @@ imgalt = "Tobias Tonch & Aren Scholte"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 Ontdek **Tobias Tonch**, een cabaretier die met vlijmscherpe humor de alledaagse werkelijkheid fileert. In zijn voorstelling neemt hij je mee op een verrassende reis vol ongefilterde inzichten en onverwachte twists. Tobias zet zijn unieke kijk op de wereld in om je te laten lachen èn nadenken.

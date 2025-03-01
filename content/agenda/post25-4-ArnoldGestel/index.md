@@ -13,6 +13,7 @@ imgalt = "Frédérique Arnold & Hidde van Gestel"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 **Frédérique Arnold** brengt met haar nieuwe kleinkunstsolo Vrouwen in Verzet een indrukwekkende ode aan de vrouwelijke verzetsstrijders van de Tweede Wereldoorlog. Geïnspireerd door het verhaal van haar eigen oud-tante Riet, die als koerierster en secretaresse voor de Binnenlandse Strijdkrachten werkte, zet Frédérique deze vaak vergeten heldinnen in de spotlight. Met een mix van historische diepgang en persoonlijke betrokkenheid neemt ze het publiek mee in een voorstelling die blijft nazinderen. Een unieke kans om stil te staan bij moed en kracht in tijden van strijd. Mis het niet!

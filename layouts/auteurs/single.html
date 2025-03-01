@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col">{{ .Render "image-styled"}}</div>
+    <div class="col">
+      <h1 class="article-header single-article-header">{{ .Title }}</h1>
+      <div class="article-paragraph single-article">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

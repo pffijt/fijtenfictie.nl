@@ -1,6 +1,10 @@
 +++
 title = 'Wolf de Kreij'
 description = 'Wolf de Kreij'
+imgsrc = "fotoWebsite_Lon.jpg"
+imgalt = "Profielfoto Auteur"
+imgclass = "article-image"
+hiddenPage = true
 +++
 
 Goed, hij is dan nog nooit buiten de ring geweest, maar hij is er toch zeker van dat Rotterdam een wereldstad is. Daarom snapt hij ook niet zo goed dat, wanneer hij op doordeweekse avonden over straat slentert, de deuren allemaal gesloten zijn en de enige lichten die van de lantaarns en de schepen zijn. Waar zijn die bruisende nachtkroegen heen? En hoe kan het stadhuis mooi weer spelen als er nergens een show te zien is?  

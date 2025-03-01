@@ -12,6 +12,7 @@ imgalt = "Iris Wiegers & Sophie Willemijntje"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 

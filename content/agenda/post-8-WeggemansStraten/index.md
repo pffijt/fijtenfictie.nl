@@ -12,6 +12,7 @@ imgalt = "Luuk Weggemans & Julia Straten"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 Na een turbulente tijd pakt iedereen de draad weer op. Zo ook **Luuk Weggemans**. Maar het leven van een 25-jarige, net afgestudeerde, vrijgezelle jongen in Amsterdam is allesbehalve rustig. Zeker als ‘het’ elk moment weer terug kan komen. Luuk trakteert in deze muzikale cabaretvoorstelling op een mooie mix van humor en ontroering.

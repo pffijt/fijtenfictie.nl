@@ -12,6 +12,7 @@ imgalt = "Jannes Laven & Tomesh Beumken"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 

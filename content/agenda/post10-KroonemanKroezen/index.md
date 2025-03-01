@@ -12,6 +12,7 @@ imgalt = "Anne-José Krooneman & Tim Kroezen"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 **Anne-José Krooneman** is een boerenmeid, maar ook een queer theatericoon. Dat is voor haarzelf heel vanzelfsprekend, maar voor de mensen om haar heen niet. Die vinden het maar ingewikkeld. Dat maakt het voor haar dan weer ingewikkeld, want dat betekent dat ze altijd op iemands tenen trapt. Terwijl dat dus juist niet is wat ze wil. Snap je?

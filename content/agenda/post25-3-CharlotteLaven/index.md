@@ -13,6 +13,7 @@ imgalt = "Marjolein van Vliet & Jannes Laven"
 imgclass = "article-image"
 tags = ['red','green','blue']
 auteurs = ['Pim Fijt']
+hiddenPage = false
 +++
 
 **Marjolein Charlotte van Vliet**, finaliste van het Amsterdams Studenten Cabaret Festival in 2023, is een kast van porselein. Ze duikt onder voor het regime van Amsterdamse en wereldse opinie die zich in een *more than you can eat*-buffet presenteert. In een wereld waarin we onze weg ellebogen, probeert zij juist te zoeken hoe we hier een arm doorheen kunnen steken om samen verder te gaan. Ze beschouwt en ontleedt wat er allemaal in ons huist en maakt hier rake, schurende en uiterst herkenbare muziek bij. Met een hoofd dat nooit stilstaat, kunnen we verwachten te hordelopen tot het einde. Einde.
