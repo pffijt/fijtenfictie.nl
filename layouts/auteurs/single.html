@@ -1,8 +1,8 @@
 {{ define "main" }}
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col">{{ .Render "image-styled"}}</div>
-    <div class="col">
+    <div class="col-12 col-md col-lg-6">{{ .Render "image-styled"}}</div>
+    <div class="col-12 col-md-7 col-lg-6">
       <h1 class="article-header single-article-header">{{ .Title }}</h1>
       <div class="article-paragraph single-article">
         {{ .Content }}
