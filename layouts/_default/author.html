@@ -13,7 +13,7 @@
                                 {{ $width := print "" (div .Width 2) }}
                                 {{ $height := print "" (div .Height 1.75) }}
                                 {{ $dimension := print $width "x" $height " Center" }}
-                                {{ $image := ((.Crop $dimension).Fit "50x50") | images.Filter (images.Colorize 52 6 100) }}
+                                {{ $image := (((.Crop $dimension).Fit "350x350") | images.Filter (images.Colorize 52 6 100)).Process "webp q95" }}
                                 <a href="{{ "/auteurs/" | relLangURL }}{{ $author }}">
                                     <img src="{{ $image.RelPermalink }}" class="author-image" alt="Portretfoto">
                                 </a>
