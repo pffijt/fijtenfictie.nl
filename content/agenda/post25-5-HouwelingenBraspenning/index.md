@@ -6,6 +6,7 @@ ticketURL = 'https://fijtenfictie.stager.co/web/tickets/111486123'
 description = "Jan van Houwelingen zoekt vol zelfspot naar de held in zichzelf, terwijl Boban Benjamin Braspenning met muzikaal cabaret de koortsachtige wereld van geld verdienen en superrijkdom induikt."
 date = 2024-02-23T20:35:00+02:00
 expiryDate = 2025-04-05T20:30:00+02:00
+highlight = 1
 draft = false
 imgsrc = "image0.png"
 imgalt = "Jan van Houwelingen & Boban Braspenning"

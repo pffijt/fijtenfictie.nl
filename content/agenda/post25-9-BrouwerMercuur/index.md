@@ -7,6 +7,7 @@ description = "Keukenmonteur Jelle Brouwer brengt sfeer met scherpe verhalen uit
 date = 2024-02-23T20:30:00+02:00
 expiryDate = 2025-06-07T20:30:00+02:00
 draft = false
+highlight = 1
 imgsrc = "image0.png"
 imgalt = "Jelle Brouwer & Tirza Mercuur"
 imgclass = "article-image"

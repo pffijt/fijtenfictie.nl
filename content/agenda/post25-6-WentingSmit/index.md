@@ -7,6 +7,7 @@ description = "Tobias Wenting combineert virtuoze muziek en poëtische teksten t
 date = 2024-02-23T20:40:00+02:00
 expiryDate = 2025-04-19T20:30:00+02:00
 draft = false
+highlight = 1
 imgsrc = "image0.png"
 imgalt = "Tobias Wenting & Oscar Smit"
 imgclass = "article-image"
