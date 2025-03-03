@@ -1,6 +1,6 @@
 +++
 title = 'Pim Fijt'
-imgsrc = "fotoWebsite_Lon.jpg"
+imgsrc = "fotoWebsite_Pim.jpg"
 imgalt = "Profielfoto Auteur"
 imgclass = "article-image"
 hiddenPage = true
