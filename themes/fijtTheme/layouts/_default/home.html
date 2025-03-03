@@ -1,33 +1,40 @@
 {{ define "main" }}
-  {{ $pages := where (where ((site.RegularPages.ByExpiryDate).ByParam "highlight") "Section" "ne" "header") "Params.hiddenPage" "ne" true }}
-  <div class="container">
-    <div class="row">
-        {{ range first 1 $pages }}
-          <div class="col-12">
-            <div class="article-card">
-              {{ .Render "home-first"}}
-            </div>
-          </div>
-        {{ end }}
-        {{ range first 1 (after 1 $pages) }}
-        <div class="col-12">
-          <div class="">
-            {{ .Render "home-second"}}
-          </div>
-        </div>
-        </div>
-        {{ end }}
-        <div class="col-12">
-          <div class="row">
-            {{ range first 3 (after 2 $pages) }}
-            <div class="col-12 col-md-4">
-              {{ .Render "home-third"}}
-            </div>
-            {{ end }}
-          </div>
-        </div>
-        <footer>
-          <hr />
-        </footer>
+{{ $pages := where (where ((site.RegularPages.ByExpiryDate).ByParam "highlight") "Section" "ne" "header") "Params.hiddenPage" "ne" true }}
+<div class="container">
+  <div class="row">
+    {{ range first 1 $pages }}
+    <div class="col-12">
+      <div class="article-card">
+        {{ .Render "home-first"}}
+      </div>
     </div>
+    {{ end }}
+    {{ range first 1 (after 1 $pages) }}
+    <div class="col-12">
+      <div class="">
+        {{ .Render "home-second"}}
+      </div>
+    </div>
+    {{ end }}
+    {{ range first 1 (after 2 $pages) }}
+    <div class="col-12">
+      <div class="">
+        {{ .Render "home-third"}}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  <div class="col-12">
+    <div class="row">
+      {{ range first 3 (after 3 $pages) }}
+      <div class="col-12 col-md-4">
+        {{ .Render "home-fourth"}}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  <footer>
+    <hr/>
+  </footer>
+</div>
 {{ end }}

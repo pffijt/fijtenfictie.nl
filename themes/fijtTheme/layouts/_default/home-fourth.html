@@ -1,8 +1,8 @@
-<article class="home-second">
-    <div class="row">
-        <div class="">
-            <h2 class="article-header home-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle | upper }}</a></h2>
-            <div class="article-paragraph m-0">
+<article class="home-fourth" >
+    <div class="row mb-3">
+        <div class="col-12 col-md-12">
+            <h2 class="article-header fourth-home-col-header home-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle | upper }}</a></h2>
+            <div class="article-paragraph fourth-home-paragraph">
                 {{ .Render "author-home" }}
                 <p>
                     {{ .Summary | markdownify }}
@@ -13,7 +13,4 @@
             </div>
         </div>
     </div>
-    <footer>
-        <hr />
-    </footer>
 </article>

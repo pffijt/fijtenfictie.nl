@@ -24,7 +24,7 @@
     font-size: 1.8em;
 }
 
-.third-home-col-header {
+.fourth-home-col-header {
     text-align: left;
     font-size: 2.5em;
 }
@@ -38,16 +38,16 @@
     font-size: 1em;
 }
 
-.third-home-col-paragraph {
+.fourth-home-col-paragraph {
     font-size: 1em;
 }
 
-.third-col-content {
+.fourth-col-content {
   display: none;
   width: 0px;
 }
   
-.third-col {
+.fourth-col {
   display: none;
 }
 
@@ -68,11 +68,11 @@
     display: none;
   }
 
-  .third-col-content {
+  .fourth-col-content {
     display: initial;
   }
 
-  .third-col {
+  .fourth-col {
     display: initial;
   }
 }
