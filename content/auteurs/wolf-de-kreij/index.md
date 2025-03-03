@@ -1,7 +1,7 @@
 +++
 title = 'Wolf de Kreij'
 description = 'Wolf de Kreij'
-imgsrc = "fotoWebsite_Lon.jpg"
+imgsrc = "fotoWebsite_Wof.png"
 imgalt = "Profielfoto Auteur"
 imgclass = "article-image"
 hiddenPage = true
