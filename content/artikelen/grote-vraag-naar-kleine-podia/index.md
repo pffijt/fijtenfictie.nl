@@ -2,7 +2,7 @@
 title = 'Grote vraag naar kleine podia'
 slug = 'grote-vraag-naar-kleine-podia'
 description = "Grote vraag naar kleine podia."
-date = 2025-02-27T20:30:05+02:00
+date = 2025-03-03T17:27:05+02:00
 layout = 'artikel'
 draft = false
 highlight = 10
