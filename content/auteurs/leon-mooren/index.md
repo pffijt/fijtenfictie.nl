@@ -1,7 +1,7 @@
 +++
 title = 'Leon Mooren'
 description = 'Leon Mooren'
-imgsrc = "fotoWebsite_Lon.jpg"
+imgsrc = "fotoWebsite_Lon.png"
 imgalt = "Profielfoto Auteur"
 imgclass = "article-image"
 hiddenPage = true
