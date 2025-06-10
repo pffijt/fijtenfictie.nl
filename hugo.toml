@@ -34,8 +34,8 @@ enableRobotsTXT = true
     class = 'menu-link'
 
 [[menus.main]]
-    name = 'Artikelen'
-    pageRef = '/artikelen'
+    name = 'Strapats'
+    pageRef = '/strapats'
     weight = 30
     [[menus.main.params]]
         class = 'menu-link'

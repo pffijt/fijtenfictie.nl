@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ range .Pages.ByExpiryDate }}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-7 col-lg-6">
+      <a href="{{ .RelPermalink }}" style="text-decoration: none;">
+        <h2 class="article-header single-article-header">{{ .Title }}</h2>
+      </a>
+    </div>
+  </div>
+</div>
+{{ end }}
+{{ end }}
