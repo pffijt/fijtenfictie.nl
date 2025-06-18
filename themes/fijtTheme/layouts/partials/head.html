@@ -52,6 +52,86 @@
 <meta name="msapplication-TileColor" content="#fcf9f7">
 <meta name="theme-color" content="#fcf9f7">
 
+{{ $ISO8601 := "2006-01-02T15:04:05-07:00" }}
+<script type="application/ld+json">
+     {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": {{ printf "%s%s" .Site.BaseURL "/#organization"}},
+                "name": "Stichting Fijt & Fictie",
+                "alternateName": "Fijt en Fictie",
+                "url": {{ .Site.BaseURL }},
+                "logo": {
+                    "@type": "ImageObject",
+                    "inLanguage": "nl-NL",
+                    "@id": {{ printf "%s%s" .Site.BaseURL "/#/schema/logo/image/"}},
+                    "url": {{ printf "%s%s" .Site.BaseURL .Site.Params.logoLight }},
+                    "contentUrl": {{ printf "%s%s" .Site.BaseURL .Site.Params.logoLight }},
+                    "width": 1865,
+                    "height": 996,
+                    "caption": "Fijt & Fictie"
+                },
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+31647281444",
+                    "email": "info@fijtenfictie.nl",
+                    "contactType": "Organisatie"
+                },
+                "sameAs": [
+                    {{ $.Site.Params.instagramUrl }},
+                    {{ $.Site.Params.facebookUrl }},
+                    {{ $.Site.Params.threadsUrl }},
+                    {{ $.Site.Params.twitterUrl }},
+                    {{ $.Site.Params.linkedinUrl }}
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": {{ printf "%s%s" .Site.BaseURL "/#website"}},
+                "publisher": { "@id": {{ printf "%s%s" .Site.BaseURL "/#organization"}} },
+                "name": "Fijt & Fictie",
+                "url": {{ .Site.BaseURL }},
+                "inLanguage": "nl-NL",
+                "description": "Fijt & Fictie is dé cabaretpodium in Rotterdam waar de nieuwe generatie cabaretiers en kleinkunstenaars het podium verovert.",
+                "audience": {
+                    "@type": "Audience",
+                    "geographicArea": {
+                        "@type": "AdministrativeArea",
+                        "name": "Rotterdam",
+                        "addressCountry": "NL"
+                    }
+                },
+                "keywords": "Cabaret, Kleinkunst, Rotterdam"
+            }{{ if .Params.Ticketurl }},{
+            {{ $image := (((.Resources.GetMatch (.Param "imgsrc" )).Fit "800x373" ).Process "webp q99") }}
+                "@type": "Event",
+                "name" : "{{ .Params.Title | safeJS }}",
+                "startDate": {{ .Params.expiryDate.Format $ISO8601 }},
+                "organizer": { "@id": {{ printf "%s%s" .Site.BaseURL "/#organization"}} },
+                "description": "{{ .Params.Description | safeJS }}",
+                "eventStatus": "https://schema.org/EventScheduled",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "image": {{ $image.Permalink }},
+                "location": {
+                    "@type": "Place",
+                    "name": "Het Klooster Oude Noorden",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Hammerstraat 55",
+                        "addressLocality": "Rotterdam",
+                        "addressRegion": "ZH",
+                        "postalCode": "3036MC",
+                        "addressCountry": "NL"
+                    }
+                }
+            }
+            {{ end }}
+        ]
+    }
+</script>
+
 {{ partialCached "head/js.html" . }}
 
 <script>
