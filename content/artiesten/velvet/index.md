@@ -4,6 +4,7 @@ description = 'Lotte Velvet'
 imgsrc = "image0.png"
 imgalt = "Lotte Velvet"
 imgclass = "article-image"
+draft = true
 hiddenPage = true
 +++
 

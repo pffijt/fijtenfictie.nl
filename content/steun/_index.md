@@ -1,6 +1,6 @@
 +++
 title = 'Steun Ons'
-description = 'Cultuur en podiumkunst in Rotterdam'
+description = 'Kleine bedragen kunnen veel voor ons betekenen. Als Denkbeeldige Vriend krijg je toegang tot exclusieve evenementen!'
 imgsrc = "image0.jpg"
 imgalt = "Steun ons!."
 +++

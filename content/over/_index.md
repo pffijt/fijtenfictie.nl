@@ -1,6 +1,6 @@
 +++
 title = 'Over'
-description = 'Cultuur en podiumkunst in Rotterdam'
+description = 'Fijt & Fictie koestert slechts een bescheiden droom: Rotterdam hé-le-maal veranderen. We willen het publiek vermaken, verbazen, en zo nu en dan inspireren.'
 imgsrc = "image0.jpg"
 imgalt = "Hallo vriend."
 +++

@@ -2,6 +2,6 @@
 title = 'Artiesten'
 description = 'Cultuur en podiumkunst in Rotterdam'
 slug = 'artiesten'
-draft = false
+draft = true
 hiddenPage = true
 +++
