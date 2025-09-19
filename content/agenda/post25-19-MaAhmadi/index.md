@@ -8,7 +8,6 @@ date = 2025-06-10T20:30:00+02:00
 expiryDate = 2025-12-13T20:30:00+02:00
 draft = false
 highlight = 2
-imgsrc = "image0.png"
 imgalt = "Willemijn de Boer & Fimme Bakker"
 imgclass = "article-image"
 tags = ['red','green','blue']

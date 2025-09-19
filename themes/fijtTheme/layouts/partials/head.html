@@ -10,16 +10,6 @@
 <script src="https://kit.fontawesome.com/0dad904ca9.js" async crossorigin="anonymous"></script>
 
 {{ $pageTitle := site.Title }}
-{{ $metadataImage :=  print .Site.BaseURL "/logo_social.jpg" }}
-
-{{ if not .IsHome  }}
-    {{ $pageTitle = print .Title " | " site.Title }}
-    {{ $src := (.Param "imgsrc")}}
-    {{ if $src }}
-        {{ $image := ((((.Resources.GetMatch (.Param "imgsrc" )).Fit "800x373" ) | images.Filter (images.Colorize 24 2 99)).Process "jpg q85") }}
-        {{ $metadataImage =  print .Site.BaseURL $image.RelPermalink }}
-    {{ end }}
-{{ end }}
 
 <title itemprop="name">{{ $pageTitle }}</title>
 <link rel="icon" type="image/x-icon" href="{{ .Site.BaseURL }}/favicon.ico">
@@ -32,7 +22,6 @@
 <meta property="og:title" content="{{ $pageTitle }}" />
 <meta property="og:url" content="{{ .Permalink | absURL }}" />
 <meta property="og:site_name" content="{{ site.Title }}" />
-<meta property="og:image" content="{{ $metadataImage }}" />
 <meta property="og:image:alt" content="{{ site.Title }}" />
 <meta property="og:description" content="{{ .Description }}" />
 <meta property="og:locale" content="{{ replace .Site.Language.LanguageCode "-" "_" }}" />
@@ -42,7 +31,6 @@
 <meta property="twitter:url" content="{{ .Permalink | absURL }}" />
 <meta name="twitter:title" content="{{ $pageTitle }}" />
 <meta name="twitter:description" content="{{ .Description }}" />
-<meta name="twitter:image" content="{{ $metadataImage }}" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}/favicon-32x32.png">
@@ -105,7 +93,6 @@
                 },
                 "keywords": "Cabaret, Kleinkunst, Rotterdam"
             }{{ if .Params.Ticketurl }},{
-            {{ $image := (((.Resources.GetMatch (.Param "imgsrc" )).Fit "800x373" ).Process "webp q99") }}
                 "@type": "Event",
                 "name" : "{{ .Params.Title | safeJS }}",
                 "startDate": {{ .Params.expiryDate.Format $ISO8601 }},
@@ -113,7 +100,6 @@
                 "description": "{{ .Params.Description | safeJS }}",
                 "eventStatus": "https://schema.org/EventScheduled",
                 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-                "image": {{ $image.Permalink }},
                 "location": {
                     "@type": "Place",
                     "name": "Het Klooster Oude Noorden",
