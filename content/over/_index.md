@@ -20,8 +20,8 @@ We bereiken dit doel door onszelf staande te houden als een baken van cultuur en
 **Fijt & Fictie in het Klooster**  
 Om daad bij die woorden te voegen programmeren wij momenteel het jongste volbloed cabaretpodium van Rotterdam. Om de week kunt u bij *Fijt & Fictie in het Klooster* genieten van het beste dat Nederland te bieden heeft aan kleinkunst. Van fijnbesnaard tot knettergek, de onvervalste Nederlandse levenskunst vind je hier. Twee artiesten spelen in het charmante Klooster elk 45 minuten van hun show, waarbij je kunt rekenen op meeslepende liedjes, rake grappen en bovenal een goed verhaal.
 
-**Ambras**  
-Wanneer de sterren er goed voor staan maken we ook Ambras: de enige avond waar het beste wèl onderin de kruik zit. In een bedrijvig café verzamelen wij illustere sprekers uit de stad die we stevig aan de tand voelen over hun werk. Maar onze opzet is pas geslaagd als ook het publiek, in een roes van nijver of alcohol, de sprekers bekokstooft met vragen die ze nergens anders krijgen. 
+**Outsiders Inn**  
+Sinds het najaar van 2025 presenteren we ook *Outsiders Inn*, dat nauw aansluit op een Nederlandstalige programmering. Elke avond twee artiesten, ieder 45 minuten. Een gevarieerd aanbod van comedians, muzikanten en verhalenvertellers, om het cabaret zoals wij dat hier kennen ook aan een internationaal publiek te presenteren.
 
 ---
 
