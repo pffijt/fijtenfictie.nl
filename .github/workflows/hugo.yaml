@@ -69,7 +69,7 @@ jobs:
               hugo \
                 --gc \
                 --minify \
-                --baseURL "https://pffijt.github.io/fijtenfictie.nl" 
+                --baseURL "https://fijtenfictie.nl" 
           fi
       - name: Upload firebase artifact
         uses: actions/upload-artifact@v4
