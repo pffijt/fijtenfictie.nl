@@ -91,13 +91,13 @@
                         "addressCountry": "NL"
                     }
                 },
-                "keywords": "Cabaret, Kleinkunst, Rotterdam"
+                "keywords": "Cabaret Rotterdam, Comedy Rotterdam Noord, Kleinkunst, Het Klooster Oude Noorden, Fijt en Fictie"
             }{{ if .Params.Ticketurl }},{
-                "@type": "Event",
+                "@type": "ComedyEvent",
                 "name" : "{{ .Params.Title | safeJS }}",
                 "startDate": {{ .Params.expiryDate.Format $ISO8601 }},
                 "organizer": { "@id": {{ printf "%s%s" .Site.BaseURL "/#organization"}} },
-                "description": "{{ .Params.Description | safeJS }}",
+                "description": "{{ .Params.Description | safeJS }}. Een intieme cabaretavond van Fijt & Fictie in Rotterdam Noord. Geniet van de nieuwe generatie cabaretiers en kleinkunstenaars in de kapel van Het Klooster Oude Noorden. De perfecte plek voor cabaret en stand-up comedy en theater in Rotterdam.",
                 "eventStatus": "https://schema.org/EventScheduled",
                 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
                 "location": {
@@ -106,12 +106,19 @@
                     "address": {
                         "@type": "PostalAddress",
                         "streetAddress": "Hammerstraat 55",
-                        "addressLocality": "Rotterdam",
+                        "addressLocality": "Rotterdam Noord",
                         "addressRegion": "ZH",
                         "postalCode": "3036MC",
                         "addressCountry": "NL"
                     }
-                }
+                },
+                "performer": [
+                  {
+                    "@type": "Person",
+                    "name": "{{ .Params.Title | safeJS }}"
+                  }
+                ],
+                "keywords": "Cabaret Rotterdam, Comedy Rotterdam Noord, Kleinkunst, Het Klooster Oude Noorden, Fijt en Fictie"
             }
             {{ end }}
         ]
