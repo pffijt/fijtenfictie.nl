@@ -3,7 +3,7 @@
     <div class="col" style="position: relative;">
         <div class="black-image-container">
             <div class="black-image">
-                {{ $image := ((((.Resources.GetMatch (.Param "imgsrc" )).Fit "800x373" ) | images.Filter (images.Colorize 24 2 99)).Process "webp q100") }}
+                {{ $image := ((((.Resources.GetMatch (.Param "imgsrc" )).Fit "1600x746" ) | images.Filter (images.Colorize 24 2 99)).Process "webp q100") }}
                 <img src='{{ $image.RelPermalink }}' width="800" height="373" title='{{ .Param "imgalt" }}' alt='{{ .Param "imgalt" }}' class='{{ .Param "imgclass" | default "" }}' />
             </div>
         </div>
