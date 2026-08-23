@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <div class="container">
+    <div class="row justify-content-center">
+      <h1 class="article-header single-article-header">{{ .Title }}</h1>
+      <div class="article-paragraph single-article">
+        {{ .Render "image-styled"}}
+        {{ .Render "author" }}
+        {{ .Content }}
+        {{ if .Page.Date }}
+          {{ $ticketDateMachine := .Page.Date | time.Format "2006-01-02T15:04:05-07:00" }}
+          {{ $ticketDateHuman := .Page.Date | time.Format "Monday 2 January 2006 15:04" }}
+          <p class="article-datetime">
+            <strong>
+              Wanneer?
+            </strong>
+          </p>
+          <p class="article-datetime">
+            <time datetime="{{ $ticketDateMachine }}">{{ $ticketDateHuman }}</time>
+          </p>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

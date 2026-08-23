@@ -4,8 +4,7 @@ slug = 'ruthenmarlies'
 layout = 'agenda'
 ticketURL = 'https://fijtenfictie.stager.co/web/tickets/111388386?utm_campaign=Ruth+Elings+%26+Marlies+Bloemen&utm_source=fijtenfictie.nl'
 description = "_Volg mij_ is Ruth Elings' voorstelling over verandering, waar ze, net als velen, mee worstelt. In _Goed genoeg_ onderzoekt Marlies Bloemen wat er gebeurt als je niet in de gebruikelijke hokjes past, op zoek naar eerlijkheid en authenticiteit in weerwil van maatschappelijke verwachtingen."
-date = 2024-02-23T20:30:00+02:00
-expiryDate = 2024-06-29T20:30:00+02:00
+date = 2024-06-29T20:30:00+02:00
 draft = false
 imgsrc = "photo.png"
 imgalt = "Ruth Elings & Marlies Bloemen"

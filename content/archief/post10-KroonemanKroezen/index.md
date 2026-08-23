@@ -4,8 +4,7 @@ slug = 'krooneman-kroezen'
 layout = 'agenda'
 ticketURL = 'https://fijtenfictie.stager.co/web/tickets/111447278?utm_campaign=KroonemanKroezen&utm_source=websiteAgenda'
 description = "Anne-José Krooneman, boerenmeid en queer theatericoon, en Tim Kroezen, comedian en voormalig consultant, brengen hun unieke verhalen vol zelfacceptatie, ambitie en humor naar het podium."
-date = 2024-02-23T20:30:00+02:00
-expiryDate = 2024-11-16T20:30:00+02:00
+date = 2024-11-16T20:30:00+02:00
 draft = false
 imgsrc = "image0.png"
 imgalt = "Anne-José Krooneman & Tim Kroezen"

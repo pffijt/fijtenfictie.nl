@@ -62,9 +62,9 @@ enableRobotsTXT = true
   [[menus.main.params]]
     class = 'menu-link'
 
-#[[menus.main]]
-#  name = 'Archief'
-#  pageRef = '/archief'
-#  weight = 60
-#  [[menus.main.params]]
-#    class = 'menu-link'
+[[menus.main]]
+  name = 'Archief'
+  pageRef = '/archief'
+  weight = 70
+  [[menus.main.params]]
+    class = 'menu-link'

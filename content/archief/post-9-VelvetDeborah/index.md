@@ -4,8 +4,7 @@ slug = 'velvet-deborah'
 layout = 'agenda'
 ticketURL = 'https://fijtenfictie.stager.co/web/tickets/111445611?utm_campaign=VelvetDeborah&utm_source=websiteAgenda'
 description = "Ervaar de scherpe observaties van Deborah en het apocalyptische cabaret van Lotte Velvet: een unieke mix van humor, muziek en confronterende actualiteit."
-date = 2024-02-23T20:30:00+02:00
-expiryDate = 2024-10-26T20:30:00+02:00
+date = 2024-10-26T20:30:00+02:00
 draft = false
 imgsrc = "image0.png"
 imgalt = "Lotte Velvet & Deborah"

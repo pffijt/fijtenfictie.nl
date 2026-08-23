@@ -1,5 +1,7 @@
 {{ define "main" }}
-{{ $pages := where (where ((site.RegularPages.ByExpiryDate).ByParam "highlight") "Section" "ne" "header") "Params.hiddenPage" "ne" true }}
+{{ $pages := site.RegularPages.ByExpiryDate.ByParam "highlight" }}
+{{ $pages = where $pages "Section" "in" (slice "agenda" "strapats")}}
+{{ $pages = where $pages "Params.hiddenPage" "ne" true }}
 <div class="container">
   <div class="row">
     {{ range first 1 $pages }}

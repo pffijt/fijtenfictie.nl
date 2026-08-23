@@ -4,8 +4,7 @@ slug = 'kroes-tooren'
 layout = 'agenda'
 ticketURL = 'https://fijtenfictie.stager.co/web/tickets/111445089?utm_campaign=KroesTooren&utm_source=websiteAgenda'
 description = "Laat je meevoeren door intieme verhalen over thuiskomen en de vraag naar je eigen bestaan in deze unieke theaterervaring vol warmte, humor en verrassende inzichten."
-date = 2024-02-23T20:30:00+02:00
-expiryDate = 2024-09-28T20:30:00+02:00
+date = 2024-09-28T20:30:00+02:00
 draft = false
 imgsrc = "image0.png"
 imgalt = "Jildou Kroes & Britt van Tooren"

@@ -4,8 +4,7 @@ slug = 'koriazova-sougk'
 layout = 'agenda'
 ticketURL = 'https://fijtenfictie.stager.co/shop/default/events/111569813?utm_campaign=KoriazovaSougk&utm_source=website'
 description = "Fijt & Fictie!"
-date = 2025-09-10T17:30:00+02:00
-expiryDate = 2025-10-04T20:30:00+02:00
+date = 2025-10-04T20:30:00+02:00
 draft = false
 highlight = 2
 imgsrc = "image0.jpg"

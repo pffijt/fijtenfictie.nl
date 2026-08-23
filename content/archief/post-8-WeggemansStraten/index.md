@@ -4,8 +4,7 @@ slug = 'weggemans-straten'
 layout = 'agenda'
 ticketURL = 'https://fijtenfictie.stager.co/web/tickets/111445610?utm_campaign=WeggemansStraten&utm_source=websiteAgenda'
 description = "Ontroerende verhalen en humorvolle twists: ontdek de verrassingen van het leven met Luuk en Julia."
-date = 2024-02-23T20:30:00+02:00
-expiryDate = 2024-10-12T20:30:00+02:00
+date = 2024-10-12T20:30:00+02:00
 draft = false
 imgsrc = "image0.png"
 imgalt = "Luuk Weggemans & Julia Straten"
