@@ -5,6 +5,7 @@ defaultContentLang = "nl"
 title = 'Fijt & Fictie'
 theme = "fijtTheme"
 enableRobotsTXT = true
+summaryLength = 5
 
 
 [params]
