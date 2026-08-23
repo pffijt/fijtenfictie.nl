@@ -5,7 +5,7 @@
             <div class="article-paragraph m-0">
                 {{ .Render "author-home" }}
                 <p>
-                    {{ .Summary | markdownify }}
+                    {{ .Summary }}
                 </p>
                 {{ if .Truncated }}
                 <a class="article-link readmore" href="{{ .RelPermalink }}">{{ i18n "readmore" }}<span class="article-link-dots">...</span></a>

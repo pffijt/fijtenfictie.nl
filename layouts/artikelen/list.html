@@ -17,7 +17,7 @@
                 </span>
             </div>
             <p class="article-paragraph article-link-big" style="align-items: center; height: 100%; font-style: italic;">
-                {{ .Summary | markdownify }}
+                {{ .Summary }}
                 <br/><br/>
                 {{ if .Truncated }}
                 <a class="article-link readmore" href="{{ .RelPermalink }}">{{ i18n "readmore" }}<span class="article-link-dots">...</span></a>
