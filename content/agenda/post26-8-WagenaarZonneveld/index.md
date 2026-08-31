@@ -3,7 +3,7 @@ title = 'Tommy Zonneveld & Tobias Wenting'
 slug = 'zonneveld-wenting'
 layout = 'agenda'
 ticketURL = 'https://fijtenfictie.stager.co/shop/default/events/111687684?utm_campaign=ZonneveldWagenaar&utm_source=website'
-description = "Veelzijdige comedy en meeslepend virtuoze kleinkunst: deze avond met Tommy Zonneveld en Tobias Wenting heeft het allemaal!"
+description = "Veelzijdige humor en meeslepend virtuoze kleinkunst: deze avond met Tommy Zonneveld en Tobias Wenting heeft het allemaal!"
 date = 2026-08-12T00:30:00+02:00
 expiryDate = 2026-09-12T20:30:00+02:00
 draft = false
