@@ -4,7 +4,6 @@
       <h1 class="article-header single-article-header">{{ .Title }}</h1>
       <div class="article-paragraph single-article">
         {{ .Render "image-styled"}}
-        {{ .Render "author" }}
         {{ .Content }}
         {{ if .Page.Date }}
           {{ $ticketDateMachine := .Page.Date | time.Format "2006-01-02T15:04:05-07:00" }}
