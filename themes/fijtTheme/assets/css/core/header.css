@@ -36,9 +36,11 @@
 }
 
 .header-logo {
+    position: relative;
+    display: inline-block;
     width: 100%;
     max-width: 200px;
-    height: auto;
+    height: 104px;
 }
 
 @media (min-width: 768px) {
