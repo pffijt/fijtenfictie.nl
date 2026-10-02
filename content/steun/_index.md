@@ -13,7 +13,7 @@ items:
     body: "Met een jaarlijkse bijdrage help je onafhankelijke cultuur ruimte te geven."
     donate: true
   - number: "03"
-    title: "Denk mee."
+    title: "Doe mee."
     body: "Vrijwilligers en culturele partners dragen bij aan het podium, de organisatie en het publiek. Neem contact op via info@fijtenfictie.nl als je wilt meedenken."
 ---
 
