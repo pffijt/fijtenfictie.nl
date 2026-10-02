@@ -1,0 +1,15 @@
+{{- $p := . -}}
+<div class="agenda-row">
+  <div class="date">{{ $p.Date.Format "02" }}<span>{{ partial "components/month-short.html" $p.Date }}</span></div>
+  <div>
+    <span class="eyebrow">{{ $p.Params.type_label }}</span>
+    <h2><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
+    <p>{{ $p.Params.artist }}</p>
+    <p>{{ $p.Params.time_start }}{{ with $p.Params.time_end }}–{{ . }}{{ end }} uur · {{ $p.Params.venue }} · {{ $p.Params.price | default "prijs via Stager" }}</p>
+  </div>
+  {{- if $p.Params.sold_out }}
+  <span class="button" aria-disabled="true">Uitverkocht</span>
+  {{- else }}
+  <a class="button" href="{{ $p.RelPermalink }}">Info &amp; tickets</a>
+  {{- end }}
+</div>

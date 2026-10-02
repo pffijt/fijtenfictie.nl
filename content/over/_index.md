@@ -1,46 +1,19 @@
-+++
-title = 'Over'
-description = 'Fijt & Fictie koestert slechts een bescheiden droom: Rotterdam hé-le-maal veranderen. We willen het publiek vermaken, verbazen, en zo nu en dan inspireren.'
-imgsrc = "image0.jpg"
-imgalt = "Hallo vriend."
-+++
+---
+title: "Over ons"
+eyebrow: "02 / OVER FIJT & FICTIE"
+page_title: "Ruimte voor<br>het ongerijmde."
+description: "Fijt & Fictie brengt kleinkunst, comedy, filosofie en literatuur bij elkaar in Rotterdam."
+intro_eyebrow: "ROTTERDAM / SINDS 2024"
+strip_heading: "Het begint in<br>de kleine zalen."
+strip_body: |
+  Fijt & Fictie wil een grote passie voor de podiumkunsten, met name voor kleinkunst en cabaret, delen met zoveel mogelijk Rotterdammers. Wij willen een cabaretpodium zijn dat thuis is in Rotterdam, en waar Rotterdam thuis is. Dat betekent voor ons het scheppen van een intieme omgeving, waar persoonlijke verhalen worden verteld die een breed publiek weten te raken, verbazen en inspireren. Door dit in de vorm van vertelkunst, humor en muziek te gieten, proberen we het culturele aanbod in de stad te verrijken op een maatschappelijk betrokken manier.
 
-**Wie haalt het in zijn botte hoofd om anno nu in Rotterdam, *where culture goes to die*, een nieuw podium te beginnen? Dat klopt: Fijt & Fictie.**
+  Cabaret heeft in de theaterwereld een unieke status. In een haastige vergelijking met grotere toneelproducties lijken cabaretvoorstellingen al snel afgekleed en simpel, terwijl het bij de stand-uppers nog weleens de reputatie heeft te gewichtig te zijn. Wij zijn ervan overtuigd dat de persoonlijke setting, de autonome plaats van de cabaretier en de vaak reflectieve verhalen, cabaret een belangrijk genre maken voor een compleet theateraanbod. Het is geheel niet toevallig dat de hoogtijdagen van het cabaret in de Parijse kelders gepaard gingen met ontwikkelingen in allerlei andere kunstvormen en een razendsnel ontwikkelend, provocatief gedachtegoed. Het genre kan bij uitstek aanzetten tot anders denken over de wereld om je heen. Op deze manier kan cabaret ook een belangrijke rol spelen in het overbruggen van kloven in de samenleving. Met gelaagde humor en persoonlijke verhalen kunnen thema’s en perspectieven aangestipt worden die anders moeilijk te bereiken zijn. De artiesten die bij ons optreden zijn bijzonder goed in het benaderen van deze spanning. Ze kunnen een diepte bereiken zonder te complex te worden en een gevoeligheid benaderen zonder aan humor in te doen.
+location_heading: "Locatie"
+location_body: |
+  Onze cabaret- en kleinkunstavonden vinden plaats in het Klooster Oude Noorden. De entree bevindt zich op Hammerstraat 55 in Rotterdam.
 
+  Voor de deur en de straten eromheen zijn een beperkt aantal parkeerplekken, en voor een goedkopere optie bevindt parkeergarage Benthuizerstraat (Bloklandstraat 154) zich op 5 minuten loopafstand. Met het OV zijn wij ook goed bereikbaar. Zo stoppen tram 4 en tram 6 aan de halte Soetendaalseweg op 4 minuten loopafstand.
 ---
 
-**Missie**  
-Fijt & Fictie koestert slechts een bescheiden droom: Rotterdam hé-le-maal veranderen. Nou goed, niet hé-le-maal, maar dan toch een beetje mooier maken. We willen het publiek vermaken, verbazen, en zo nu en dan inspireren. Hoewel onze stad bekend staat als onverbeterlijke betonnen bak, zien wij in de hoeken en kieren talloze kansen ontkiemen voor indrukwekkende kunsten, die lang niet altijd een plek krijgen in de zon. Ons streven is dit bruisende talent een podium te bieden, en zodoende de stad een plek te maken waar je, als je niet oppast, over de cultuurmakers struikelt. We sleuren gangmakers en publiek aan hun haren bij elkaar en hopen vurig dat er iets nieuws ontstaat.  
-
-**Visie**  
-We bereiken dit doel door onszelf staande te houden als een baken van cultuur en podiumkunsten in een stad die zichzelf net serieus genoeg neemt om werelds te zijn. We programmeren eigenzinnige en kleinschalige avonden waar dat kan en ook waar dat níet kan, om het gevoel te doen ontstaan, dat je in Rotterdam nog wat kan ontdekken als je van de gebaande paden durft te wijken. Fijt & Fictie gelooft in de kracht van cultuur als spiegel van de samenleving, en als broedplek voor verrassende perspectieven, en hoopt met haar projecten zo bij te dragen aan een buitengewone stad.  
-
----
-
-**Fijt & Fictie in het Klooster**  
-Om daad bij die woorden te voegen programmeren wij momenteel het jongste volbloed cabaretpodium van Rotterdam. Om de week kunt u bij *Fijt & Fictie in het Klooster* genieten van het beste dat Nederland te bieden heeft aan kleinkunst. Van fijnbesnaard tot knettergek, de onvervalste Nederlandse levenskunst vind je hier. Twee artiesten spelen in het charmante Klooster elk 45 minuten van hun show, waarbij je kunt rekenen op meeslepende liedjes, rake grappen en bovenal een goed verhaal.
-
-**Outsiders Inn**  
-Sinds het najaar van 2025 presenteren we ook *Outsiders Inn*, dat nauw aansluit op een Nederlandstalige programmering. Elke avond twee artiesten, ieder 45 minuten. Een gevarieerd aanbod van comedians, muzikanten en verhalenvertellers, om het cabaret zoals wij dat hier kennen ook aan een internationaal publiek te presenteren.
-
----
-
-**Word Denkbeeldige Vriend van Fijt & Fictie!**  
-Kleine bedragen kunnen veel voor ons betekenen. Daarom kun je al Denkbeeldige Vriend worden voor slechts €35,- per jaar. Als Denkbeeldige Vriend krijg je toegang tot exclusieve evenementen en word je als eerste op de hoogte gehouden van het laatste Fijt & Fictie-nieuws, maar bovenal kun je met een gerust hart en een goed geweten naar bed - omdat je Rotterdam een dienst hebt geleverd. Goed! **[Doneer hier](https://fijtenfictie.stager.co/shop/doneren)**.
-
-**Drie goede redenen om Fijt & Fictie te steunen:**
-
-(1) Je bent een goed mens met een hart voor cultuur.  
-(2) Je bent géén goed mens, hebt géén hart voor cultuur, maar straalt dat wèl graag uit.  
-(3) Je bent altijd op zoek naar nieuwe manieren om minder belasting te betalen.  
-
-**Fijt & Fictie is een culturele ANBI (Algemeen Nut Beogende Instelling).** Dat houdt *gunstige belastingregels* in voor jou als weldoener. Giften aan Fijt & Fictie kunnen namelijk tot een fiscale aftrekpost leiden die groter is dan het geschonken bedrag. Wij zeggen: doen! Wil je doneren, of gewoon meer informatie hierover? Stuur ons een e-mail naar info@fijtenfictie.nl of **[doneer hier](https://fijtenfictie.stager.co/shop/doneren)**.  
-
-Heb je vragen, ideeën, klachten of complimenten? Stuur een e-mail naar info@fijtenfictie.nl of bel naar +31 6 47 28 14 44 (op normale tijden, op normale dagen).
-
-In overeenstemming met geldende wettelijke vereisten en statutaire bepalingen, vindt u [hier](/organisatie) enkele formele gegevens met betrekking tot de stichting.
-
-
-
-
-
+De Rotterdamse theaterwereld ligt er allang niet meer zo slecht bij als ooit het geval was, maar één belangrijke schakel in het theatrale ecosysteem ontbrak nog: een intiem cabaret- en kleinkunstpodium waar de meest veelbelovende artiesten van dit moment een plek krijgen om hun kunsten te vertonen. Fijt & Fictie is in 2024 opgericht om in deze leemte te voorzien, en programmeert nu om de week een avond in het Klooster Oude Noorden vol grootse verhalen, scherpe humor, en ontroerende muziek. In de charmante kapelzaal zorgt de combinatie van de benaderbare, informele sfeer en de hoge kwaliteit van de optredens iedere keer weer voor een unieke beleving.

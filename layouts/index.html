@@ -1,0 +1,48 @@
+{{ define "main" }}
+{{ $home := . }}
+<div class="edition">{{ with .Params.edition_left }}<span>{{ . }}</span>{{ end }}{{ with .Params.edition_right }}<span class="edition-right">{{ . }}</span>{{ end }}</div>
+
+{{ partial "components/hero.html" . }}
+
+<section class="intro">
+  <span class="eyebrow">{{ .Params.intro_eyebrow }}</span>
+  {{ .Content }}
+</section>
+
+{{ $events := where site.RegularPages "Section" "agenda" }}
+{{ $upcoming := sort (where $events ".Date" "ge" now) "Date" }}
+<section class="section">
+  {{ partial "components/section-head.html" (dict "title" "Binnenkort op de planken" "link" "/agenda/" "linkText" "De hele agenda") }}
+  <div class="event-grid">
+    {{ range first 3 $upcoming }}
+    <a class="event" href="{{ .RelPermalink }}">
+      {{ partial "components/poster-card.html" . }}
+      <div class="event-info">
+        <span class="eyebrow">{{ .Params.type_label }}</span>
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Params.artist }}</p>
+        <p>{{ .Params.time_start }} uur · {{ .Params.venue }}</p>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+
+{{ $essays := sort (where site.RegularPages "Section" "artikelen") "Date" "desc" }}
+{{ with (index $essays 0) }}
+<section class="section magazine">
+  {{ partial "components/section-head.html" (dict "title" "Artikelen" "link" "/artikelen/" "linkText" "Lees de artikelen") }}
+  {{ partial "components/mag-spread.html" . }}
+</section>
+{{ end }}
+
+{{ partial "components/newsletter-signup.html" (dict "variant" "banner" "eyebrow" "BLIJF OP DE HOOGTE" "heading" "Mis geen voorstelling meer." "body" "Elke maand het nieuwe programma, nieuwe makers en een paar woorden van ons in je inbox." "placeholder" "Jouw e-mailadres" "buttonLabel" "Aanmelden") }}
+
+{{ with site.GetPage "/over" }}
+{{ partial "components/about-strip.html" (dict "heading" .Params.strip_heading "body" .Params.strip_body "ctaURL" "/over/" "ctaLabel" "Meer over Fijt & Fictie") }}
+{{ end }}
+
+{{ partial "components/support-cta.html" (dict "eyebrow" "CULTUUR MAAK JE SAMEN" "heading" "Houd het speelveld open." "body" "Help onafhankelijke makers en nieuwe ideeën aan een podium." "ctaURL" "/steun/" "ctaLabel" "Steun Fijt & Fictie") }}
+
+{{ partial "jsonld/organization.html" . }}
+{{ end }}

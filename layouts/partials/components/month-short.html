@@ -1,0 +1,2 @@
+{{- $months := slice "JAN" "FEB" "MRT" "APR" "MEI" "JUN" "JUL" "AUG" "SEP" "OKT" "NOV" "DEC" -}}
+{{- return index $months (sub (int .Month) 1) -}}

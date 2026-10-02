@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ $p := . }}
+<section class="page">
+  <a class="underlink" href="{{ "/artikelen/" | relURL }}">Terug naar artikelen</a>
+  <article class="article">
+    <p class="eyebrow">{{ $p.Params.eyebrow }}</p>
+    <h1>{{ $p.Title }}</h1>
+    {{ with $p.Params.image }}
+    <figure class="article-image">
+      <img src="{{ . | relURL }}" alt="{{ $p.Params.image_alt }}" loading="eager">
+      {{ with $p.Params.image_alt }}<figcaption>{{ . }}</figcaption>{{ end }}
+    </figure>
+    {{ end }}
+    {{ $p.Content }}
+  </article>
+</section>
+{{ partial "jsonld/article.html" $p }}
+{{ end }}

@@ -1,0 +1,30 @@
+{{- $variant := .variant -}}
+<div class="newsletter{{ with $variant }} newsletter--{{ . }}{{ end }}">
+  <div class="newsletter-text">
+    {{- with .eyebrow }}
+    <p class="eyebrow">{{ . }}</p>
+    {{- end }}
+    {{- with .heading }}
+    {{- if eq $variant "footer" }}
+    <strong>{{ . }}</strong>
+    {{- else }}
+    <h2>{{ . }}</h2>
+    {{- end }}
+    {{- end }}
+    {{- with .body }}
+    <p>{{ . }}</p>
+    {{- end }}
+  </div>
+  {{- if site.Params.newsletterFormAction }}
+  <form class="newsletter-form" method="post" action="{{ site.Params.newsletterFormAction }}">
+    <label class="visually-hidden" for="newsletter-email-{{ $variant }}">E-mailadres</label>
+    <input type="email" name="{{ site.Params.newsletterFieldName | default "email" }}" id="newsletter-email-{{ $variant }}" required autocomplete="email" placeholder="{{ .placeholder | default "Jouw e-mailadres" }}">
+    <button class="button" type="submit">{{ .buttonLabel | default "Aanmelden" }}</button>
+  </form>
+  {{- else }}
+  <div class="newsletter-form newsletter-form--disabled">
+    <span class="newsletter-fake-input">{{ .placeholder | default "Jouw e-mailadres" }}</span>
+    <span class="button" aria-disabled="true">Binnenkort beschikbaar</span>
+  </div>
+  {{- end }}
+</div>

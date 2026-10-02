@@ -1,30 +1,10 @@
 {{ define "main" }}
-    {{ range .Pages.ByExpiryDate }}
-        {{ $ticketDateMachine := .ExpiryDate | time.Format "2006-01-02T15:04:05-07:00" }}
-        {{ $ticketDateHuman := .ExpiryDate | time.Format "Mon 2 Jan 15:04" }}
-        <div class="container">
-            <div class="row">
-                <a class="col-sm-10 col" href="{{ .RelPermalink }}" style="text-decoration: none;">
-                    <div class="row">
-                        <div class="col-sm-4 col-11 align-self-center">
-                            <time class="calendar-header" datetime="{{ $ticketDateMachine }}">{{ $ticketDateHuman }}</time>
-                        </div>
-                        <div class="col">
-                            <div class="agenda-row">
-                                <h2 class="article-header left-align">{{ .LinkTitle }}</h2>
-                            </div>
-                            <p class="article-paragraph">{{ .Description }}</p>
-                        </div>
-                    </div>
-                </a>
-                <div class="col-sm-2 col-11 align-self-center">
-                    <a class="article-link call-to-action-link" href="{{ .Params.Ticketurl }}">Kaarten&nbsp;<i class="fa-solid fa-2xs fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="container">
-                <hr/>
-            </div>
-        </div>
-    {{ end }}
+<section class="page">
+  <p class="eyebrow">{{ .Params.eyebrow }}</p>
+  <h1 class="page-title">{{ .Title }}</h1>
+  <div class="page-intro">{{ .Content }}</div>
+  {{ range (sort .Pages "Date") }}
+  {{ partial "components/agenda-row.html" . }}
+  {{ end }}
+</section>
 {{ end }}

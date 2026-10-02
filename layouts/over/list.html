@@ -1,9 +1,12 @@
 {{ define "main" }}
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="article-paragraph single-article">
-        {{ .Content }}
-      </div>
-    </div>
+<section class="page">
+  <p class="eyebrow">{{ .Params.eyebrow }}</p>
+  <h1 class="page-title">{{ .Params.page_title | default .Title | safeHTML }}</h1>
+  <div class="intro">
+    <span class="eyebrow">{{ .Params.intro_eyebrow }}</span>
+    {{ .Content }}
   </div>
+  {{ partial "components/about-strip.html" (dict "heading" .Params.strip_heading "body" .Params.strip_body "ctaURL" "/agenda/" "ctaLabel" "Ontdek het programma" "ctaStyle" "button") }}
+  {{ partial "components/about-strip.html" (dict "id" "locatie" "heading" .Params.location_heading "body" .Params.location_body "ctaURL" "/organisatie/" "ctaLabel" "Organisatiegegevens") }}
+</section>
 {{ end }}

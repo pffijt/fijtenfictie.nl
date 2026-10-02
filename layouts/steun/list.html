@@ -1,14 +1,27 @@
 {{ define "main" }}
-  <div class="container">
-    <div class="row">
-      <div class="article-paragraph single-article mb-3">
-        {{ .Render "image-styled" }}
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="article-paragraph single-article">
-        {{ .Content }}
-      </div>
+<section class="page">
+  <p class="eyebrow">{{ .Params.eyebrow }}</p>
+  <h1 class="page-title">{{ .Title }}</h1>
+  <div class="page-intro">{{ .Content }}</div>
+  {{ range .Params.items }}
+  <div class="project-row">
+    <span class="eyebrow">{{ .number }}</span>
+    <h2>{{ .title }}</h2>
+    <div>
+      <p>{{ .body }}</p>
+      {{ if .donate }}
+        {{ if site.Params.donateURL }}
+        <a class="button" href="{{ site.Params.donateURL }}" rel="noopener" target="_blank">Word vriend</a>
+        {{ else }}
+        <span class="button" aria-disabled="true">Binnenkort beschikbaar</span>
+        {{ end }}
+      {{ else if .cta_url }}
+      <a class="button" href="{{ .cta_url | relURL }}">{{ .cta_label }}</a>
+      {{ end }}
     </div>
   </div>
+  {{ end }}
+  <hr class="section-divider">
+  {{ partial "components/newsletter-signup.html" (dict "variant" "banner" "eyebrow" "OF BLIJF BETROKKEN" "heading" "Schrijf je in voor de nieuwsbrief." "body" "Geen verplichtingen, wel de eerste die het weet wanneer er nieuwe voorstellingen zijn." "placeholder" "Jouw e-mailadres" "buttonLabel" "Aanmelden") }}
+</section>
 {{ end }}

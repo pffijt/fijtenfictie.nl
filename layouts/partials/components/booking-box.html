@@ -1,0 +1,23 @@
+{{- $p := . -}}
+{{- $ticketURL := $p.Params.ticket_url | default site.Params.ticketShopURL -}}
+<aside class="booking">
+  <p class="eyebrow">{{ $p.Params.artist }}</p>
+  <h2>{{ $p.Date.Format "02" }} {{ partial "components/month-short.html" $p.Date }}</h2>
+  <dl>
+    <dt>Datum</dt>
+    <dd><time datetime="{{ $p.Date.Format "2006-01-02T15:04:05-07:00" }}">{{ partial "components/weekday-full.html" $p.Date | strings.FirstUpper }} {{ $p.Date.Day }} {{ partial "components/month-full.html" $p.Date }} {{ $p.Date.Year }}</time></dd>
+    <dt>Tijd</dt>
+    <dd>{{ $p.Params.time_start }}{{ with $p.Params.time_end }}–{{ . }}{{ end }} uur</dd>
+    <dt>Locatie</dt>
+    <dd>{{ $p.Params.venue }}</dd>
+    {{- with $p.Params.price }}
+    <dt>Kaartje</dt>
+    <dd>{{ . }}</dd>
+    {{- end }}
+  </dl>
+  {{- if $p.Params.sold_out }}
+  <span class="button" aria-disabled="true">Uitverkocht</span>
+  {{- else }}
+  <a class="button" href="{{ $ticketURL }}" rel="noopener" target="_blank">Tickets</a>
+  {{- end }}
+</aside>

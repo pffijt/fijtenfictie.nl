@@ -1,4 +1,0 @@
-User-agent: *
-
-Disallow: /organisatie/
-Sitemap: {{ .Site.BaseURL }}/sitemap.xml

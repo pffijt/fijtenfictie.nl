@@ -1,0 +1,41 @@
+{{- $home := . -}}
+{{- $events := where site.RegularPages "Section" "agenda" -}}
+{{- $pinned := sort (where $events ".Params.pinned" true) "Date" -}}
+{{- $upcoming := sort (where $events ".Date" "ge" now) "Date" -}}
+{{- $next := "" -}}
+{{- if $pinned }}{{ $next = index $pinned 0 }}{{ else if $upcoming }}{{ $next = index $upcoming 0 }}{{ end -}}
+{{- $photoSrc := $home.Params.hero_photo -}}
+{{- $photoAlt := $home.Params.hero_photo_alt -}}
+{{- $photoCaption := $home.Params.hero_photo_caption -}}
+{{- if $next -}}
+  {{- if $next.Params.image -}}
+    {{- $photoSrc = $next.Params.image -}}
+    {{- $photoAlt = $next.Params.image_alt -}}
+    {{- $photoCaption = "" -}}
+  {{- end -}}
+{{- end -}}
+<section class="hero">
+  <h1>{{ $home.Params.hero_heading | safeHTML }}</h1>
+  {{- with $photoSrc }}
+  <div class="hero-photo">
+    <img src="{{ . | relURL }}" alt="{{ $photoAlt }}" loading="eager">
+    {{- with $photoCaption }}
+    <span class="photo-caption">{{ . }}</span>
+    {{- end }}
+  </div>
+  {{- end }}
+  {{- with $home.Params.hero_badge_text }}
+  <span class="sticker">{{ . | safeHTML }}</span>
+  {{- end }}
+  {{- with $next }}
+  <div class="hero-bottom">
+    <div class="date">{{ .Date.Format "02" }}<span>{{ partial "components/month-full.html" .Date | upper }}</span></div>
+    <div>
+      <p class="eyebrow">EERSTVOLGEND · {{ .Params.type_label }}</p>
+      <h2>{{ .Title }}</h2>
+      <div class="metadata">{{ .Params.time_start }} uur · {{ .Params.venue }} · {{ .Params.price | default "prijs via Stager" }}</div>
+      <a class="button" href="{{ .RelPermalink }}">Bekijk de avond &amp; tickets</a>
+    </div>
+  </div>
+  {{- end }}
+</section>

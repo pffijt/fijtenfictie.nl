@@ -1,0 +1,9 @@
+{{- $p := . -}}
+<div class="poster {{ $p.Params.accent | default "red" }}">
+  <small>{{ $p.Params.type_label }}</small>
+  {{- if $p.Params.sold_out }}
+  <span class="sold-out">Uitverkocht</span>
+  {{- end }}
+  <div class="poster-title">{{ $p.Params.poster_title | default $p.Title }}{{ with $p.Params.poster_script_word }}<div class="script">{{ . }}</div>{{ end }}</div>
+  <div class="poster-date">{{ $p.Date.Format "02" }}<small> / {{ partial "components/month-short.html" $p.Date }}</small></div>
+</div>

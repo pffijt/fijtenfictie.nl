@@ -1,0 +1,11 @@
+<section class="about-strip"{{ with .id }} id="{{ . }}"{{ end }}>
+  <h2>{{ .heading | safeHTML }}</h2>
+  <div>
+    {{- range strings.Split .body "\n\n" }}
+    <p>{{ . }}</p>
+    {{- end }}
+    {{- with .ctaURL }}
+    <a class="{{ if eq $.ctaStyle "button" }}button{{ else }}underlink{{ end }}" href="{{ . | relURL }}">{{ $.ctaLabel }}</a>
+    {{- end }}
+  </div>
+</section>

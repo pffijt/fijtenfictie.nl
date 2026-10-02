@@ -1,0 +1,23 @@
+{{- $p := . -}}
+{{- $article := dict
+  "@context" "https://schema.org"
+  "@type" "Article"
+  "headline" $p.Title
+  "datePublished" ($p.Date.Format "2006-01-02")
+  "description" ($p.Params.excerpt | default ($p.Summary | plainify | htmlUnescape))
+  "author" (dict
+    "@type" "Person"
+    "name" ($p.Params.author | default site.Params.orgName)
+  )
+  "publisher" (dict
+    "@type" "NGO"
+    "name" site.Params.orgName
+    "logo" (dict
+      "@type" "ImageObject"
+      "url" (site.Params.logo | absURL)
+    )
+  )
+  "mainEntityOfPage" $p.Permalink
+-}}
+{{- with $p.Params.image }}{{ $article = merge $article (dict "image" (. | absURL)) }}{{ end -}}
+<script type="application/ld+json">{{ $article | jsonify | safeJS }}</script>

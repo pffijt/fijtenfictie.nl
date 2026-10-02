@@ -1,0 +1,8 @@
+{{- $text := .text -}}
+{{- $emph := .emphasis -}}
+{{- $result := $text -}}
+{{- if and $emph (strings.Contains $text $emph) -}}
+  {{- $parts := strings.Split $text $emph -}}
+  {{- $result = printf "%s<em>%s</em>%s" (index $parts 0) $emph (index $parts 1) | safeHTML -}}
+{{- end -}}
+{{- return $result -}}

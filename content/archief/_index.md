@@ -1,7 +1,7 @@
-+++
-title = 'Archief'
-description = 'Eerdere artiesten'
-date = 2024-01-01T08:30:00-07:00
-draft = false
-+++
+---
+title: "Archief"
+eyebrow: "EERDERE AVONDEN"
+description: "Een overzicht van eerdere voorstellingen bij Fijt & Fictie in Rotterdam."
+---
 
+Een overzicht van de avonden die achter ons liggen.

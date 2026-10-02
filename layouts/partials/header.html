@@ -1,0 +1,12 @@
+{{- $page := . -}}
+<header>
+  <a class="brand" href="{{ "/" | relURL }}">fijt <i>&amp;</i> fictie<span>{{ site.Params.tagline | upper }}</span></a>
+  <nav aria-label="Hoofdnavigatie">
+    {{- range site.Menus.main }}
+    <a href="{{ .URL | relLangURL }}"{{ if $page.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
+    {{- end }}
+  </nav>
+  {{- with site.Params.ctaPill }}
+  <a class="header-ticket" href="{{ .url | relURL }}">{{ .label }}</a>
+  {{- end }}
+</header>

@@ -1,0 +1,17 @@
+{{- $p := . -}}
+<div class="mag-spread">
+  <div>
+    <p class="eyebrow">{{ $p.Params.eyebrow }}</p>
+    <a href="{{ $p.RelPermalink }}"><h2 class="essay-title">{{ partial "components/emphasize.html" (dict "text" $p.Title "emphasis" $p.Params.title_emphasis) }}</h2></a>
+    <p class="essay-excerpt">{{ $p.Params.excerpt }}</p>
+    <a class="underlink" href="{{ $p.RelPermalink }}">Lees het essay</a>
+  </div>
+  <a class="issue-art" href="{{ $p.RelPermalink }}">
+    <span>{{ site.Params.orgName | upper }} / TIJDSCHRIFT</span>
+    <strong>{{ $p.Params.cover_word | default ($p.Title | upper) }}</strong>
+    {{- with $p.Params.cover_tagline }}
+    <i>{{ . }}</i>
+    {{- end }}
+    <span>ESSAYS · OBSERVATIES · KLEINKUNST</span>
+  </a>
+</div>

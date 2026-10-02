@@ -1,0 +1,38 @@
+{{- $p := . -}}
+{{- $ticketURL := $p.Params.ticket_url | default site.Params.ticketShopURL -}}
+{{- $availability := "https://schema.org/InStock" -}}
+{{- if $p.Params.sold_out }}{{ $availability = "https://schema.org/SoldOut" }}{{ end -}}
+{{- $event := dict
+  "@context" "https://schema.org"
+  "@type" "Event"
+  "name" $p.Title
+  "startDate" ($p.Date.Format "2006-01-02T15:04:05-07:00")
+  "eventAttendanceMode" "https://schema.org/OfflineEventAttendanceMode"
+  "eventStatus" "https://schema.org/EventScheduled"
+  "description" ($p.Summary | plainify | htmlUnescape)
+  "location" (dict
+    "@type" "Place"
+    "name" $p.Params.venue
+    "address" ($p.Params.address | default site.Params.address)
+  )
+  "performer" (dict
+    "@type" "PerformingGroup"
+    "name" $p.Params.artist
+  )
+  "organizer" (dict
+    "@type" "NGO"
+    "name" site.Params.orgName
+    "url" site.BaseURL
+  )
+  "offers" (dict
+    "@type" "Offer"
+    "url" $ticketURL
+    "availability" $availability
+  )
+-}}
+{{- if $p.Params.price_amount -}}
+{{- $event = merge $event (dict "offers" (merge $event.offers (dict "price" $p.Params.price_amount "priceCurrency" ($p.Params.price_currency | default "EUR")))) -}}
+{{- end -}}
+{{- if $p.Params.end_date }}{{ $event = merge $event (dict "endDate" $p.Params.end_date) }}{{ end -}}
+{{- with $p.Params.image }}{{ $event = merge $event (dict "image" (. | absURL)) }}{{ end -}}
+<script type="application/ld+json">{{ $event | jsonify | safeJS }}</script>

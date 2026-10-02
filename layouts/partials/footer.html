@@ -1,0 +1,24 @@
+<footer>
+  <div class="foot-col">
+    <a class="foot-logo" href="{{ "/" | relURL }}">fijt &amp; fictie.</a>
+    <p>{{ site.Params.footerTagline }}</p>
+  </div>
+  <div class="foot-col foot-col--newsletter">
+    {{ partial "components/newsletter-signup.html" (dict "variant" "footer" "heading" "Blijf op de hoogte" "placeholder" "Jouw e-mailadres" "buttonLabel" "Aanmelden") }}
+  </div>
+  <div class="foot-col">
+    {{- with site.Params.socials }}
+    <nav class="foot-social" aria-label="Social media">
+      {{- range . }}
+      <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .name }}">{{ partial "components/social-icon.html" .name }}</a>
+      {{- end }}
+    </nav>
+    {{- end }}
+    <a href="{{ "/steun/" | relURL }}">Blijf betrokken</a>
+    <a href="{{ "/archief/" | relURL }}">Archief</a>
+    {{- with site.Params.termsURL }}
+    <a href="{{ . | relURL }}" target="_blank" rel="noopener">Algemene voorwaarden</a>
+    {{- end }}
+    <span>&copy; {{ now.Year }} {{ site.Params.orgName }}</span>
+  </div>
+</footer>

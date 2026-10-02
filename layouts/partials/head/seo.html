@@ -1,0 +1,24 @@
+{{- $sep := site.Params.titleSeparator | default "·" -}}
+{{- $title := "" -}}
+{{- if .IsHome -}}
+  {{- $title = printf "%s — %s" site.Title site.Params.tagline -}}
+{{- else -}}
+  {{- $title = printf "%s %s %s" .Title $sep site.Title -}}
+{{- end -}}
+{{- $desc := .Params.description | default .Params.excerpt | default .Summary | default site.Params.description -}}
+{{- $desc = $desc | plainify | htmlUnescape | truncate 160 -}}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $desc }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:type" content="{{ if in (slice "agenda" "artikelen") .Section }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="{{ site.Title }}">
+{{- $ogImage := .Params.image | default site.Params.defaultOGImage -}}
+{{- with $ogImage }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{- end }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="{{ if eq .Kind "404" }}noindex, nofollow{{ else }}index, follow{{ end }}">

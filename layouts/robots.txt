@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /organisatie/
+
+Sitemap: {{ "sitemap.xml" | absURL }}

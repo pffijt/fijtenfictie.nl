@@ -1,28 +1,22 @@
 {{ define "main" }}
-    {{ range .Pages.ByDate.Reverse }}
-        {{ $ticketDateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-        {{ $ticketDateHuman := .Date | time.Format "2 Jan 2006 15:04" }}
-        <div class="container">
-            <div class="row">
-                <a class="col-sm-10 col" href="{{ .RelPermalink }}" style="text-decoration: none;">
-                    <div class="row">
-                        <div class="col-sm-4 col-11 align-self-center">
-                            <time class="calendar-header" datetime="{{ $ticketDateMachine }}">{{ $ticketDateHuman }}</time>
-                        </div>
-                        <div class="col">
-                            <div class="agenda-row">
-                                <h2 class="article-header left-align">{{ .LinkTitle }}</h2>
-                            </div>
-                            <p class="article-paragraph">{{ .Description | markdownify }}</p>
-                        </div>
-                    </div>
-                </a>
-                <div class="col-sm-2 col-11 align-self-center">
-                </div>
-            </div>
-            <div class="container">
-                <hr/>
-            </div>
-        </div>
-    {{ end }}
+<section class="page">
+  <p class="eyebrow">{{ .Params.eyebrow }}</p>
+  <h1 class="page-title">{{ .Title }}</h1>
+  <div class="page-intro">{{ .Content }}</div>
+  {{ $lastYear := "" }}
+  {{ range (sort .Pages "Date" "desc") }}
+  {{ $year := .Date.Format "2006" }}
+  {{ if ne $year $lastYear }}
+  <div class="archive-year">{{ $year }}</div>
+  {{ $lastYear = $year }}
+  {{ end }}
+  <div class="agenda-row archive">
+    <div class="date">{{ .Date.Format "02" }}<span>{{ partial "components/month-short.html" .Date }}</span></div>
+    <div>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Params.description }}</p>
+    </div>
+  </div>
+  {{ end }}
+</section>
 {{ end }}

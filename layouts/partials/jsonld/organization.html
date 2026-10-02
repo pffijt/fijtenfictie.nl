@@ -1,0 +1,12 @@
+{{- $socials := slice -}}
+{{- range site.Params.socials -}}{{ $socials = $socials | append .url }}{{- end -}}
+{{- $org := dict
+  "@context" "https://schema.org"
+  "@type" "NGO"
+  "name" site.Params.orgName
+  "url" site.BaseURL
+  "logo" (site.Params.logo | absURL)
+  "description" site.Params.description
+  "sameAs" $socials
+-}}
+<script type="application/ld+json">{{ $org | jsonify | safeJS }}</script>

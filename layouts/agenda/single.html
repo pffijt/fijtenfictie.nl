@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ $p := . }}
+<section class="page">
+  <a class="underlink" href="{{ "/agenda/" | relURL }}">Terug naar de agenda</a>
+  <div class="detail">
+    <div>
+      <p class="eyebrow">{{ $p.Params.type_label }}</p>
+      <h1 class="detail-title">{{ $p.Title }}</h1>
+      {{ with $p.Params.image }}
+      <div class="detail-photo"><img src="{{ . | relURL }}" alt="{{ $p.Params.image_alt }}" loading="eager"></div>
+      {{ else }}
+      {{ partial "components/poster-card.html" $p }}
+      {{ end }}
+      <div class="detail-copy">{{ $p.Content }}</div>
+      {{ with $p.Params.program_note }}
+      <h2>Het programma</h2>
+      <p class="detail-copy">{{ . }}</p>
+      {{ end }}
+    </div>
+    {{ partial "components/booking-box.html" $p }}
+  </div>
+</section>
+{{ partial "jsonld/event.html" $p }}
+{{ end }}

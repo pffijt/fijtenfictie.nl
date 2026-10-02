@@ -1,71 +1,93 @@
-baseURL = 'http://localhost:1313/'
-languageCode = 'nl-NL'
-defaultContentLanguage = "nl"
-defaultContentLang = "nl"
-title = 'Fijt & Fictie'
-theme = "fijtTheme"
-enableRobotsTXT = true
-summaryLength = 5
+baseURL = "https://www.fijtenfictie.nl/"
+locale = "nl-NL"
+title = "Fijt & Fictie"
+copyright = "Fijt & Fictie"
 
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+# Events are almost always dated in the future (that's the point of an
+# agenda) — without this, Hugo hides them from every build by default.
+buildFuture = true
+
+[pagination]
+  pagerSize = 20
 
 [params]
-    instagramUrl = 'https://www.instagram.com/fijtenfictie/'
-    facebookUrl = 'https://www.facebook.com/fijtenfictie'
-    twitterUrl = 'https://twitter.com/fijtenfictie'
-    threadsUrl = 'https://www.threads.net/@fijtenfictie'
-    linkedinUrl = 'https://www.linkedin.com/company/fijtenfictie'
-    logoLight = '/logo4_light.webp'
-    logoDark = '/logo4_dark.webp'
-    logoAlternative = 'Fijt & Fictie'
-    headline = 'Het Nieuw Rotterdamsch Cabaret'
+  orgName = "Fijt & Fictie"
+  tagline = "Onafhankelijk podium · Rotterdam"
+  footerTagline = "Cultuur en podiumkunst in Rotterdam."
+  description = "Kleinkunst, comedy en nieuwe gedachten. Een onafhankelijk cultureel podium in Rotterdam."
+  officeName = "Voor de Duif"
+  address = "Posthoornstraat 11, 3011 WD Rotterdam"
+  email = "info@fijtenfictie.nl"
+  logo = "/images/logo.svg"
+  defaultOGImage = ""
+  titleSeparator = "·"
+  termsURL = "/15november2024_AlgemeneVoorwaarden.pdf"
 
-[menus]
+  # Real ticketing provider (Stager). Individual events can override this
+  # with their own `ticket_url` in frontmatter; this is the fallback.
+  ticketShopURL = "https://fijtenfictie.stager.co/shop/default"
+
+  donateURL = "https://fijtenfictie.stager.co/shop/doneren"
+
+  # TODO: nog geen nieuwsbrief-dienst (ESP) gekozen. Vul hier de form-action
+  # URL in zodra die bekend is — de knoppen worden dan automatisch actief.
+  newsletterFormAction = ""
+  # Veldnaam die de ESP verwacht (bv. Mailchimp wil "EMAIL"). Pas dit samen
+  # met newsletterFormAction aan zodra er een dienst gekozen is.
+  newsletterFieldName = "email"
+
+  [params.ctaPill]
+    label = "DE ZAAL IN"
+    url = "/agenda/"
+
+  [[params.socials]]
+    name = "Instagram"
+    url = "https://www.instagram.com/fijtenfictie/"
+
+  [[params.socials]]
+    name = "Facebook"
+    url = "https://www.facebook.com/fijtenfictie"
+
+  [[params.socials]]
+    name = "X"
+    url = "https://twitter.com/fijtenfictie"
+
+  [[params.socials]]
+    name = "Threads"
+    url = "https://www.threads.net/@fijtenfictie"
+
+  [[params.socials]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/company/fijtenfictie"
+
 [[menus.main]]
-  name = 'Thuis'
-  pageRef = '/'
+  name = "Agenda"
+  pageRef = "/agenda"
   weight = 10
-  [[menus.main.params]]
-    class = 'menu-link'
 
 [[menus.main]]
-  name = 'Agenda'
-  pageRef = '/agenda'
+  name = "Over"
+  pageRef = "/over"
   weight = 20
-  [[menus.main.params]]
-    class = 'menu-link'
 
 [[menus.main]]
-    name = 'Strapats'
-    pageRef = '/strapats'
-    weight = 30
-    [[menus.main.params]]
-        class = 'menu-link'
+  name = "Artikelen"
+  pageRef = "/artikelen"
+  weight = 30
 
 [[menus.main]]
-  name = 'Kaarten'
-  url = 'https://fijtenfictie.stager.co/web/tickets?utm_campaign=TIcketshop&utm_source=fijtenfictie.nl'
+  name = "Steun ons"
+  pageRef = "/steun"
   weight = 40
-  [[menus.main.params]]
-    class = 'menu-link'
-    target = "_blank"
 
-[[menus.main]]
-    name = 'Steun ons'
-    pageRef = '/steun'
-    weight = 50
-    [[menus.main.params]]
-        class = 'menu-link'
+[sitemap]
+  changeFreq = "weekly"
+  priority = 0.5
 
-[[menus.main]]
-  name = 'Over'
-  pageRef = '/over'
-  weight = 60
-  [[menus.main.params]]
-    class = 'menu-link'
-
-[[menus.main]]
-  name = 'Archief'
-  pageRef = '/archief'
-  weight = 70
-  [[menus.main.params]]
-    class = 'menu-link'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
