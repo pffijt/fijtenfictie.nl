@@ -50,13 +50,21 @@ nav a:hover,nav a.active{color:var(--red)}
 /* === Hero === */
 .edition{margin:20px 4% 0;display:flex;justify-content:space-between;font-size:11px;letter-spacing:1px}
 .edition-right{margin-left:auto}
-.hero{position:relative;margin:20px 4% 65px;min-height:670px;display:grid;grid-template-columns:1.05fr 1fr;grid-template-rows:auto 1fr}
+.hero{position:relative;margin:20px 4% 65px;min-height:670px;display:grid;grid-template-columns:1fr 1.6fr;grid-template-rows:auto 1fr}
 .hero h1{font:800 clamp(90px,12.8vw,190px)/.77 'Barlow Condensed','Arial Narrow',Impact,sans-serif;letter-spacing:-4px;text-transform:uppercase;margin:48px 0 0;position:relative;z-index:2}
 .hero h1 em{font:italic 400 .7em/.9 'Libre Caslon Text',Georgia,serif;text-transform:none;display:block;letter-spacing:-7px;margin:15px 0 9px 35px}
-.hero-photo{grid-column:2;grid-row:1/3;background:#242422;min-height:580px;position:relative;overflow:hidden;margin:28px 0 0 -35px}
-.hero-photo img{height:100%;width:100%;object-fit:cover;position:absolute}
+.hero-photo{grid-column:2;grid-row:1/3;align-self:start;background:#242422;position:relative;margin:28px 0 0 -35px}
+.hero-photo a{display:block;position:relative;overflow:hidden;max-height:720px}
+.hero-photo img{display:block;width:100%;height:auto}
 .photo-caption{position:absolute;bottom:18px;left:22px;color:white;font-size:11px;letter-spacing:1px}
 .sticker{position:absolute;right:-12px;top:0;background:var(--red);color:var(--paper);z-index:3;width:120px;height:120px;transform:rotate(8deg);display:flex;justify-content:center;align-items:center;text-align:center;font:700 25px/1 'Barlow Condensed',sans-serif}
+.hero-photo .sticker{top:-28px}
+@media(min-width:901px){
+  .hero h1{grid-column:1;grid-row:1}
+  .hero-photo{grid-column:1/3;grid-row:1;justify-self:end;width:62%;margin-left:0;align-self:stretch}
+  .hero-photo a{height:100%;max-height:none}
+  .hero-photo img{height:100%;object-fit:cover}
+}
 .hero-bottom{align-self:end;padding:40px 60px 0 0;display:grid;grid-template-columns:85px 1fr;gap:25px}
 .date{font:600 76px/.85 'Barlow Condensed',sans-serif}
 .date span{display:block;font:14px 'DM Sans',sans-serif;letter-spacing:2px;margin-top:10px}
@@ -207,7 +215,7 @@ footer{background:var(--ink);color:var(--paper);padding:40px 4%;display:flex;fle
   .header-ticket{font-size:12px;padding:13px 18px}
   .hero{margin:15px 5% 40px;min-height:0;grid-template-columns:1fr 1fr}
   .hero h1{font-size:clamp(80px,15vw,135px);letter-spacing:-2px}
-  .hero-photo{min-height:440px;margin-left:-40px}
+  .hero-photo{margin-left:-40px}
   .hero h1 em{letter-spacing:-4px;margin-left:15px}
   .hero-bottom{grid-column:1/3;padding:25px 0 0}
   .hero-photo{grid-row:1}
@@ -236,11 +244,13 @@ footer{background:var(--ink);color:var(--paper);padding:40px 4%;display:flex;fle
   .edition{font-size:9px;margin:18px 5% 0}
   .edition span:last-child{max-width:120px;text-align:right}
   .hero{display:block;padding-top:8px}
-  .hero h1{font-size:27vw;margin:25px 0 0;position:relative}
+  .hero h1{font-size:24vw;margin:25px 0 0;position:relative}
   .hero h1 em{margin:10px 0 5px 22px;font-size:.67em}
-  .hero-photo{height:330px;min-height:0;margin:-32px 0 0 22%;z-index:0}
+  .hero-photo{margin:-32px 0 0 22%;z-index:0}
+  .hero-photo a{max-height:330px}
   .hero h1{z-index:2}
-  .sticker{top:170px;right:-5px;transform:rotate(7deg)}
+  .sticker{transform:rotate(7deg)}
+  .hero-photo .sticker{top:-30px;right:-5px}
   .hero-bottom{padding:26px 0;gap:20px;grid-template-columns:75px 1fr}
   .hero-bottom h2{font-size:24px}
   .date{font-size:65px}

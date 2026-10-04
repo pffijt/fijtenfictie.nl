@@ -7,7 +7,9 @@
 {{- $photoSrc := $home.Params.hero_photo -}}
 {{- $photoAlt := $home.Params.hero_photo_alt -}}
 {{- $photoCaption := $home.Params.hero_photo_caption -}}
+{{- $photoLink := "/agenda/" | relURL -}}
 {{- if $next -}}
+  {{- $photoLink = $next.RelPermalink -}}
   {{- if $next.Params.image -}}
     {{- $photoSrc = $next.Params.image -}}
     {{- $photoAlt = $next.Params.image_alt -}}
@@ -18,14 +20,16 @@
   <h1>{{ $home.Params.hero_heading | safeHTML }}</h1>
   {{- with $photoSrc }}
   <div class="hero-photo">
-    <img src="{{ . | relURL }}" alt="{{ $photoAlt }}" loading="eager">
-    {{- with $photoCaption }}
-    <span class="photo-caption">{{ . }}</span>
+    <a href="{{ $photoLink }}">
+      <img src="{{ . | relURL }}" alt="{{ $photoAlt }}" loading="eager">
+      {{- with $photoCaption }}
+      <span class="photo-caption">{{ . }}</span>
+      {{- end }}
+    </a>
+    {{- with $home.Params.hero_badge_text }}
+    <span class="sticker">{{ . | safeHTML }}</span>
     {{- end }}
   </div>
-  {{- end }}
-  {{- with $home.Params.hero_badge_text }}
-  <span class="sticker">{{ . | safeHTML }}</span>
   {{- end }}
   {{- with $next }}
   <div class="hero-bottom">

@@ -1,7 +1,7 @@
 ---
 title: "Ruth Elings & Marlies Bloemen"
 artist: "Fijt & Fictie in het Klooster"
-date: 2026-10-10T20:30:00+02:00
+date: 2026-10-17T20:30:00+02:00
 time_start: "20:30"
 venue: "Het Klooster Oude Noorden, Rotterdam"
 address: "Hammerstraat 55, 3036 MC Rotterdam"
