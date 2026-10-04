@@ -21,4 +21,22 @@
   </div>
 </section>
 {{ partial "jsonld/event.html" $p }}
+<script>
+  document.querySelectorAll('.share-link').forEach(function (btn) {
+    if (!navigator.share && !navigator.clipboard) return;
+    btn.hidden = false;
+    btn.addEventListener('click', function () {
+      var url = btn.dataset.shareUrl;
+      if (navigator.share) {
+        navigator.share({ title: btn.dataset.shareTitle, url: url }).catch(function () {});
+        return;
+      }
+      var label = btn.textContent;
+      navigator.clipboard.writeText(url).then(function () {
+        btn.textContent = 'Link gekopieerd';
+        setTimeout(function () { btn.textContent = label; }, 2000);
+      });
+    });
+  });
+</script>
 {{ end }}

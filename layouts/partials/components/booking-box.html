@@ -10,6 +10,8 @@
     <dd>{{ $p.Params.time_start }}{{ with $p.Params.time_end }}–{{ . }}{{ end }} uur</dd>
     <dt>Locatie</dt>
     <dd>{{ $p.Params.venue }}</dd>
+  </dl>
+  <dl>
     {{- with $p.Params.price }}
     <dt>Kaartje</dt>
     <dd>{{ . }}</dd>
@@ -20,4 +22,5 @@
   {{- else }}
   <a class="button" href="{{ $ticketURL }}" rel="noopener" target="_blank">Tickets</a>
   {{- end }}
+  <button type="button" class="share-link" hidden data-share-url="{{ $p.Permalink }}" data-share-title="{{ $p.Title }}">Deel deze avond</button>
 </aside>
