@@ -3,7 +3,7 @@
   <p class="eyebrow">{{ .Params.eyebrow }}</p>
   <h1 class="page-title">{{ .Title }}</h1>
   <div class="page-intro">{{ .Content }}</div>
-  {{ range (sort .Pages "Date") }}
+  {{ range (sort (where .Pages ".Date" "ge" now) "Date") }}
   {{ partial "components/agenda-row.html" . }}
   {{ end }}
 </section>
