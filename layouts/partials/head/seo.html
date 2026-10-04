@@ -17,8 +17,11 @@
 <meta property="og:locale" content="nl_NL">
 <meta property="og:site_name" content="{{ site.Title }}">
 {{- $ogImage := .Params.image | default site.Params.defaultOGImage -}}
+{{- $ogImageAlt := .Params.image_alt | default site.Title -}}
 {{- with $ogImage }}
 <meta property="og:image" content="{{ . | absURL }}">
+<meta property="og:image:alt" content="{{ $ogImageAlt }}">
+<meta name="twitter:image" content="{{ . | absURL }}">
 {{- end }}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="{{ if eq .Kind "404" }}noindex, nofollow{{ else }}index, follow{{ end }}">

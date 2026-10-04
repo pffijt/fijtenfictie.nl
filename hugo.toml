@@ -1,4 +1,4 @@
-baseURL = "https://www.fijtenfictie.nl/"
+baseURL = "https://fijtenfictie.nl/"
 locale = "nl-NL"
 title = "Fijt & Fictie"
 copyright = "Fijt & Fictie"
@@ -22,7 +22,7 @@ buildFuture = true
   address = "Posthoornstraat 11, 3011 WD Rotterdam"
   email = "info@fijtenfictie.nl"
   logo = "/images/logo.svg"
-  defaultOGImage = ""
+  defaultOGImage = "/logo_social.jpg"
   titleSeparator = "·"
   termsURL = "/15november2024_AlgemeneVoorwaarden.pdf"
 
