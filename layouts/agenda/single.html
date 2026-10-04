@@ -23,18 +23,23 @@
 {{ partial "jsonld/event.html" $p }}
 <script>
   document.querySelectorAll('.share-link').forEach(function (btn) {
-    if (!navigator.share && !navigator.clipboard) return;
-    btn.hidden = false;
+    var panel = btn.nextElementSibling;
+    var copy = panel.querySelector('[data-copy]');
+    var url = btn.dataset.shareUrl;
     btn.addEventListener('click', function () {
-      var url = btn.dataset.shareUrl;
       if (navigator.share) {
         navigator.share({ title: btn.dataset.shareTitle, url: url }).catch(function () {});
         return;
       }
-      var label = btn.textContent;
+      panel.hidden = !panel.hidden;
+      btn.setAttribute('aria-expanded', String(!panel.hidden));
+    });
+    copy.addEventListener('click', function () {
+      if (!navigator.clipboard) return;
+      var label = copy.textContent;
       navigator.clipboard.writeText(url).then(function () {
-        btn.textContent = 'Link gekopieerd';
-        setTimeout(function () { btn.textContent = label; }, 2000);
+        copy.textContent = 'Link gekopieerd';
+        setTimeout(function () { copy.textContent = label; }, 2000);
       });
     });
   });

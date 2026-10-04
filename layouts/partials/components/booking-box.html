@@ -22,5 +22,12 @@
   {{- else }}
   <a class="button" href="{{ $ticketURL }}" rel="noopener" target="_blank">Tickets</a>
   {{- end }}
-  <button type="button" class="share-link" hidden data-share-url="{{ $p.Permalink }}" data-share-title="{{ $p.Title }}">Deel deze avond</button>
+  <button type="button" class="share-link" aria-expanded="false" data-share-url="{{ $p.Permalink }}" data-share-title="{{ $p.Title }}">Deel deze avond</button>
+  <div class="share-panel" hidden>
+    <a href="https://wa.me/?text={{ printf "%s %s" $p.Title $p.Permalink | urlquery }}" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ $p.Permalink | urlquery }}" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://twitter.com/intent/tweet?url={{ $p.Permalink | urlquery }}&amp;text={{ $p.Title | urlquery }}" target="_blank" rel="noopener">X</a>
+    <a href="mailto:?subject={{ $p.Title }}&amp;body={{ $p.Permalink }}">E-mail</a>
+    <button type="button" data-copy>Kopieer link</button>
+  </div>
 </aside>

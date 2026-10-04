@@ -188,6 +188,11 @@ footer{background:var(--ink);color:var(--paper);padding:40px 4%;display:flex;fle
 .booking .button{width:100%;text-align:center;font-size:19px;padding:20px 23px;letter-spacing:.5px}
 .booking .share-link{display:block;width:100%;margin:12px 0 0;padding:16px 23px;background:var(--paper);color:var(--ink);border:0;text-decoration:none;text-align:center;font-size:15px;font-weight:700;letter-spacing:.5px}
 .booking .share-link:hover{background:var(--ink);color:var(--paper)}
+.share-panel{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 16px}
+.share-panel[hidden]{display:none}
+.share-panel a,.share-panel button{display:block;padding:12px 10px;background:var(--paper);color:var(--ink);border:0;text-align:center;text-decoration:none;font-size:14px;font-weight:700;line-height:1;cursor:pointer}
+.share-panel a:hover,.share-panel button:hover{background:var(--ink);color:var(--paper)}
+.share-panel button{grid-column:1/-1}
 
 /* === Article === */
 .article{max-width:780px;margin:auto}
