@@ -53,7 +53,7 @@ nav a:hover,nav a.active{color:var(--red)}
 .edition{margin:20px 4% 0;display:flex;justify-content:space-between;font-size:11px;letter-spacing:1px}
 .edition-right{margin-left:auto}
 .hero{position:relative;margin:20px 4% 65px;min-height:670px;display:grid;grid-template-columns:1fr 1.6fr;grid-template-rows:auto 1fr}
-.hero h1{font:800 clamp(90px,12.8vw,190px)/.77 'Barlow Condensed','Arial Narrow',Impact,sans-serif;letter-spacing:-4px;text-transform:uppercase;margin:48px 0 0;position:relative;z-index:2}
+.hero h1{font:800 clamp(76px,10.9vw,162px)/.77 'Barlow Condensed','Arial Narrow',Impact,sans-serif;letter-spacing:-4px;text-transform:uppercase;margin:48px 0 0;position:relative;z-index:2}
 .hero h1 em{font:italic 400 .7em/.9 'Libre Caslon Text',Georgia,serif;text-transform:none;display:block;letter-spacing:-7px;margin:15px 0 9px 35px}
 .hero-photo{grid-column:2;grid-row:1/3;align-self:start;background:#242422;position:relative;margin:28px 0 0 -35px}
 .hero-photo a{display:block;position:relative;overflow:hidden;max-height:720px}
@@ -225,7 +225,7 @@ footer{background:var(--ink);color:var(--paper);padding:40px 4%;display:flex;fle
   nav{order:3;width:100%;justify-content:space-between;gap:10px;font-size:11px}
   .header-ticket{font-size:12px;padding:13px 18px}
   .hero{margin:15px 5% 40px;min-height:0;grid-template-columns:1fr 1fr}
-  .hero h1{font-size:clamp(80px,15vw,135px);letter-spacing:-2px}
+  .hero h1{font-size:clamp(68px,12.8vw,115px);letter-spacing:-2px}
   .hero-photo{margin-left:-40px}
   .hero h1 em{letter-spacing:-4px;margin-left:15px}
   .hero-bottom{grid-column:1/3;padding:25px 0 0}
@@ -255,7 +255,7 @@ footer{background:var(--ink);color:var(--paper);padding:40px 4%;display:flex;fle
   .edition{font-size:9px;margin:18px 5% 0}
   .edition span:last-child{max-width:120px;text-align:right}
   .hero{display:block;padding-top:8px}
-  .hero h1{font-size:24vw;margin:25px 0 0;position:relative}
+  .hero h1{font-size:20.4vw;margin:25px 0 0;position:relative}
   .hero h1 em{margin:10px 0 5px 22px;font-size:.67em}
   .hero-photo{margin:-32px 0 0 22%;z-index:0}
   .hero-photo a{max-height:330px}
