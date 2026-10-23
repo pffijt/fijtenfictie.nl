@@ -16,6 +16,7 @@ accent: "red"                    # red / black / yellow
 poster_title: ""                 # optioneel: titel met <br> voor de poster, anders wordt de titel gebruikt
 poster_script_word: ""           # optioneel: schuingedrukt "handgeschreven" woord op de poster
 pinned: false                    # forceer deze avond als uitgelicht op de homepage
+hero_badge_text: ""              # tekst in het rode blok op de homepage; <br> voor nieuwe regels, leeg = geen blok
 sold_out: false
 image: ""                        # foto van de artiest(en), getoond op de detailpagina en gedeeld op social media
 image_alt: ""

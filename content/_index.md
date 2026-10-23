@@ -6,7 +6,6 @@ hero_heading: "ZONDER WRIJVING<br><em>geen</em> GLANS."
 hero_photo: "/images/hero-performer.jpg"
 hero_photo_alt: "Expressief zwart-wit portret van een fictieve theaterperformer (voorbeeldfoto)"
 hero_photo_caption: "HET PODIUM IS GEEN VEILIGE GEDACHTE."
-hero_badge_text: "EEN<br>PRIMEUR<br>BIJ FIJT<br>& FICTIE"
 intro_eyebrow: "01 / Aangenaam, wij zijn Fijt & Fictie"
 ---
 

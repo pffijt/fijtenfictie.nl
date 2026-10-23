@@ -16,6 +16,7 @@
       <h2>Het programma</h2>
       <p class="detail-copy">{{ . }}</p>
       {{ end }}
+      {{ partial "components/location-info.html" . }}
     </div>
     {{ partial "components/booking-box.html" $p }}
   </div>

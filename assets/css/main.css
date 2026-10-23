@@ -181,6 +181,9 @@ footer{background:var(--ink);color:var(--paper);padding:40px 4%;display:flex;fle
 .detail .poster{min-height:450px}
 .detail-photo img{display:block;width:100%;height:auto}
 .detail-copy{font:19px/1.75 'Libre Caslon Text',serif}
+.event-location{margin-top:35px;padding-top:20px;border-top:1px solid currentColor}
+.event-location h2{margin:0 0 16px}
+.event-location .detail-copy p:last-child{margin-bottom:0}
 .booking{background:#e7e4da;padding:30px;align-self:start;position:sticky;top:20px}
 .booking h2{font:600 65px 'Barlow Condensed',sans-serif;margin:0}
 .booking dl{display:grid;grid-template-columns:1fr 1.3fr;font-size:15px;gap:16px}

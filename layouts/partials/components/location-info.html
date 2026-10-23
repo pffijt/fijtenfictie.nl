@@ -1,0 +1,13 @@
+{{- with site.GetPage "/over" -}}
+  {{- $heading := .Params.location_heading -}}
+  {{- with .Params.location_body -}}
+    <section class="event-location" id="locatie">
+      <h2>{{ $heading }}</h2>
+      <div class="detail-copy">
+        {{- range strings.Split . "\n\n" }}
+        <p>{{ . }}</p>
+        {{- end }}
+      </div>
+    </section>
+  {{- end -}}
+{{- end -}}
