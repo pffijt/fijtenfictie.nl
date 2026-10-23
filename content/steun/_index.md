@@ -14,7 +14,7 @@ items:
     donate: true
   - number: "03"
     title: "Doe mee."
-    body: "Vrijwilligers en culturele partners dragen bij aan het podium, de organisatie en het publiek. Neem contact op via info@fijtenfictie.nl als je wilt meedenken."
+    body: "Vrijwilligers en culturele partners dragen bij aan het podium, de organisatie en het publiek. Neem contact op via info@fijtenfictie.nl als je wilt meedoen."
 ---
 
 Betrokken bezoekers, vrienden en partners maken het mogelijk om nieuwe stemmen te laten horen.
