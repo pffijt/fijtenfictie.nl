@@ -19,7 +19,7 @@
   {{- end -}}
 {{- end -}}
 <section class="hero">
-  <h1>{{ $home.Params.hero_heading | safeHTML }}</h1>
+  {{ with $home.Params.hero_heading }}<h1>{{ . | safeHTML }}</h1>{{ end }}
   {{- with $photoSrc }}
   <div class="hero-photo">
     <a href="{{ $photoLink }}">

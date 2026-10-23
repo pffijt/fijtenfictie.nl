@@ -2,7 +2,6 @@
 title: "Fijt & Fictie — Kunst met weerhaakjes"
 description: "Kleinkunst, comedy en nieuwe gedachten. Een onafhankelijk cultureel podium in Rotterdam."
 edition_right: "ROTTERDAM · NAJAAR 2026"
-hero_heading: "ZONDER WRIJVING<br><em>geen</em> GLANS."
 hero_photo: "/images/hero-performer.jpg"
 hero_photo_alt: "Expressief zwart-wit portret van een fictieve theaterperformer (voorbeeldfoto)"
 hero_photo_caption: "HET PODIUM IS GEEN VEILIGE GEDACHTE."
